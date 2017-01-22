@@ -1,0 +1,130 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;}
+
+/* ---------------------- TYPOS ---------------------- */
+
+
+
+@font-face{ 
+	font-family: 'robotobold';
+	src: url('../font/robotobold.eot');
+	src: url('../font/robotobold.eot?iefix') format('eot'),
+	     url('../font/robotobold.woff') format('woff'),
+	     url('../font/robotobold.ttf') format('truetype'),
+	     url('../font/robotobold.svg#robotobold') format('svg');
+}
+
+
+@font-face{ 
+	font-family: 'robotothin';
+	src: url('../font/roboto-thin-webfont.eot');
+	src: url('../font/roboto-thin-webfont.eot?iefix') format('eot'),
+	     url('../font/roboto-thin-webfont.woff') format('woff'),
+	     url('../font/roboto-thin-webfont.ttf') format('truetype'),
+	     url('../font/roboto-thin-webfont.svg#roboto-thin-webfont') format('svg');
+}
+
+/* ---------------------- home --------------------- */
+
+
+body {
+		background-color: #171718;
+		background-image:url("../img/fondhome.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+} 
+
+.home{
+		
+		height: 100%;
+		width: 100%;
+}
+
+h1{	
+		color: white;
+		font-size: 70px;
+		letter-spacing: 30px;
+		text-align: center;
+		margin-top: 25%;
+		font-family:'robotobold';
+		opacity: 0.4;
+}
+
+h2{		
+		color: white;
+		font-size: 15px;
+		letter-spacing: 10px;
+		text-align: center;
+		font-family: 'robotothin';
+		opacity: 0.4;
+		margin-top: 10px;
+}
+
+
+/* -------------------- FOOTER ---------------- */
+
+footer{ 
+		height: 35px;
+		width: 100%;
+		float: bottom;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column; 
+		flex-direction: column;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+
+ }
+
+#scrolldown{
+		width: 40px;
+		height: 30px;
+		margin: auto;
+		position: fixed;
+		bottom: 15px;
+		opacity: 0.8;
+}
+
