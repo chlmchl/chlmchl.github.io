@@ -4,7 +4,7 @@ $(document).ready(function() {
   });
 
   $(".typed").typed({
-      strings: ["la street.", "ma gueule.", "bien ou bien ?"],
+      strings: ["Chloé Michel.", "étudiante.", "motivée.", "aventurière.", "débrouillarde.", "bilingue anglais.", "calme.", "curieuse.", "votre future stagiaire ?"],
       loop: true
   });
 
