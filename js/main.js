@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    anchors: ['home', 'work']
+    anchors: ['home', 'work', 'about']
   });
 
   $(".typed").typed({

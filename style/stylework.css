@@ -62,93 +62,26 @@ table {
 	     url('../font/roboto-thin-webfont.woff') format('woff'),
 	     url('../font/roboto-thin-webfont.ttf') format('truetype'),
 	     url('../font/roboto-thin-webfont.svg#roboto-thin-webfont') format('svg');
-
 }
 
-/* --------------------------- ELMT PRINCIPAUX ------------------------------*/
 
-.scrolldown{
-		width: 40px;
-		height: 30px;
-		margin: auto;
-		position: absolute;
-		bottom: 15px;
-		opacity: 0.8;
-}
 
-/* ---------------------- home --------------------- */
+
+/* ------------------------ WORK -------------------------*/
 
 
 body {
 		background-color: #171718;
+
 } 
 
-#fond{
-		width: 100%;
-		height: 100%;	
-		background-image:url("../img/fondhome.jpg"), url("../img/fondhome-fast.jpg");
-		background-size: 100%;
-		background-repeat: no-repeat;
-}
-
-.home{
-		padding-top: 25%;
-		height: 100px;
-		width: 100%;
-
-}
-
-#h1_home{	
-		color: white;
-		font-size: 70px;
-		letter-spacing: 30px;
-		text-align: center;
-		font-family:'robotobold';
-		opacity: 0.4;
-
-}
-
-#h2_home{		
-		color: white;
-		font-size: 15px;
-		letter-spacing: 10px;
-		text-align: center;
-		font-family: 'robotothin';
-		opacity: 0.5;
-		margin-top: 10px;
-}
-
-
-/* -------------------- home/FOOTER ---------------- */
-
-footer{ 
-		height: 35px;
-		width: 100%;
-		float: bottom;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-direction: column; 
-		flex-direction: column;
-		-webkit-align-items: center;
-		align-items: center;
-		-webkit-justify-content: center;
-		justify-content: center;
-
- }
-
-
-
-/* --------------------------------------- WORK -------------------------*/
-
-
-
-/* -------------------- work/HEADER ---------------- */
+/* -------------------- HEADER ---------------- */
 
 header{ 
 		height: 45px;
 		width: 100%;
+		
 		float: top;
-		position: fixed;
 		display: -webkit-flex;
 		display: flex;
 		-webkit-flex-direction: column; 
@@ -160,40 +93,39 @@ header{
 
 		 }
 
-#h1_work{ 
+h1{ 
 		color: white;
 		opacity: 0.8;
 		font-family: 'robotobold';
 		font-size: 15px;
 		letter-spacing: 5px;
-}
+		padding-top: 7px;
+		 }
 
-hr{		margin-top: 15px;
+hr{		
 		color: white;
 		opacity: 0.6;
 		width: 100%;
 	}
 
-/* -------------------- work/CONTENT ---------------- */
+/* -------------------- CONTENT ---------------- */
 
 
-#h2_work{ 
+h2{ 
 	color: white;
 	opacity: 0.8;
 	font-family:'robotobold';
 	font-size: 25px;
 	letter-spacing: 9px;
 	margin-left: 150px;
-	margin-top: 45px;
+	margin-top: 20px;
 }
-
-/* C'EST ICI QUE ÇA VOUS INTÉRESSE POUR LA MOSAIQUE */
 
 .conteneur {
 	width: calc(100% - 300px);
 	margin-right: 150px;
 	margin-left: 150px;
-	margin-top: 15px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -212,11 +144,7 @@ hr{		margin-top: 15px;
 	max-height: 100%;
 	border: solid white 2px;
 }
-
-/* FIN MOSAIQUE */
-
-
-/* -------------------- work/FOOTER ---------------- */
+/* -------------------- FOOTER ---------------- */
 
 footer{ 
 		height: 35px;
@@ -233,42 +161,19 @@ footer{
 
  }
 
-/* ------------------- ABOUT ------------------------- */
-
-#header_about{ 
-		height: 45px;
-		width: 100%;
-		float: top;
-		display: -webkit-flex;
-		display: flex;
-		
-		-webkit-align-items: center;
-		align-items: center;
-		-webkit-justify-content: center;
-		justify-content: center;
-
-		 }
-
-#h1_about{ 
-		color: white;
+#scrolldown{
+		width: 40px;
+		height: 30px;
+		margin: auto;
+		position: fixed;
+		bottom: 15px;
 		opacity: 0.8;
-		font-family: 'robotobold';
-		font-size: 15px;
-		letter-spacing: 5px;
 }
 
 
-.jesuis {
-    
-    font-size: 3em;
-    font-family: 'robotothin';
-    color: white;
-}
 
-.jesuis .typed{
-		color: black;
-		font-family: 'robotobold'
-}
+
+
 
 
 
