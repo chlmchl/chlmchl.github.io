@@ -2,7 +2,16 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     anchors: ['home', 'work', 'about'],
     menu: '#menu',
-    loopBottom: true
+    afterRender: function(){
+       $('#menu').hide();
+    },
+    afterLoad: function(anchor, index){
+      if (index == 1){
+        $('#menu').fadeOut();
+      } else {
+        $('#menu').fadeIn();   
+      }
+    }
   });
 
   $(".typed").typed({

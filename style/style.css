@@ -147,11 +147,12 @@ footer{
 /* -------------------- work/HEADER ---------------- */
 
 header{ 
+		left: 0;
+		right: 0;
+		z-index: 70;
 		height: 40px;
-		width: 100%;
 		margin-top: 10px;
 		text-decoration: none;
-		float: top;
 		position: fixed;
 		display: -webkit-flex;
 		display: flex;
@@ -161,8 +162,7 @@ header{
 		align-items: center;
 		-webkit-justify-content: center;
 		justify-content: center;
-
-		 }
+}
 
 #h1_work{ 
 		color: white;
