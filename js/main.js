@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
     anchors: ['home', 'work', 'about'],
-    menu: '#menu'
+    menu: '#menu',
+    loopBottom: true
   });
 
   $(".typed").typed({
