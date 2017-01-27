@@ -57,11 +57,11 @@ table {
 
 @font-face{ 
 	font-family: 'robotothin';
-	src: url('../font/roboto-thin-webfont.eot');
-	src: url('../font/roboto-thin-webfont.eot?iefix') format('eot'),
-	     url('../font/roboto-thin-webfont.woff') format('woff'),
-	     url('../font/roboto-thin-webfont.ttf') format('truetype'),
-	     url('../font/roboto-thin-webfont.svg#roboto-thin-webfont') format('svg');
+	src: url('../font/robotothin.eot');
+	src: url('../font/robotothin.eot?iefix') format('eot'),
+	     url('../font/robotothin.woff') format('woff'),
+	     url('../font/robotothin.ttf') format('truetype'),
+	     url('../font/robotothin.svg#roboto-thin-webfont') format('svg');
 
 }
 
