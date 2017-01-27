@@ -78,11 +78,45 @@ table {
 
 a{text-decoration: none;}
 
+header{ 
+		left: 0;
+		right: 0;
+		z-index: 70;
+		height: 40px;
+		background-color: #171718;
+		padding-top: 10px;
+		text-decoration: none;
+		position: fixed;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column; 
+		flex-direction: column;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+}
+
+#chloe{ 
+		color: white;
+		opacity: 0.8;
+		font-family: 'robotobold';
+		font-size: 15px;
+		letter-spacing: 5px;
+}
+
+hr{		margin-top: 15px;
+		color: white;
+		opacity: 0.6;
+		width: 100%;
+	}
+
 /* ---------------------- home --------------------- */
 
 
 body {
 		background-color: #171718;
+		position: relative;
 } 
 
 #fondhome{
@@ -107,6 +141,7 @@ body {
 		text-align: center;
 		font-family:'robotobold';
 		opacity: 0.4;
+		
 
 }
 
@@ -151,7 +186,8 @@ header{
 		right: 0;
 		z-index: 70;
 		height: 40px;
-		margin-top: 10px;
+		background-color: #171718;
+		padding-top: 10px;
 		text-decoration: none;
 		position: fixed;
 		display: -webkit-flex;
@@ -164,7 +200,7 @@ header{
 		justify-content: center;
 }
 
-#h1_work{ 
+#chloe{ 
 		color: white;
 		opacity: 0.8;
 		font-family: 'robotobold';
@@ -238,7 +274,7 @@ hr{		margin-top: 15px;
 
 /* -------------------- work/FOOTER ---------------- */
 
-footer{ 
+.arrow { 
 		height: 30px;
 		width: 100%;
 		float: bottom;
@@ -253,39 +289,24 @@ footer{
 
  }
 
+ footer {
+ 	position: absolute;
+ 	bottom: 0;
+ }
+
 /* ------------------- ABOUT ------------------------- */
 
 
 /* ---------------------- header/ABOUT -------------------------- */
 
-#header_about{ 
-		height: 45px;
-		width: 100%;
-		float: top;
-		text-decoration: none;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-direction: column; 
-		flex-direction: column;
-		-webkit-align-items: center;
-		align-items: center;
-		-webkit-justify-content: center;
-		justify-content: center;
-		 }
 
-#h1_about{ 
-		color: white;
-		opacity: 0.8;
-		font-family: 'robotobold';
-		font-size: 15px;
-		letter-spacing: 5px;
-}
+
 
 /* --------------------------- content/ABOUT -------------------- */
 
 .jesuis {
     
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'robotothin';
     color: white;
 }
@@ -293,7 +314,7 @@ footer{
 		.jesuis .typed{
 				color: black;
 				color: #476369;
-				font-family: 'robotobold'
+				font-family: 'robotobold';
 		}
 
 			/* Typed animated blinking cursor */
@@ -325,19 +346,37 @@ footer{
 
 .conteneur {
 	width: calc(100% - 500px);
-	margin-right: 250px;
+	margin-right: 100px;
 	margin-left: 250px;
-	margin-top: 0px;
+	padding-top: 23%;
 	margin-bottom: 20px;
+
+
 }
 
 	.conteneur p{
 			color:white;
 			font-family: 'robotothin';
-			font-size: 20px;
+			font-size: 25px;
 			margin-top: 25px;
 	}
 
+#contact{
+	margin-top: 30px;
+	opacity: 0.8;
+	margin-right:10px;
+	margin-bottom: 20px;
+	text-decoration: none;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row; 
+		flex-direction: row;
+}
+
+#contact img{
+	width: 30px;
+	height: 30px;
+}
 
 
 

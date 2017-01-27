@@ -1,7 +1,12 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
+    loopBottom: true,
+    navigation: true,
+    scrollOverflow: true,
+    verticalCentered: false,
+    fadingEffect: true,
     anchors: ['home', 'work', 'about'],
-    menu: '#menu',
+    menu: '#menu', 
     afterRender: function(){
        $('#menu').hide();
     },
@@ -15,7 +20,7 @@ $(document).ready(function() {
   });
 
   $(".typed").typed({
-      strings: ["Chloé Michel.", "étudiante.", "motivée.", "aventurière.", "débrouillarde.", "bilingue anglais.", "calme.", "curieuse.", "votre future stagiaire ?"],
+      strings: ["Chloé Michel.", "étudiante.", "motivée.", "aventurière.", "débrouillarde.", "fétarde.", "bilingue anglais.", "calme.", "curieuse.", "une grande voyageuse.", "ambitieuse.", "votre future stagiaire ?"],
       loop: true
   });
 
