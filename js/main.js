@@ -2,6 +2,8 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     loopBottom: true,
     verticalCentered: false,
+    scrollOverflow: true,
+    slidesNavigation: true,
     anchors: ['home', 'work', 'about'],
     menu: '#menu', 
     afterRender: function(){
