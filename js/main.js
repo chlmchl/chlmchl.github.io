@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     loopBottom: true,
     verticalCentered: false,
+    horizontalCentered: false,
     scrollOverflow: true,
     slidesNavigation: true,
     anchors: ['home', 'work', 'about'],
