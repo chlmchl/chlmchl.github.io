@@ -1,10 +1,7 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
     loopBottom: true,
-    navigation: true,
-    scrollOverflow: true,
     verticalCentered: false,
-    fadingEffect: true,
     anchors: ['home', 'work', 'about'],
     menu: '#menu', 
     afterRender: function(){
