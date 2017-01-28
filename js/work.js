@@ -2,15 +2,14 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     loopBottom: true,
     slidesNavigation: true,
-    scrollOverflow: true,
     verticalCentered: false,
     recordHistory: true,
-    anchors: ['projets', 'work', 'about'],
+    anchors: ['work'],
     menu: '#menu', 
     afterRender: function(){
        $('#menu').hide();
     },
-    afterLoad: function(anchor, index){
+    afterLoad: function(anchor, index) {
       if (index == 1){
         $('#menu').fadeOut();
       } else {
@@ -18,3 +17,4 @@ $(document).ready(function() {
       }
     }
   });
+});
