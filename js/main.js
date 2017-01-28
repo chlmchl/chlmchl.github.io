@@ -4,6 +4,7 @@ $(document).ready(function() {
     slidesNavigation: true,
     scrollOverflow: true,
     verticalCentered: false,
+    recordHistory: true,
     anchors: ['accueil', 'work', 'about'],
     menu: '#menu', 
     afterRender: function(){

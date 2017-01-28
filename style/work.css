@@ -192,15 +192,10 @@ hr{		margin-top: 15px;
 
 }
 
-#infomake{
-		width: 550px;
-		height: 300px;
-		background-color: black;
-}
-
 .content{
 	padding: 25px;
 }
+
 
 .surtitre{
 		color: #476369;
@@ -225,6 +220,34 @@ hr{		margin-top: 15px;
 		font-size: 18px;
 		text-align: justify;
 		padding-top: 17px;
+}
+
+
+/* MAKE */
+
+#infomake{
+		width: 550px;
+		height: 300px;
+		background-color: black;
+}
+
+
+/* TROMBI */
+
+
+
+#infotrombi{
+		width: 550px;
+		height: 300px;
+		background-color: black;
+}
+
+/* FRED TURNER */
+
+#infofredturner{
+		width: 550px;
+		height: 300px;
+		background-color: black;
 }
 
 
