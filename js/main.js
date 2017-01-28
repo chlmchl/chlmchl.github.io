@@ -1,11 +1,10 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
     loopBottom: true,
-    verticalCentered: false,
-    horizontalCentered: false,
-    scrollOverflow: true,
     slidesNavigation: true,
-    anchors: ['home', 'work', 'about'],
+    scrollOverflow: true,
+    verticalCentered: false,
+    anchors: ['accueil', 'work', 'about'],
     menu: '#menu', 
     afterRender: function(){
        $('#menu').hide();
