@@ -1,9 +1,11 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
     loopBottom: true,
-    navigation: true,
+    slidesNavigation: true,
     scrollOverflow: true,
-    anchors: ['home', 'work', 'about'],
+    verticalCentered: false,
+    recordHistory: true,
+    anchors: ['projets', 'work', 'about'],
     menu: '#menu', 
     afterRender: function(){
        $('#menu').hide();
