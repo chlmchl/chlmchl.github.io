@@ -2,7 +2,6 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     loopBottom: true,
     slidesNavigation: true,
-    scrollOverflow: true,
     verticalCentered: false,
     recordHistory: true,
     anchors: ['accueil', 'work', 'about'],
