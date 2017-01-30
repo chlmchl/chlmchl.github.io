@@ -3,6 +3,7 @@ $(document).ready(function() {
     loopBottom: true,
     slidesNavigation: true,
     verticalCentered: false,
+    lazyloading: true,
     recordHistory: true,
     anchors: ['accueil', 'work', 'about'],
     menu: '#menu', 

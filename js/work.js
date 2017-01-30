@@ -4,17 +4,10 @@ $(document).ready(function() {
     slidesNavigation: true,
     verticalCentered: false,
     recordHistory: true,
+    lazyloading: true,
+    responsiveSlides: true,
     anchors: ['work'],
     menu: '#menu', 
-    afterRender: function(){
-       $('#menu').hide();
-    },
-    afterLoad: function(anchor, index) {
-      if (index == 1){
-        $('#menu').fadeOut();
-      } else {
-        $('#menu').fadeIn();   
-      }
-    }
+   
   });
 });

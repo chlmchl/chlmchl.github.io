@@ -110,6 +110,7 @@ header{
 		font-family: 'robotobold';
 		font-size: 15px;
 		letter-spacing: 5px;
+		margin-top: 5px;
 }
 
 
@@ -185,12 +186,21 @@ hr{		margin-top: 15px;
 
 .conteneurprojets{
 		width: calc(100% - 500px);
-		margin-right: 100px;
-		margin-left: 250px;
-		width: 100%;
-		height: 100%;
+		margin-right: 250px;
+		margin-left: 300px;
+		margin-bottom: 30px;
+		display: flex;
+		
 
 }
+
+.conteneurprojets .row{
+	flex-direction: column;
+}
+
+
+
+
 
 .content{
 	padding: 25px;
@@ -229,7 +239,59 @@ hr{		margin-top: 15px;
 		width: 550px;
 		height: 300px;
 		background-color: black;
+		display: inline-block;
 }
+
+#bloc1 {	
+	width: 547px;
+	margin: 3px;
+}
+
+	#bloc1:hover{
+		opacity: 0.3;
+
+	}
+
+#bloc4 {width: 300px;
+		margin: 3px;
+		float: right;}
+
+	#bloc4:hover{
+	opacity: 0.3;
+
+}
+
+#bloc2 {width: 550px;
+		margin: 3px;}
+
+	#bloc2:hover{
+	opacity: 0.3;
+	}
+
+#bloc3 {width: 550px;
+		margin: 3px;}
+
+	#bloc3:hover{
+	opacity: 0.3;
+	}
+
+
+#bloc1 img{ 
+	max-width: 100%;
+ }
+#bloc2 img{ 
+	max-width: 100%;
+	
+ }
+
+ #bloc3 img{ 
+	max-width: 100%;
+	
+ }
+
+ #bloc4 img{ 
+	max-width: 100%;
+ }
 
 
 /* TROMBI */
@@ -241,6 +303,87 @@ hr{		margin-top: 15px;
 		height: 300px;
 		background-color: black;
 }
+
+
+
+#trombi1 {	
+	width: 547px;
+	margin: 3px;
+}
+
+	#trombi1:hover{
+		opacity: 0.3;
+
+	}
+
+#trombi2 {width: 547px;
+		margin: 3px;
+		}
+
+	#trombi2:hover{
+	opacity: 0.3;
+
+}
+
+#trombi5 {width: 547px;
+		margin: 3px;
+		}
+
+	#trombi5:hover{
+	opacity: 0.3;
+
+}
+
+#trombi3 {width: 550px;
+		margin: 3px;
+		margin-top: 100px;}
+
+	#trombi3:hover{
+	opacity: 0.3;
+	}
+
+#trombi4 {width: 550px;
+		margin: 3px;}
+
+	#trombi4:hover{
+	opacity: 0.3;
+	}
+
+#trombi6 {width: 550px;
+		margin: 3px;
+		}
+
+	#trombi6:hover{
+	opacity: 0.3;
+	}
+
+
+#trombi1 img{ 
+	max-width: 100%;
+ }
+#trombi2 img{ 
+	max-width: 100%;
+	
+ }
+
+ #trombi3 img{ 
+	max-width: 100%;
+	
+ }
+
+ #trombi4 img{ 
+	max-width: 100%;
+ }
+
+  #trombi5 img{ 
+	max-width: 100%;
+ }
+
+  #trombi6 img{ 
+	max-width: 100%;
+ }
+
+
 
 /* FRED TURNER */
 
@@ -258,13 +401,162 @@ hr{		margin-top: 15px;
 		background-color: black;
 }
 
+#transport1 {	
+	width: 547px;
+	margin: 3px;
+	margin-top: 120px;
+}
+
+	#transport1:hover{
+		opacity: 0.3;
+
+	}
+
+#transport2 {width: 547px;
+		margin: 3px;
+		}
+
+	#transport2:hover{
+	opacity: 0.3;
+
+}
+
+#transport5 {width: 547px;
+		margin: 3px;
+		}
+
+	#transport5:hover{
+	opacity: 0.3;
+
+}
+
+#transport3 {width: 547px;
+		margin: 3px;
+	}
+
+	#transport3:hover{
+	opacity: 0.3;
+	}
+
+#transport4 {width: 547px;
+		margin: 3px;}
+
+	#transport4:hover{
+	opacity: 0.3;
+	}
+
+
+
+#transport1 img{ 
+	max-width: 100%;
+ }
+#transport2 img{ 
+	max-width: 100%;
+	
+ }
+
+ #transport3 img{ 
+	max-width: 100%;
+	
+ }
+
+ #transport4 img{ 
+	max-width: 100%;
+ }
+
+  #transport5 img{ 
+	max-width: 100%;
+ }
+
+
+
 /* TEMPS MORT */
 
 #infotempsmort{
 		width: 550px;
-		height: 300px;
+		height: 430px;
 		background-color: black;
 }
+
+#tempsmort1 {	
+	width: 547px;
+	margin: 3px;
+	margin-top: 360px;
+}
+
+	#tempsmort1:hover{
+		opacity: 0.3;
+
+	}
+
+#tempsmort2 {width: 547px;
+		margin: 3px;
+		}
+
+	#tempsmort2:hover{
+	opacity: 0.3;
+
+}
+
+#tempsmort5 {width: 547px;
+		margin: 3px;
+		}
+
+	#tempsmort5:hover{
+	opacity: 0.3;
+
+}
+
+#tempsmort3 {width: 547px;
+		margin: 3px;
+	}
+
+	#tempsmort3:hover{
+	opacity: 0.3;
+	}
+
+#tempsmort4 {width: 547px;
+		margin: 3px;}
+
+	#tempsmort4:hover{
+	opacity: 0.3;
+	}
+
+#tempsmort6 {width: 547px;
+		margin: 3px;}
+
+	#tempsmort6:hover{
+	opacity: 0.3;
+	}
+
+
+
+#tempsmort1 img{ 
+	max-width: 100%;
+ }
+#tempsmort2 img{ 
+	max-width: 100%;
+	
+ }
+
+ #tempsmort3 img{ 
+	max-width: 100%;
+	
+ }
+
+ #tempsmort4 img{ 
+	max-width: 100%;
+ }
+
+  #tempsmort5 img{ 
+	max-width: 100%;
+ }
+
+#tempsmort6 img{
+	max-width: 100%;
+}
+
+
 
 /* LE CANCRE */
 
