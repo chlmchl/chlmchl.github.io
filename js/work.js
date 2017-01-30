@@ -5,9 +5,10 @@ $(document).ready(function() {
     verticalCentered: false,
     recordHistory: true,
     lazyloading: true,
-    responsiveSlides: true,
+    // responsiveSlides: true,
     anchors: ['work'],
     menu: '#menu', 
-   
+    scrollOverflow: true,
+    scrollOverflowReset: true
   });
 });
