@@ -4,6 +4,7 @@ $(document).ready(function() {
     slidesNavigation: true,
     verticalCentered: false,
     recordHistory: true,
+    paddingBottom: '150px',
     lazyloading: true,
     // responsiveSlides: true,
     anchors: ['work'],
