@@ -567,4 +567,103 @@ hr{		margin-top: 15px;
 }
 
 
+/* TROMBI */
+
+
+
+#infotimbres{
+		width: 550px;
+		height: 300px;
+		background-color: black;
+}
+
+
+
+#timbre1 {	
+	width: 547px;
+	margin: 3px;
+}
+
+	#timbre1:hover{
+		opacity: 0.3;
+
+	}
+
+#timbre2 {width: 547px;
+		margin: 3px;
+		}
+
+	#timbre2:hover{
+	opacity: 0.3;
+
+}
+
+#timbre5 {width: 547px;
+		margin: 3px;
+		}
+
+	#timbre5:hover{
+	opacity: 0.3;
+
+}
+
+#timbre3 {width: 550px;
+		margin: 3px;
+		}
+
+	#timbre3:hover{
+	opacity: 0.3;
+	}
+
+#timbre4 {width: 550px;
+		margin: 3px;
+		margin-top: 304px;}
+
+	#timbre4:hover{
+	opacity: 0.3;
+	}
+
+#timbre6 {width: 550px;
+		margin: 3px;
+		}
+
+	#timbre6:hover{
+	opacity: 0.3;
+	}
+
+
+#timbre1 img{ 
+	max-width: 100%;
+ }
+#timbre2 img{ 
+	max-width: 100%;
+	
+ }
+
+ #timbre3 img{ 
+	max-width: 100%;
+	
+ }
+
+ #timbre4 img{ 
+	max-width: 100%;
+ }
+
+  #timbre5 img{ 
+	max-width: 100%;
+ }
+
+  #timbre6 img{ 
+	max-width: 100%;
+ }
+
+/* SENTIMENT */
+
+#infosentiment{
+		width: 550px;
+		height: 300px;
+		background-color: black;
+}
+
+
 

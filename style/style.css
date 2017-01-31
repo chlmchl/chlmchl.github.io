@@ -236,7 +236,7 @@ hr{		margin-top: 15px;
     position: relative;
     width: calc(100% - 500px);
     margin: 0px auto;
-    border: 3px solid #171718;
+    border: 1px solid #171718;
 }
 
 .grid .row {
@@ -246,7 +246,7 @@ hr{		margin-top: 15px;
 .grid .row .img-container {
     display: table-cell;
     position: relative;
-    border: 3px solid #171718;
+    border: 2px solid #171718;
 }
 
 .grid .row .img-container img {
