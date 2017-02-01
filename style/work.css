@@ -232,6 +232,7 @@ hr{		margin-top: 15px;
 		font-family: 'robotothin';
 		font-size: 18px;
 		text-align: justify;
+		line-height: 20px;
 		padding-top: 17px;
 }
 
@@ -240,7 +241,7 @@ hr{		margin-top: 15px;
 
 #infomake{
 		width: 550px;
-		height: 320px;
+		height: 340px;
 		background-color: black;
 		display: inline-block;
 }
@@ -303,7 +304,7 @@ hr{		margin-top: 15px;
 
 #infotrombi{
 		width: 550px;
-		height: 300px;
+		height: 320px;
 		background-color: black;
 }
 
@@ -506,7 +507,7 @@ h3:hover{
 
 #infotempsmort{
 		width: 550px;
-		height: 430px;
+		height: 440px;
 		background-color: black;
 }
 
