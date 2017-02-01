@@ -10,6 +10,7 @@ $(document).ready(function() {
     anchors: ['work'],
     menu: '#menu', 
     scrollOverflow: true,
-    scrollOverflowReset: true
+    scrollOverflowReset: true,
+    
   });
 });

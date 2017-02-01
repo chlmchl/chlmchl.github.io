@@ -20,7 +20,7 @@ $(document).ready(function() {
   });
 
   $(".typed").typed({
-      strings: ["Chloé Michel.", "étudiante.", "motivée.", "aventurière.", "débrouillarde.", "fétarde.", "bilingue anglais.", "calme.", "curieuse.", "une grande voyageuse.", "ambitieuse.", "votre future stagiaire ?"],
+      strings: ["Chloé Michel.", "étudiante.", "motivée.", "passionnée.", "aventurière.", "débrouillarde.", "fétarde.", "bilingue anglais.", "calme.", "curieuse.", "disponible pour une bière.", "une grande voyageuse.", "ambitieuse.", "votre future stagiaire ?"],
       loop: true
   });
 
