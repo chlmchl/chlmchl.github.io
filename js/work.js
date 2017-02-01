@@ -6,11 +6,8 @@ $(document).ready(function() {
     recordHistory: true,
     paddingBottom: '150px',
     lazyloading: true,
-    // responsiveSlides: true,
     anchors: ['work'],
-    menu: '#menu', 
-    scrollOverflow: true,
-    scrollOverflowReset: true,
-    
+    menu: '#menu',
+    scrollOverflow: true
   });
 });
