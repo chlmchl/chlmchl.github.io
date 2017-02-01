@@ -32,7 +32,7 @@ $(document).ready(function() {
     var src = $(event.target).attr('src');
 
     $('.img-container img').css('opacity', '0');
-    $('.grid-background img').attr('src', src);
+    $('.background-container .background').css('background-image', 'url("' + src + '")');
   },
   function(event) {
     $('.img-container img').css('opacity', '1');
