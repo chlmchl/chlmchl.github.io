@@ -105,20 +105,19 @@ header{
 }
 
 #chloe{ 
-		color: white;
 		opacity: 0.8;
-		font-family: 'robotobold';
-		font-size: 15px;
-		letter-spacing: 5px;
-		margin-top: 5px;
+		width: 90px;
+		margin-top: 10px;
 }
+
+#chloe img{ width: 100%; }
 
 #chloe:hover{
 		opacity: 1;
 }
 
 
-hr{		margin-top: 15px;
+hr{		
 		color: white;
 		opacity: 0.6;
 		width: 100%;
@@ -426,6 +425,52 @@ h3:hover{
 		color: white;
 }
 
+#fredturner_min1{
+		width: 547px;
+		margin: 3px;
+		margin-top: 10px;
+}
+
+	#fredturner_min1:hover{
+		opacity: 0.3;
+	}
+
+#fredturner_min2{
+		width: 547px;
+		margin: 3px;
+		margin-top: 10px;
+}
+
+	#fredturner_min2:hover{
+		opacity: 0.3;
+	}
+
+#fredturner_min3{
+		width: 547px;
+		margin: 3px;
+}
+
+	#fredturner_min3:hover{
+		opacity: 0.3;
+	}
+
+#fredturner_min1 img{
+		width: 100%;
+	
+}
+
+#fredturner_min2 img{
+		width: 100%;
+	
+}
+
+#fredturner_min3 img{
+		width: 100%;
+	
+}
+
+
+
 /* VOYAGE DANS LES TRANSPORTS */
 
 #infotransports{
@@ -514,7 +559,7 @@ h3:hover{
 #tempsmort1 {	
 	width: 547px;
 	margin: 3px;
-	margin-top: 360px;
+	
 }
 
 	#tempsmort1:hover{
@@ -701,12 +746,96 @@ h3:hover{
 
 #infosentiment{
 		width: 550px;
-		height: 300px;
+		height: 370px;
 		background-color: black;
 }
 
 
+#sentiment1 {	
+	width: 270px;
+	margin: 3px;
+	display: inline-block;
+	
+}
 
+	#sentiment1:hover{
+		opacity: 0.3;
+
+	}
+
+#sentiment2 {width: 270px;
+		margin: 3px;
+		display: inline-block;
+
+		}
+
+	#sentiment2:hover{
+	opacity: 0.3;
+
+}
+
+#sentiment3 {width: 547px;
+		margin: 3px;
+		
+		}
+
+	#sentiment3:hover{
+	opacity: 0.3;
+
+}
+
+#sentiment4 {width: 550px;
+		margin: 3px;
+		}
+
+	#sentiment4:hover{
+	opacity: 0.3;
+	}
+
+#sentiment5 {width: 550px;
+		margin: 3px;
+		}
+
+	#sentiment5:hover{
+	opacity: 0.3;
+	}
+
+
+
+#sentiment1 img{ 
+	max-width: 100%;
+ }
+#sentiment2 img{ 
+	max-width: 100%;
+	
+ }
+
+ #sentiment3 img{ 
+	max-width: 100%;
+	
+ }
+
+ #sentiment4 img{ 
+	max-width: 100%;
+ }
+
+  #sentiment5 img{ 
+	max-width: 100%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
 
 
 #contact{

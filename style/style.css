@@ -82,9 +82,9 @@ header{
 		left: 0;
 		right: 0;
 		z-index: 70;
-		height: 40px;
+		height: 35px;
 		background-color: #171718;
-		padding-top: 10px;
+		padding-top: 0px;
 		text-decoration: none;
 		position: fixed;
 		display: -webkit-flex;
@@ -98,18 +98,17 @@ header{
 }
 
 #chloe{ 
-		color: white;
 		opacity: 0.8;
-		font-family: 'robotobold';
-		font-size: 15px;
-		letter-spacing: 5px;
-		margin-top: 5px;
+		width: 90px;
+		margin-top: 10px;
 }
+
+#chloe img{ width: 100%; }
 
 #chloe:hover{opacity: 1;
 	}
 
-hr{		margin-top: 15px;
+hr{		
 		color: white;
 		opacity: 0.6;
 		width: 100%;
@@ -129,29 +128,48 @@ body {
 		background-image:url("../img/fondhome.jpg"), url("../img/fondhome-fast.jpg");
 		background-size: 100%;
 		background-repeat: no-repeat;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column; 
+		flex-direction: column;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		justify-content: center;
 }
 
-.home{
-		padding-top: 25%;
+/*.home{
+		
 		height: 100px;
 		width: 100%;
 
+
+}*/
+
+#logohome{
+		width: 1000px;
+		margin: auto;
+		opacity: 0.7;
+}
+
+#logohome img{ 
+		width: 100%; 
 }
 
 #h1_home{	
 		color: white;
-		font-size: 70px;
-		letter-spacing: 30px;
+		font-size: 30px;
+		letter-spacing: 20px;
 		text-align: center;
-		font-family:'robotobold';
-		opacity: 0.4;
+		font-family: 'robotobold';
+		opacity: 0.6;
 		
 
 }
 
 #h2_home{		
 		color: white;
-		font-size: 15px;
+		font-size: 12px;
 		letter-spacing: 10px;
 		text-align: center;
 		font-family: 'robotothin';
@@ -217,7 +235,7 @@ hr{		margin-top: 15px;
 	margin-top: 50px;
 }
 
-/* C'EST ICI QUE ÇA VOUS INTÉRESSE POUR LA MOSAIQUE */
+/* TIP TOP MOSAIQUE */
 
 
 
@@ -308,7 +326,7 @@ hr{		margin-top: 15px;
 }
 
 		.jesuis .typed{
-				color: black;
+				
 				color: #476369;
 				font-family: 'robotobold';
 		}
