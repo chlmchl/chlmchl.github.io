@@ -259,8 +259,7 @@ hr{		margin-top: 15px;
 }
 
 .grid {
-    display: flex;
-    flex-direction: column;
+    display: table;
     position: relative;
     width: calc(100% - 500px);
     margin: 0px auto;
@@ -268,11 +267,12 @@ hr{		margin-top: 15px;
 }
 
 .grid .row {
-    display: flex;
-    flex-direction: row;
+    display: table-row;
 }
 
 .grid .row .img-container {
+    display: table-cell;
+    position: relative;
     border: 2px solid #171718;
 }
 
@@ -281,7 +281,6 @@ hr{		margin-top: 15px;
     max-width: 100%;
     transition: all 1s;
     opacity: 1;
-    filter: brightness(1.01); // Fixes moving images on hover
 }
 
 /* FIN MOSAIQUE */
@@ -378,6 +377,16 @@ hr{		margin-top: 15px;
 			margin-top: 25px;
 			line-height: 29px;
 	}
+
+#cv{
+		font-family: 'robotobold';
+		color: white;
+		margin-top: 15px;
+		font-size: 17px;
+
+}
+
+#cv:hover{color: #476369;}
 
 #contact{
 	margin-top: 0px;

@@ -187,8 +187,13 @@ hr{
 }
 
 .conteneurprojets{
+		width: calc(100% - 500px);
+		margin-right: 250px;
+		margin-left: 300px;
+		margin-bottom: 30px;
 		display: flex;
-  	justify-content: center
+		
+
 }
 
 .conteneurprojets .row{
