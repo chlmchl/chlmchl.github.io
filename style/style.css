@@ -259,7 +259,8 @@ hr{		margin-top: 15px;
 }
 
 .grid {
-    display: table;
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: calc(100% - 500px);
     margin: 0px auto;
@@ -267,12 +268,11 @@ hr{		margin-top: 15px;
 }
 
 .grid .row {
-    display: table-row;
+    display: flex;
+    flex-direction: row;
 }
 
 .grid .row .img-container {
-    display: table-cell;
-    position: relative;
     border: 2px solid #171718;
 }
 
@@ -281,6 +281,7 @@ hr{		margin-top: 15px;
     max-width: 100%;
     transition: all 1s;
     opacity: 1;
+    filter: brightness(1.01); // Fixes moving images on hover
 }
 
 /* FIN MOSAIQUE */
