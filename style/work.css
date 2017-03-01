@@ -74,6 +74,15 @@ text-align: center;}
 
 }
 
+@font-face{ 
+	font-family: 'poppinsbold';
+	src: url('../font/robotobold.eot');
+	src: url('../font/robotobold.eot?iefix') format('eot'),
+	     url('../font/robotobold.woff') format('woff'),
+	     url('../font/poppinsbold.ttf') format('truetype'),
+	     url('../font/robotobold.svg#robotobold') format('svg');
+}
+
 /* --------------------------- ELMT PRINCIPAUX ---------------------------- */
 
 
@@ -89,9 +98,9 @@ header{
 		left: 0;
 		right: 0;
 		z-index: 70;
-		height: 40px;
+		height: 35px;
 		background-color: #171718;
-		padding-top: 10px;
+		padding-top: 0px;
 		text-decoration: none;
 		position: fixed;
 		display: -webkit-flex;
@@ -106,16 +115,15 @@ header{
 
 #chloe{ 
 		opacity: 0.8;
-		width: 90px;
-		margin-top: 10px;
+		width: 35px;
+		margin-top: 15px;
+		margin-bottom: -10px;
 }
 
 #chloe img{ width: 100%; }
 
-#chloe:hover{
-		opacity: 1;
-}
-
+#chloe:hover{opacity: 1;
+	}
 
 hr{		
 		color: white;

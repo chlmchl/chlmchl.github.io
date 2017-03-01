@@ -41,29 +41,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;}
 
-/* ---------------------- TYPOS ---------------------- */
 
 
-
-@font-face{ 
-	font-family: 'robotobold';
-	src: url('../font/robotobold.eot');
-	src: url('../font/robotobold.eot?iefix') format('eot'),
-	     url('../font/robotobold.woff') format('woff'),
-	     url('../font/robotobold.ttf') format('truetype'),
-	     url('../font/robotobold.svg#robotobold') format('svg');
-}
-
-
-@font-face{ 
-	font-family: 'robotothin';
-	src: url('../font/robotothin.eot');
-	src: url('../font/robotothin.eot?iefix') format('eot'),
-	     url('../font/robotothin.woff') format('woff'),
-	     url('../font/robotothin.ttf') format('truetype'),
-	     url('../font/robotothin.svg#roboto-thin-webfont') format('svg');
-
-}
 
 /* --------------------------- ELMT PRINCIPAUX ------------------------------*/
 
@@ -99,8 +78,9 @@ header{
 
 #chloe{ 
 		opacity: 0.8;
-		width: 90px;
+		width: 40px;
 		margin-top: 10px;
+		margin-bottom: -10px;
 }
 
 #chloe img{ width: 100%; }
@@ -147,22 +127,25 @@ body {
 }*/
 
 #logohome{
-		width: 1000px;
+		width: 170px;
 		margin: auto;
-		opacity: 0.7;
+		opacity: 0.9;
+
 }
 
 #logohome img{ 
-		width: 100%; 
+		width: 170px; 
+		margin-bottom: 20px;
 }
 
-#h1_home{	
+/* #h1_home{	
 		color: white;
 		font-size: 30px;
-		letter-spacing: 20px;
+		letter-spacing: 12px;
 		text-align: center;
-		font-family: 'robotobold';
-		opacity: 0.6;
+		font-family: 'Poppins', sans-serif;
+		font-weight: bold;
+		opacity: 0.8;
 		
 
 }
@@ -172,10 +155,11 @@ body {
 		font-size: 12px;
 		letter-spacing: 10px;
 		text-align: center;
-		font-family: 'robotothin';
+		font-family: 'Roboto', sans-serif;
+		font-weight: thin;
 		opacity: 0.5;
 		margin-top: 10px;
-}
+} */
 
 
 /* -------------------- home/FOOTER ---------------- */
@@ -211,7 +195,8 @@ header{
 #chloe{ 
 		color: white;
 		opacity: 0.8;
-		font-family: 'robotobold';
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
 		font-size: 15px;
 		letter-spacing: 5px;
 }
@@ -228,7 +213,8 @@ hr{		margin-top: 15px;
 #h2_work{ 
 	color: white;
 	opacity: 0.8;
-	font-family:'robotobold';
+	font-family:'Roboto', sans-serif;
+	font-weight: bold;
 	font-size: 25px;
 	letter-spacing: 9px;
 	margin-left: 250px;
@@ -322,14 +308,16 @@ hr{		margin-top: 15px;
 .jesuis {
     
     font-size: 70px;
-    font-family: 'robotothin';
+    font-family: 'Roboto', sans-serif;
+    font-weight: thin;
     color: white;
 }
 
 		.jesuis .typed{
 				
 				color: #476369;
-				font-family: 'robotobold';
+				font-family: 'Roboto', sans-serif;
+				font-weight: bold;
 		}
 
 			/* Typed animated blinking cursor */
@@ -373,14 +361,16 @@ hr{		margin-top: 15px;
 
 	.conteneur p{
 			color:white;
-			font-family: 'robotothin';
+			font-family: 'Roboto', sans-serif;
+			font-weight: thin;
 			font-size: 23px;
 			margin-top: 25px;
 			line-height: 29px;
 	}
 
 #cv{
-		font-family: 'robotobold';
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
 		color: white;
 		margin-top: 15px;
 		font-size: 17px;
@@ -424,13 +414,15 @@ footer{
 
 footer #pfooter{
 		color: white;
-		font-family: 'robotothin';
+		font-family: 'Roboto', sans-serif;
+		font-weight: 100;
 		font-size: 11px;
 		margin-top: 7px;}
 
 footer #h1footer{
 		color: white;
-		font-family: 'robotobold';
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
 		font-size: 14px;
 		letter-spacing: 3px;
 		margin-top: 5px;
