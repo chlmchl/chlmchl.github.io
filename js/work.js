@@ -6,8 +6,8 @@ $(document).ready(function() {
     recordHistory: true,
     paddingBottom: '150px',
     lazyloading: true,
-    anchors: ['work'],
+    anchors: ['2016', '2015'],
     menu: '#menu',
-    scrollOverflow: true
+    scrollOverflow: true,
   });
 });
