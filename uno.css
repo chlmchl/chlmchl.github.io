@@ -2,13 +2,14 @@ h2{
 	font-family: 'Press Start 2p';
 	font-size: 45px;
 	text-align: center;
-	margin-top: 80px;
+	margin-top: 90px;
 	margin-bottom: 60px;
 }
 
 body{
-	width: 80vw;
+	width: 85vw;
 	margin: auto;
+	margin-bottom: 40px;
 }
 
 p{
@@ -19,6 +20,20 @@ p{
 
 h1{
 	font-family: 'Press Start 2p';
-	font-size: 14px;
+	font-size: 13px;
 
+}
+
+img{
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+}
+
+#icone{
+	width: 100px;
+	position: absolute;
+	display: block;
+	top: 1vh;
+	right: 1vw;
 }
