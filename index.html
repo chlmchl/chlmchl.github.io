@@ -2,10 +2,180 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>CHLOÉ MICHEL • PORTFOLIO </title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Chloé Michel • Portfolio </title>
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+    <link href="style/overlay.css" type="text/css" rel="stylesheet">
+    <link href="style/projects.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700|Quattrocento:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style/jquery.fullpage.min.css">
   </head>
+
   <body>
-    <h1>COMING BACK SOON</h1>
+    <!--
+     .d88b.  db    db d88888b d8888b. db       .d8b.  db    db
+    .8P  Y8. 88    88 88'     88  `8D 88      d8' `8b `8b  d8'
+    88    88 Y8    8P 88ooooo 88oobY' 88      88ooo88  `8bd8'
+    88    88 `8b  d8' 88~~~~~ 88`8b   88      88~~~88    88
+    `8b  d8'  `8bd8'  88.     88 `88. 88booo. 88   88    88
+     `Y88P'     YP    Y88888P 88   YD Y88888P YP   YP    YP     -->
+    
+    <aside>
+      <div class="outer-close toggle-overlay">
+        <a class="close"><span>X</span></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="home_about_contact" href="#home">HOME</a></li>
+          <li><a class="home_about_contact" href="about.html">ABOUT</a></li>
+          <li id="contact" ><a class="home_about_contact" href="#!">CONTACT</a>
+              <ul id="social_networks">
+                <li><a href="#!">MAIL</a></li>
+                <li><a href="#!">LINKEDIN</a></li>
+                <li><a href="#!">INSTAGRAM</a></li>
+                <li><a href="#!">TWITTER</a></li>
+              </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!--
+    d88888b d8b   db d8888b.       .d88b.  db    db d88888b d8888b. db       .d8b.  db    db
+    88'     888o  88 88  `8D      .8P  Y8. 88    88 88'     88  `8D 88      d8' `8b `8b  d8'
+    88ooooo 88V8o 88 88   88      88    88 Y8    8P 88ooooo 88oobY' 88      88ooo88  `8bd8'
+    88~~~~~ 88 V8o88 88   88      88    88 `8b  d8' 88~~~~~ 88`8b   88      88~~~88    88
+    88.     88  V888 88  .8D      `8b  d8'  `8bd8'  88.     88 `88. 88booo. 88   88    88
+    Y88888P VP   V8P Y8888D'       `Y88P'     YP    Y88888P 88   YD Y88888P YP   YP    YP   -->
+
+    <!--       <div id="menu">
+      <a href="#">
+        <img src="img/logo_chloe_michel_white.svg" alt="logo chloe michel graphic designer">
+      </a>
+    </div> -->
+
+    <header>
+      <button class="toggle-overlay"><img src="img/logo_chloe_michel_white.svg" alt="logo chloe michel graphic designer"></button>
+
+      <div id=EN_FR>
+        <ul>
+          <a href="#"><li>EN</li></a>
+          <a href="#"><li>FR</li></a>
+        </ul>
+      </div>
+    </header>
+
+    <div id="fullpage">
+
+      <div class="section">
+        <section id="home">
+          <div id="home_box">
+            <h1>HELLO, I'M A<br/> <span>GRAPHIC DESIGNER</span></h1>
+            <p>My name is Chloé and I’m a 21 years-old graphic design student  based in <span class="p_hilight">Paris, France</span>. <br/> I aim to live a life I love and can control... or choose not to.</p>
+          </div>
+          
+        </section>
+      </div>
+
+      <div class="section">
+        <section class="projects">
+          <div id="project_1">
+            <h1>CINÉMAS <br/> INDÉPENDANTS <br/> PARISIENS</h1>
+            <ul>
+              <li>
+                <h2>DATE</h2>
+                <p>2017</p>
+              </li>
+              <li>
+                <h2>CLIENT</h2>
+                <p>Les cinémas indépendants parisiens</p>
+              </li>
+              <li>
+                <h2>ROLE</h2>
+                <p>Motion design</p>
+              </li>
+            </ul>
+            <p class="description">Sant explit eaquae oditas estes quis rempores diae volores erchitem rem quunto mint dolupta tectatinus. Nimo od quae ni dolorecea dollent omnimus sumque volectis pa prem cus aute pariorrum cum.</p>
+            <a href="#">
+              <button class="view_project"> VIEW PROJECT </button>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="section">
+        <section class="projects">
+          <div id="project_2">
+            <h1>0001</h1>
+            <ul>
+              <li>
+                <h2>DATE</h2>
+                <p>2017</p>
+              </li>
+              <li>
+                <h2>CLIENT</h2>
+                <p>School project</p>
+              </li>
+              <li>
+                <h2>ROLE</h2>
+                <p>Artistic direction, motion, print</p>
+              </li>
+            </ul>
+            <p class="description">Sant explit eaquae oditas estes quis rempores diae volores erchitem rem quunto mint dolupta tectatinus. Nimo od quae ni dolorecea dollent omnimus sumque volectis pa prem cus aute pariorrum cum.</p>
+            <a href="#">
+              <button class="view_project"> VIEW PROJECT </button>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="section">
+        <section class="projects">
+          <div id="project_3">
+            <h1>LET'S GO - <br/> RONE</h1>
+            <ul>
+              <li>
+                <h2>DATE</h2>
+                <p>2017</p>
+              </li>
+              <li>
+                <h2>CLIENT</h2>
+                <p>School project</p>
+              </li>
+              <li>
+                <h2>ROLE</h2>
+                <p>Processing</p>
+              </li>
+            </ul>
+            <p class="description">Sant explit eaquae oditas estes quis rempores diae volores erchitem rem quunto mint dolupta tectatinus. Nimo od quae ni dolorecea dollent omnimus sumque volectis pa prem cus aute pariorrum cum.</p>
+            <a href="#">
+              <button class="view_project"> VIEW PROJECT </button>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="section">
+        <section class="projects">
+          <div id="#project4">
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    designed with <img src="img/logo_chloe_michel_1A1945.svg" alt="logo chloe michel graphic designer">
+  </footer>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/overlay.js"></script>
+    
   </body>
 </html>

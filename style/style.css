@@ -1,0 +1,148 @@
+
+
+
+
+
+
+
+
+
+/*
+COLORS :
+
+orange ---- #FF6333
+blue ---- #1A1945
+white ---- #ffffff
+*/
+
+
+
+/* GENERAL */
+
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* gradient */
+  background-color: #1A1945; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#1A1945, #FF6333 1500%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#1A1945, #FF6333 1500%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#1A1945, #FF6333 1500%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1A1945, #FF6333 1500%); /* Standard syntax */
+}
+
+.p_hilight {
+  color: #FF6333;
+  font-weight: 700;
+}
+
+/*a {
+  text-decoration: none;
+}*/
+
+
+
+/*header*/
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+/*#menu {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  margin: 20px;
+}*/
+
+
+
+#EN_FR {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+#EN_FR li {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: "Oswald";
+  color: #ffffff;
+}
+
+
+/* fin header */
+
+/* HOME */
+
+#home, .projects {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home_box {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -10vh;
+}
+
+#home_box h1 {
+  margin-right: 42vw;
+  text-align: right;
+  color: #FF6333;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 1.2em;
+  text-shadow: #1A1945 0px 0px 5px;
+}
+
+#home_box h1 span {
+  color: #ffffff;
+  font-size: 75px;
+}
+
+
+
+#home_box p {
+  width: 25vw;
+  color: #ffffff;
+  font-family: "Quattrocento", serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-left: 42vw;
+  margin-top: -1.30em;
+}
+
+
+
+/* scroll */
+
+
+footer {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: #1A1945;
+  text-align: center;
+  margin-top: -5vh;
+}
+
+footer img {
+  width: 15px;
+  height: 15px;
+}
+
+
+

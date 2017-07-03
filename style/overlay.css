@@ -1,0 +1,191 @@
+/*
+COLORS :
+
+orange ---- #FF6333
+blue ---- #1A1945
+white ---- #ffffff
+*/
+
+ul {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  position: relative;
+  color: #FF6333;
+  margin: 10px;
+}
+
+/*animation line under links when hovered */
+ul .home_about_contact:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  background: #ff6333;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav ul .home_about_contact:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* social networks apparition */
+
+#social_networks {
+  list-style-type: none;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+#social_networks li a {
+  font-weight: 200;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+#contact:hover #social_networks{
+  animation: appear 1s forwards;
+}
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+aside {
+  opacity: 0.3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* gradient */
+  background-color: #1A1945; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(200deg, #1A1945, #ff6333 580%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(200deg, #1A1945, #ff6333 580%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(200deg, #1A1945, #ff6333 580%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(200deg, #1A1945, #ff6333 580%); /* Standard syntax */
+  visibility: hidden;
+  transition: all .5s ease;
+  z-index: 20;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  text-decoration: none;
+}
+.open {
+  opacity: 1;
+  visibility: visible;
+}
+nav {
+  text-align: center;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      align-items: center;
+      flex: 1;
+      line-height: 20vh;
+      a {
+        font-size: 3.5em;
+        transition: all 0.5s ease;
+        display: block;
+        text-decoration: none;
+        color: rgba(255, 255, 255, .5);
+        color:hover {
+          color: rgba(255, 255, 255, .9);
+          transform: scale(1.1);
+          a:before {
+            visibility: visible;
+            transform: scaleX(1);
+          }
+        }
+        a:before {
+          content: "";
+          position: absolute;
+          width: 50%;
+          height: 2px;
+          bottom: 0;
+          left: 25%;
+          background: white;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out 0s;
+        }
+      }
+    }
+  }*/
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+  nav ul li a {
+    font-size: 3em;
+  }
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: none;
+  background: transparent;
+  transition: all .5s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.close {
+  position: fixed;
+  top: 30px;
+  left: 38px;
+  color: white;
+  z-index: 3;
+  cursor: pointer;
+  font-family: sans-serif;
+  /*span,
+  span:before,
+  span:after {
+    border-radius: 4px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';*/
+  }
+
+}
+.outer-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+}

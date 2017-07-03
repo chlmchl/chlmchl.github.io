@@ -1,0 +1,167 @@
+/* PROJETS */
+
+/*aspects généraux*/
+
+
+
+.projects{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+#project_1 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -35vh;
+}
+
+#project_2 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -35vh;
+}
+
+#project_3 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -35vh;
+}
+
+#project_4 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -35vh;
+}
+
+
+.projects h1 {
+  color: #FF6333;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 6vw;
+  line-height: 1.2em;
+  margin-left: 5vw;
+  text-shadow: #1A1945 0px 0px 5px;
+}
+
+.description {
+  width: 25vw;
+  margin-left: 42vw;
+  margin-top: -1.3em;
+  color: #ffffff;
+  font-family: "Quattrocento", serif;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+/* lists */
+
+.projects ul {
+  position: absolute;
+  margin-left: 5.15vw;
+  margin-top: 25px;
+  display: flex;
+}
+
+.projects li {
+  display: inline-block;
+  width: 6vw;
+  min-width: 40px;
+  margin-right: 4vw;
+}
+
+.projects li h2 {
+  color: #ffffff;  
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+
+}
+
+.projects li p {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+
+}
+
+/* BUTTONS */
+
+.view_project {
+  text-decoration: none;
+  font-family: : "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ff6333;
+  text-shadow: #1A1945 0px 0px 5px;
+
+  position: absolute;
+  width: 140px;
+  height: 20px;
+  right: 32vw;
+  margin-top: 70px;
+  opacity: 0;
+
+}
+
+
+
+.projects:hover .view_project{
+  animation: appear 1s forwards;
+}
+
+
+
+/*header:hover .view_project{
+  animation: appear 1s forwards;
+}*/
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.view_project:after {    
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 30%;
+  right: 30%;
+  position: absolute;
+  background: #ff6333;
+  transition: right 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.view_project:hover:after { 
+  left: 0; 
+  right: 0;
+}
+
+
+/* PROJECT 2 - 0001 */
+
+#project_2 h1 {
+  font-size: 16vw;
+  margin-left: 4.15vw;
+}
+
+#project_2 .description {
+  margin-top: -3em;
+}
+
+
+#project_3 h1 {
+  font-size: 9vw;
+  margin-left: 4.15vw;
+}
+
+#project_3 .description {
+  margin-top: -2em;
+}
