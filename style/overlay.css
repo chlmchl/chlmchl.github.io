@@ -10,7 +10,7 @@ ul {
   list-style-type: none;
 }
 
-ul li a {
+aside ul li a {
   text-decoration: none;
   position: relative;
   color: #FF6333;
@@ -96,7 +96,7 @@ aside {
 }
 nav {
   text-align: center;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

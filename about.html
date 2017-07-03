@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Chloé Michel • Portfolio </title>
-    <!--     <link href="style/style.css" type="text/css" rel="stylesheet">
-    -->    <link href="style/overlay.css" type="text/css" rel="stylesheet">
-    <link href="style/about.css" type="text/css" rel="stylesheet">
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+    <link href="style/overlay.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700|Quattrocento:400,700" rel="stylesheet">
   </head>
-  <body>
+  <body id="body_about">
     <!--
     .d88b.  db    db d88888b d8888b. db       .d8b.  db    db
     .8P  Y8. 88    88 88'     88  `8D 88      d8' `8b `8b  d8'
@@ -59,10 +58,13 @@
   </header>
   
   <div id="about">
-    <h1>  HEY, <br/> <span>NICE TO MEET YOU</span> </h1>
+
+    <a href="index.html"><button class="view_home"> HOME</button></a>
+
+    <h1 id="hey">  HEY, <br/> <span>NICE TO MEET YOU</span> </h1>
     <section id="presentation">
       <div class="row">
-        <article> 
+        <article>
           <h2> Who am I? </h2>
           <p>My name is Chloé Michel, I am a 21-years-old graphic designer and student  in digital graphic design at Lycée Jacques Prévert, Boulogne.  I was born and raised in the suburb of Paris with a pencil in my hand.</p>
         </article>
@@ -72,21 +74,24 @@
         </article>
       </div>
       <div class="row">
-        <article> 
+        <article>
           <h2> What am I passionate about? </h2>
           <p> I’ve always had a thing for good looking websites and coding. But I also love videos that take you elsewhere, to the rythm of a music or of its visuals. I aim at being polyvalent in my work as I think good-designer-me is someone that can take any subject of any kind from anywhere and make it her own. </p>
         </article>
-        <article> 
+        <article>
           <h2> Something crazy I've done? </h2>
           <p> At 14, I decided I had to change my everyday life and at 15 I flew off alone to Avon Lake, Ohio to live a school year as an exchange student.  </p>
         </article>
       </div>
     </section>
-
-
-    <section id="contact">
+    <section id="pigeon">
       <h1>SEND ME A PIGEON</h1>
-
+      <ul id="send_me_pigeon">
+        <li><a href="#!">MAIL</a></li>
+        <li><a href="#!">LINKEDIN</a></li>
+        <li><a href="#!">INSTAGRAM</a></li>
+        <li><a href="#!">TWITTER</a></li>
+      </ul>
     </section>
   </div>
   
@@ -94,6 +99,8 @@
   <footer>
     designed with <img src="img/logo_chloe_michel_1A1945.svg" alt="logo chloe michel graphic designer">
   </footer>
+
+  
   <!-- SCRIPTS -->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/main.js"></script>

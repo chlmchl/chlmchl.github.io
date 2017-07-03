@@ -13,25 +13,25 @@
 #project_1 {
   width: 80vw;
   height: 30vh;
-  margin-top: -35vh;
+  margin-top: -30vh;
 }
 
 #project_2 {
   width: 80vw;
   height: 30vh;
-  margin-top: -35vh;
+  margin-top: -30vh;
 }
 
 #project_3 {
   width: 80vw;
   height: 30vh;
-  margin-top: -35vh;
+  margin-top: -30vh;
 }
 
 #project_4 {
   width: 80vw;
   height: 30vh;
-  margin-top: -35vh;
+  margin-top: -30vh;
 }
 
 
@@ -110,12 +110,6 @@
 .projects:hover .view_project{
   animation: appear 1s forwards;
 }
-
-
-
-/*header:hover .view_project{
-  animation: appear 1s forwards;
-}*/
 
 
 @keyframes appear {
