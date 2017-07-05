@@ -17,24 +17,34 @@ white ---- #ffffff
 
 
 
-/* GENERAL */
+/* -------------------------
+
+GENERAL 
+
+---------------------------- */
 
 a {
   text-decoration: none;
 }
+
 
 * { 
   margin: 0;
   padding: 0;
 }
 
+::selection {
+  color: #ff6333;
+  background-color: #1A1945;
+}
+
 body {
   /* gradient */
   background-color: #1A1945; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#1A1945, #FF6333 1500%); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#1A1945, #FF6333 1500%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#1A1945, #FF6333 1500%); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#1A1945, #FF6333 1500%); /* Standard syntax */
+  background: -webkit-linear-gradient(#1A1945, #FF6333 1200%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#1A1945, #FF6333 1200%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#1A1945, #FF6333 1200%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1A1945, #FF6333 1200%); /* Standard syntax */
 }
 
 #body_about {
@@ -57,22 +67,17 @@ body {
 
 
 
-/*header*/
+/* ----------------------------
+
+HEADER 
+
+------------------------------*/
 
 header {
   position: fixed;
   width: 100%;
   z-index: 10;
 }
-
-/*#menu {
-  position: fixed;
-  width: 35px;
-  height: 35px;
-  margin: 20px;
-}*/
-
-
 
 #EN_FR {
   position: absolute;
@@ -90,7 +95,11 @@ header {
 
 /* fin header */
 
-/* HOME */
+/* ----------------------------
+
+HOME + PROJECTS
+
+------------------------------*/
 
 #home, .projects {
   width: 100vw;
@@ -100,14 +109,45 @@ header {
   justify-content: center;
 }
 
+
+/* ----------------------------
+
+LOGO PARALLAX HOME PAGE 
+
+------------------------------*/
+
+
 #home img {
   position: absolute;
   width: 60vw;
   height: 60vh;
-  margin-top: -5vh;
-  opacity: 0.3;
+  opacity: 0.8;
   z-index: -2;
+  margin-left: 20vw;
+  margin-top: 15vh;
 }
+
+
+#parallax{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  list-style: none;
+  z-index: -10;
+}
+
+#layer{
+  position: absolute;
+  display: block;
+
+}
+
+/* ----------------------------
+
+CARACTERISTICS HOME PAGE 
+
+------------------------------*/
 
 #home_box {
   width: 80vw;
@@ -122,8 +162,8 @@ header {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 1.2em;
-  text-shadow: #1A1945 0px 0px 5px;
+  line-height: 1.3em;
+  text-shadow: #1A1945 0px 5px 20px;
 }
 
 #home_box h1 span {
@@ -144,7 +184,11 @@ header {
 }
 
 
-/* BUTTON VIEW ABOUT */
+/* ----------------------------
+
+BUTTON VIEW ABOUT 
+
+------------------------------*/
 
 .view_about {
   text-decoration: none;
@@ -152,7 +196,7 @@ header {
   font-weight: 400;
   font-size: 15px;
   color: #ff6333;
-  text-shadow: #1A1945 0px 0px 5px;
+  text-shadow: #1A1945 0px 5px 20px;
   text-align: left;
   position: absolute;
   width: 100px;
@@ -179,7 +223,11 @@ header {
 }
 
 
-/* scroll down */
+/* ----------------------------
+
+ SCROLL DOWN  
+
+------------------------------*/
 
 .scroll_down {
   text-decoration: none;
@@ -187,7 +235,7 @@ header {
   font-weight: 400;
   font-size: 15px;
   color: #ff6333;
-  text-shadow: #1A1945 0px 0px 5px;
+  text-shadow: #1A1945 0px 5px 20px;
   text-align: right;
   position: absolute;
   width: 140px;
@@ -216,7 +264,11 @@ header {
 }
 
 
-/* about */
+/* ----------------------------
+
+ PAGE ABOUT 
+
+------------------------------*/
 
 #about {
   width: 100vw;
@@ -234,7 +286,7 @@ header {
   font-weight: 500;
   font-size: 120px;
   line-height: 1em;
-  text-shadow: #1A1945 0px 0px 5px;
+  text-shadow: #1A1945 0px 5px 20px;
 }
 
 /*#about #hey:after {    
@@ -261,7 +313,11 @@ body:hover #about #hey:after {
 }
 
 
-/* BUTTON VIEW ABOUT */
+/* ----------------------------
+
+PAGE ABOUT - BUTTON VIEW HOME
+
+------------------------------*/
 
 .view_home {
   text-decoration: none;
@@ -269,7 +325,7 @@ body:hover #about #hey:after {
   font-weight: 400;
   font-size: 15px;
   color: #ff6333;
-  text-shadow: #1A1945 0px 0px 5px;
+  text-shadow: #1A1945 0px 5px 20px;
   text-align: right;
   position: absolute;
   width: 100px;
@@ -297,13 +353,17 @@ body:hover #about #hey:after {
 }
 
 
-/* presentation */
+/* ----------------------------
+
+ PAGE ABOUT - PRESENTATION
+
+------------------------------*/
 
 #presentation {
   margin-top: 15vh;
-  width: 78vw;
-  margin-right: 11vw;
-  margin-left: 11vw;
+  width: 74vw;
+  margin-right: 14vw;
+  margin-left: 14vw;
 }
 
 .row {
@@ -314,7 +374,7 @@ body:hover #about #hey:after {
 article {
   display: inline-block;
   width: 31vw;
-  margin: 4vw;
+  margin: 2vw;
 }
 
 article h2 {
@@ -340,6 +400,12 @@ article p {
   margin-right: 11vw;
   margin-left: 11vw;
 }
+
+/* ----------------------------
+
+ PAGE ABOUT - CONTACT
+
+------------------------------*/
 
 #pigeon h1 {
   font-size: 60px;
@@ -377,7 +443,220 @@ article p {
   cursor: pointer;
 }
 
-/* scroll */
+
+/* ----------------------------
+
+ PAGE PROJECTS 
+
+------------------------------*/
+
+
+/*aspects généraux*/
+
+
+
+.projects{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+#project_1 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -28vh;
+}
+
+#project_2 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -28vh;
+}
+
+#project_3 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -28vh;
+}
+
+
+#project_4 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -25vh;
+}
+
+
+.projects h1 {
+  color: #FF6333;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 6vw;
+  line-height: 1.2em;
+  margin-left: 5vw;
+  text-shadow: #1A1945 0px 5px 20px;
+}
+
+.description {
+  width: 25vw;
+  margin-left: 42vw;
+  margin-top: -1.3em;
+  color: #ffffff;
+  font-family: "Quattrocento", serif;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+/* lists */
+
+.projects ul {
+  position: absolute;
+  margin-left: 5.15vw;
+  margin-top: 25px;
+  display: flex;
+}
+
+.projects li {
+  display: inline-block;
+  width: 6vw;
+  min-width: 40px;
+  margin-right: 4vw;
+}
+
+.projects li h2 {
+  color: #ffffff;  
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+
+}
+
+.projects li p {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+
+}
+
+/* BUTTONS */
+
+.view_project {
+  text-decoration: none;
+  font-family: : "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ff6333;
+  text-shadow: #1A1945 0px 5px 20px;
+
+  position: absolute;
+  width: 140px;
+  height: 20px;
+  right: 32vw;
+  margin-top: 70px;
+  opacity: 0;
+
+}
+
+
+
+.projects:hover .view_project{
+  animation: appear 1s forwards;
+}
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.view_project:after {    
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 30%;
+  right: 30%;
+  position: absolute;
+  background: #ff6333;
+  transition: right 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.view_project:hover:after { 
+  left: 0; 
+  right: 0;
+}
+
+
+/* PROJECT 2 - 0001 */
+
+#project_2 h1 {
+  font-size: 16vw;
+  margin-left: 4.15vw;
+}
+
+#project_2 .description {
+  margin-top: -3em;
+}
+
+
+#project_3 h1 {
+  font-size: 9vw;
+  margin-left: 4.15vw;
+}
+
+#project_3 .description {
+  margin-top: -2em;
+}
+
+#project_4 h1 {
+  font-size: 8.2vw;
+  margin-left: 4.15vw;
+}
+
+#project_2 img {
+  width: 600px;
+  position: absolute;
+  z-index: -10;
+  opacity: 0.9;
+  margin-left: 25vw;
+  margin-top: -10vh;
+  transform: rotate(18deg);
+}
+
+
+#parallax_0001{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  list-style: none;
+  z-index: -1;
+}
+
+#layer2{
+  transform: rotate(15deg);
+  position: absolute;
+  display: block;
+
+}
+
+
+
+
+
+
+
+/* ----------------------------
+
+FOOTER
+
+------------------------------*/
 
 
 footer {

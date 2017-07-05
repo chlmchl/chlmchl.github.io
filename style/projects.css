@@ -7,31 +7,39 @@
 .projects{
   width: 100vw;
   height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
+.projects::before {
+  /* never visible - this is used in jQuery to check the current MQ */
+  content: 'mobile';
+  display: none;
+}
 
 #project_1 {
   width: 80vw;
   height: 30vh;
-  margin-top: -30vh;
+  margin-top: -28vh;
 }
 
 #project_2 {
   width: 80vw;
   height: 30vh;
-  margin-top: -30vh;
+  margin-top: -28vh;
 }
 
 #project_3 {
   width: 80vw;
   height: 30vh;
-  margin-top: -30vh;
+  margin-top: -28vh;
 }
 
 #project_4 {
   width: 80vw;
   height: 30vh;
-  margin-top: -30vh;
+  margin-top: -25vh;
 }
 
 
@@ -159,3 +167,10 @@
 #project_3 .description {
   margin-top: -2em;
 }
+
+#project_4 h1 {
+  font-size: 8.2vw;
+  margin-left: 4.15vw;
+}
+
+
