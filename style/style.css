@@ -163,7 +163,7 @@ CARACTERISTICS HOME PAGE
   font-weight: 700;
   font-size: 75px;
   line-height: 1.3em;
-  text-shadow: #1A1945 0px 5px 20px;
+  text-shadow: #1A1945 2px 5px 10px;
 }
 
 #home_box h1 span {
@@ -196,7 +196,7 @@ BUTTON VIEW ABOUT
   font-weight: 400;
   font-size: 15px;
   color: #ff6333;
-  text-shadow: #1A1945 0px 5px 20px;
+  text-shadow: #1A1945 2px 5px 10px;
   text-align: left;
   position: absolute;
   width: 100px;
@@ -235,7 +235,7 @@ BUTTON VIEW ABOUT
   font-weight: 400;
   font-size: 15px;
   color: #ff6333;
-  text-shadow: #1A1945 0px 5px 20px;
+  text-shadow: #1A1945 2px 5px 10px;
   text-align: right;
   position: absolute;
   width: 140px;
@@ -286,7 +286,7 @@ BUTTON VIEW ABOUT
   font-weight: 500;
   font-size: 120px;
   line-height: 1em;
-  text-shadow: #1A1945 0px 5px 20px;
+  text-shadow: #1A1945 2px 5px 10px;
 }
 
 /*#about #hey:after {    
@@ -325,7 +325,7 @@ PAGE ABOUT - BUTTON VIEW HOME
   font-weight: 400;
   font-size: 15px;
   color: #ff6333;
-  text-shadow: #1A1945 0px 5px 20px;
+  text-shadow: #1A1945 2px 5px 10px;
   text-align: right;
   position: absolute;
   width: 100px;
@@ -462,31 +462,31 @@ article p {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
-
+/*
 #project_1 {
   width: 80vw;
   height: 30vh;
-  margin-top: -28vh;
+  padding-top: -28vh;
 }
 
 #project_2 {
   width: 80vw;
   height: 30vh;
-  margin-top: -28vh;
+  padding-top: -20vh;
 }
 
 #project_3 {
   width: 80vw;
   height: 30vh;
-  margin-top: -28vh;
+  padding-top: -28vh;
 }
 
 
 #project_4 {
   width: 80vw;
   height: 30vh;
-  margin-top: -25vh;
-}
+  padding-top: -25vh;
+}*/
 
 
 .projects h1 {
@@ -495,8 +495,8 @@ article p {
   font-weight: 700;
   font-size: 6vw;
   line-height: 1.2em;
-  margin-left: 5vw;
-  text-shadow: #1A1945 0px 5px 20px;
+/*  margin-left: 5vw;*/
+  text-shadow: #1A1945 2px 5px 10px;
 }
 
 .description {
@@ -513,8 +513,8 @@ article p {
 
 .projects ul {
   position: absolute;
-  margin-left: 5.15vw;
-  margin-top: 25px;
+/*  margin-left: 5.15vw;
+  margin-top: 25px;*/
   display: flex;
 }
 
@@ -548,7 +548,7 @@ article p {
   font-weight: 700;
   font-size: 18px;
   color: #ff6333;
-  text-shadow: #1A1945 0px 5px 20px;
+  text-shadow: #1A1945 2px 5px 10px;
 
   position: absolute;
   width: 140px;
@@ -597,7 +597,7 @@ article p {
 
 #project_2 h1 {
   font-size: 16vw;
-  margin-left: 4.15vw;
+/*  margin-left: 4.15vw;*/
 }
 
 #project_2 .description {
@@ -607,8 +607,8 @@ article p {
 
 #project_3 h1 {
   font-size: 9vw;
-  margin-left: 4.15vw;
-}
+/*  margin-left: 4.15vw;
+*/}
 
 #project_3 .description {
   margin-top: -2em;
@@ -616,8 +616,8 @@ article p {
 
 #project_4 h1 {
   font-size: 8.2vw;
-  margin-left: 4.15vw;
-}
+/*  margin-left: 4.15vw;
+*/}
 
 #project_2 img {
   width: 600px;
@@ -631,11 +631,11 @@ article p {
 
 
 #parallax_0001{
-  width: 100%;
+/*  width: 100%;
   height: 100%;
   position: absolute;
   display: block;
-  list-style: none;
+  list-style: none;*/
   z-index: -1;
 }
 
@@ -647,8 +647,35 @@ article p {
 }
 
 
+.desc {
+  position: absolute;
+  height: 1800px;
+  margin-top: -100px;
+  padding-top: 380px;
+  z-index: 100;
+}
+
+.desc h2 {
+  font-family: "Oswald", sans-serif;
+  color: #ff6333;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-shadow: #1A1945 2px 5px 10px;
+  line-height: 2em;
+
+  margin-left: 100px;
 
 
+  }
+
+.desc p {
+  margin-left: 200px;
+  width: 50vw;
+  font-family: "quattrocento", serif;
+  color: #ffffff;
+  font-size: 18px;
+  }
 
 
 

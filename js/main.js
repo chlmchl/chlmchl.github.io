@@ -3,6 +3,7 @@ $(document).ready(function() {
     loopBottom: true,
     slidesNavigation: false,
     verticalCentered: false,
+    normalScrollElements: '.desc',
     lazyloading: true,
     recordHistory: true,
     anchors: ['hello', 'cip', '0001', 'processing', 'photography'], 
@@ -14,6 +15,17 @@ function main() {
   $('p').slideToggle(900);
   $('p').fadeIn(1000);
 };
+
+
+function main() {
+  $('.desc').hide();
+  $('.view_project').on('click', function() {
+    //$(this).next().toggle();
+    $(this).next().slideToggle(400);
+    $(this).toggleClass('active');  
+  });
+}
+
 
 $(document).ready(function() {
   var scene = document.getElementById('parallax');
