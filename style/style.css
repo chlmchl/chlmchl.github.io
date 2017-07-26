@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 /*
 COLORS :
 
@@ -14,7 +5,6 @@ orange ---- #FF6333
 blue ---- #1A1945
 white ---- #ffffff
 */
-
 
 
 /* -------------------------
@@ -28,7 +18,7 @@ a {
 }
 
 
-* { 
+* {
   margin: 0;
   padding: 0;
 }
@@ -40,20 +30,30 @@ a {
 
 body {
   /* gradient */
-  background-color: #1A1945; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#1A1945, #FF6333 1200%); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#1A1945, #FF6333 1200%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#1A1945, #FF6333 1200%); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#1A1945, #FF6333 1200%); /* Standard syntax */
+  background-color: #1A1945;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#1A1945, #FF6333 1000%);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#1A1945, #FF6333 1000%);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#1A1945, #FF6333 1000%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1A1945, #FF6333 1000%);
+  /* Standard syntax */
 }
 
 #body_about {
   /* gradient */
-  background-color: #1A1945; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#1A1945, #FF6333 300%); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#1A1945, #FF6333 300%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#1A1945, #FF6333 300%); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#1A1945, #FF6333 300%); /* Standard syntax */
+  background-color: #1A1945;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#1A1945, #FF6333 300%);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#1A1945, #FF6333 300%);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#1A1945, #FF6333 300%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1A1945, #FF6333 300%);
+  /* Standard syntax */
 }
 
 .p_hilight {
@@ -61,10 +61,110 @@ body {
   font-weight: 700;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*a {
   text-decoration: none;
 }*/
-
 
 
 /* ----------------------------
@@ -93,7 +193,109 @@ header {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* fin header */
+
 
 /* ----------------------------
 
@@ -110,12 +312,112 @@ HOME + PROJECTS
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------
 
 LOGO PARALLAX HOME PAGE 
 
 ------------------------------*/
-
 
 #home img {
   position: absolute;
@@ -128,7 +430,7 @@ LOGO PARALLAX HOME PAGE
 }
 
 
-#parallax{
+#parallax {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -137,11 +439,111 @@ LOGO PARALLAX HOME PAGE
   z-index: -10;
 }
 
-#layer{
+#layer {
   position: absolute;
   display: block;
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----------------------------
 
@@ -184,6 +586,107 @@ CARACTERISTICS HOME PAGE
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------
 
 BUTTON VIEW ABOUT 
@@ -205,7 +708,7 @@ BUTTON VIEW ABOUT
 }
 
 
-.view_about:after {    
+.view_about:after {
   bottom: -10px;
   content: "";
   display: block;
@@ -217,10 +720,111 @@ BUTTON VIEW ABOUT
   transition: right 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-.view_about:hover:after { 
-  left: 0; 
+.view_about:hover:after {
+  left: 0;
   right: -100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------------
@@ -246,7 +850,7 @@ BUTTON VIEW ABOUT
 }
 
 
-.scroll_down:after {    
+.scroll_down:after {
   bottom: -10px;
   content: "";
   display: block;
@@ -258,10 +862,111 @@ BUTTON VIEW ABOUT
   transition: right 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-.scroll_down:hover:after { 
-  left: -100%; 
+.scroll_down:hover:after {
+  left: -100%;
   right: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------------
@@ -274,8 +979,9 @@ BUTTON VIEW ABOUT
   width: 100vw;
   height: 100vh;
   display: table;
-/*  justify-content: center;
-*/}
+  /*  justify-content: center;
+*/
+}
 
 #about #hey, #pigeon h1 {
   text-align: center;
@@ -288,6 +994,107 @@ BUTTON VIEW ABOUT
   line-height: 1em;
   text-shadow: #1A1945 2px 5px 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*#about #hey:after {    
   content: "";
@@ -313,6 +1120,107 @@ body:hover #about #hey:after {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------
 
 PAGE ABOUT - BUTTON VIEW HOME
@@ -335,7 +1243,7 @@ PAGE ABOUT - BUTTON VIEW HOME
 }
 
 
-.view_home:after {    
+.view_home:after {
   bottom: -10px;
   content: "";
   display: block;
@@ -347,10 +1255,111 @@ PAGE ABOUT - BUTTON VIEW HOME
   transition: right 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-.view_home:hover:after { 
-  right: 0; 
+.view_home:hover:after {
+  right: 0;
   left: -100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------------
@@ -401,6 +1410,107 @@ article p {
   margin-left: 11vw;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------
 
  PAGE ABOUT - CONTACT
@@ -410,7 +1520,6 @@ article p {
 #pigeon h1 {
   font-size: 60px;
   line-height: 1.3em;
-
 }
 
 #pigeon h1:after {
@@ -430,7 +1539,6 @@ article p {
   justify-content: center;
   text-decoration: none;
   margin-top: 50px;
-
 }
 
 #send_me_pigeon li a {
@@ -441,7 +1549,113 @@ article p {
   color: #ffffff;
   margin: 40px;
   cursor: pointer;
+  opacity: 0.9;
 }
+
+#send_me_pigeon li a:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------------
@@ -453,40 +1667,37 @@ article p {
 
 /*aspects généraux*/
 
-
-
-.projects{
+.projects {
   width: 100vw;
-  height: 100vh;
   position: relative;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
+  /*webkit-overflow-scrolling: touch;
+*/
 }
-/*
+
 #project_1 {
   width: 80vw;
   height: 30vh;
-  padding-top: -28vh;
+  margin-top: -28vh;
 }
 
 #project_2 {
   width: 80vw;
   height: 30vh;
-  padding-top: -20vh;
+  margin-top: -20vh;
 }
 
 #project_3 {
   width: 80vw;
   height: 30vh;
-  padding-top: -28vh;
+  margin-top: -28vh;
 }
 
 
 #project_4 {
   width: 80vw;
   height: 30vh;
-  padding-top: -25vh;
-}*/
+  margin-top: -25vh;
+}
 
 
 .projects h1 {
@@ -495,7 +1706,7 @@ article p {
   font-weight: 700;
   font-size: 6vw;
   line-height: 1.2em;
-/*  margin-left: 5vw;*/
+  margin-left: 5vw;
   text-shadow: #1A1945 2px 5px 10px;
 }
 
@@ -509,12 +1720,13 @@ article p {
   line-height: 1.4em;
 }
 
-/* lists */
+
 
 .projects ul {
+  /* lists */
   position: absolute;
-/*  margin-left: 5.15vw;
-  margin-top: 25px;*/
+  margin-left: 5.15vw;
+  margin-top: 25px;
   display: flex;
 }
 
@@ -526,23 +1738,71 @@ article p {
 }
 
 .projects li h2 {
-  color: #ffffff;  
+  color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 25px;
-
 }
 
 .projects li p {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-weight: 200;
-
 }
 
-/* BUTTONS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .view_project {
+  /* BUTTONS */
   text-decoration: none;
   font-family: : "Oswald", sans-serif;
   font-weight: 700;
@@ -556,12 +1816,11 @@ article p {
   right: 32vw;
   margin-top: 70px;
   opacity: 0;
-
 }
 
 
 
-.projects:hover .view_project{
+.projects:hover .view_project {
   animation: appear 1s forwards;
 }
 
@@ -575,11 +1834,11 @@ article p {
   }
 }
 
-.view_project:after {    
+.view_project:after {
   bottom: -10px;
   content: "";
   display: block;
-  height: 4px;
+  height: 3px;
   left: 30%;
   right: 30%;
   position: absolute;
@@ -587,17 +1846,34 @@ article p {
   transition: right 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-.view_project:hover:after { 
-  left: 0; 
+.view_project:hover:after {
+  left: 0;
   right: 0;
 }
 
+#parallax_paris {
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* PROJECT 2 - 0001 */
+#parallax_paris img {
+  width: 45%;
+  height: 45%;
+  opacity: 0.9;
+  margin-top: -250px;
+  margin-left: -100px;
+}
+
 
 #project_2 h1 {
+  /* PROJECT 2 - 0001 */
   font-size: 16vw;
-/*  margin-left: 4.15vw;*/
+  margin-left: 4.15vw;
 }
 
 #project_2 .description {
@@ -607,8 +1883,8 @@ article p {
 
 #project_3 h1 {
   font-size: 9vw;
-/*  margin-left: 4.15vw;
-*/}
+  margin-left: 4.15vw;
+}
 
 #project_3 .description {
   margin-top: -2em;
@@ -616,8 +1892,8 @@ article p {
 
 #project_4 h1 {
   font-size: 8.2vw;
-/*  margin-left: 4.15vw;
-*/}
+  margin-left: 4.15vw;
+}
 
 #project_2 img {
   width: 600px;
@@ -630,8 +1906,8 @@ article p {
 }
 
 
-#parallax_0001{
-/*  width: 100%;
+#parallax_0001 {
+  /*  width: 100%;
   height: 100%;
   position: absolute;
   display: block;
@@ -639,19 +1915,48 @@ article p {
   z-index: -1;
 }
 
-#layer2{
+#layer2 {
   transform: rotate(15deg);
   position: absolute;
   display: block;
-
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 .desc {
   position: absolute;
   height: 1800px;
+  width: 70vw;
+  margin-left: 5vw;
   margin-top: -100px;
-  padding-top: 380px;
+  padding-top: 350px;
   z-index: 100;
 }
 
@@ -675,7 +1980,350 @@ article p {
   font-family: "quattrocento", serif;
   color: #ffffff;
   font-size: 18px;
+  }*/
+
+#svg_parallax {
+  width: 100vw;
+  height: 100vh;
+  z-index: -20;
+  position: absolute;
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+svg .st0 {
+  animation: appear 3.9s forwards;
+  stroke: white;
+}
+
+svg .st1 {
+  animation: appear 2.2s 4.5s forwards;
+  stroke: white;
+}
+
+svg .st2 {
+  animation: appear 2s 4s forwards;
+  stroke: white;
+}
+
+svg .st3 {
+  animation: appear 2s 5s forwards;
+  stroke: white;
+}
+
+svg .st4 {
+  animation: appear 3s 5.6s forwards;
+  stroke: white;
+}
+
+svg .st4 {
+  animation: appear 3.3s 7s forwards;
+  stroke: white;
+}
+
+svg .st5 {
+  animation: appear 3s 10s forwards;
+  stroke: white;
+}
+
+svg .st6 {
+  animation: appear 2.9s forwards;
+  stroke: white;
+}
+
+svg .st7 {
+  animation: appear 2.2s 7s forwards;
+  stroke: white;
+}
+
+svg .st8 {
+  animation: appear 2s 8s forwards;
+  stroke: white;
+}
+
+svg .st9 {
+  animation: appear 2s 10s forwards;
+  stroke: white;
+}
+
+svg .st10 {
+  animation: appear 2s 2.1s forwards;
+  stroke: white;
+}
+
+svg .st11 {
+  animation: appear 3.3s 4.3s forwards;
+  stroke: white;
+}
+
+svg .st12 {
+  animation: appear 1s 14s forwards;
+  stroke: white;
+}
+
+svg .st13 {
+  animation: appear 0.5s 14.1s forwards;
+  stroke: white;
+}
+
+svg .st14 {
+  animation: appear 1.3s 3.3s forwards;
+  stroke: white;
+}
+
+svg .st15 {
+  animation: appear 1s 7s forwards;
+  stroke: white;
+}
+
+svg .st16 {
+  animation: appear 1.3s 4s forwards;
+  stroke: white;
+}
+
+svg .st17 {
+  animation: appear 1s 9s forwards;
+  stroke: white;
+}
+
+svg .st18 {
+  animation: appear 1.3s 13.3s forwards;
+  stroke: white;
+}
+
+svg .st19 {
+  animation: appear 1s 2s forwards;
+  stroke: white;
+}
+
+svg .st20 {
+  animation: appear 1.3s 12.1s forwards;
+  stroke: white;
+}
+
+svg .st21 {
+  animation: appear 1.4s 13.8s forwards;
+  stroke: white;
+}
+
+svg .st22 {
+  animation: appear 1s 7s forwards;
+  stroke: white;
+}
+
+svg .st23 {
+  animation: appear 1.3s 3.3s forwards;
+  stroke: white;
+}
+
+svg .st24 {
+  animation: appear 1s 5s forwards;
+  stroke: white;
+}
+
+svg .st25 {
+  animation: appear 1.3s 13.3s forwards;
+  stroke: white;
+}
+
+svg .st26 {
+  animation: appear 2s 3.1s forwards;
+  stroke: white;
+}
+
+svg .st27 {
+  animation: appear 3.3s 4.3s forwards;
+  stroke: white;
+}
+
+svg .st28 {
+  animation: appear 1s 7s forwards;
+  stroke: white;
+}
+
+svg .st29 {
+  animation: appear 1.3s 8.3s forwards;
+  stroke: white;
+}
+
+svg .st30 {
+  animation: appear 1s 20s forwards;
+  stroke: white;
+}
+
+svg .st31 {
+  animation: appear 1.3s 4.3s forwards;
+  stroke: white;
+}
+
+svg .st32 {
+  animation: appear 1s 20s forwards;
+  stroke: white;
+}
+
+svg .st33 {
+  animation: appear 1.3s 13.3s forwards;
+  stroke: white;
+}
+
+svg .st34 {
+  animation: appear 1s 2s forwards;
+  stroke: white;
+}
+
+svg .st35 {
+  animation: appear 1.3s 9.1s forwards;
+  stroke: white;
+}
+
+svg .st36 {
+  animation: appear 1.4s 3.8s forwards;
+  stroke: white;
+}
+
+svg .st37 {
+  animation: appear 1s 22s forwards;
+  stroke: white;
+}
+
+svg .st38 {
+  animation: appear 1.3s 10.3s forwards;
+  stroke: white;
+}
+
+svg .st39 {
+  animation: appear 1s 20s forwards;
+  stroke: white;
+}
+
+svg .st40 {
+  animation: appear 1.3s 4.3s forwards;
+  stroke: white;
+}
+
+svg .st41 {
+  animation: appear 2s 10.1s forwards;
+  stroke: white;
+}
+
+
+line {
+  opacity: 0
+}
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
   }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -684,7 +2332,6 @@ article p {
 FOOTER
 
 ------------------------------*/
-
 
 footer {
   position: absolute;
@@ -702,6 +2349,3 @@ footer img {
   width: 15px;
   height: 15px;
 }
-
-
-

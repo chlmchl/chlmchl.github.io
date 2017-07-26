@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function fullpage() {
   $('#fullpage').fullpage({
     loopBottom: true,
     slidesNavigation: false,
@@ -6,9 +6,40 @@ $(document).ready(function() {
     normalScrollElements: '.desc',
     lazyloading: true,
     recordHistory: true,
-    anchors: ['hello', 'cip', '0001', 'processing', 'photography'], 
+    anchors: ['hello', 'cip', '0001', 'processing', 'photography'],
   });
-});
+};
+
+
+function parallax() {
+  var logo = $('#parallax').get(0);
+  var iphone = $('#parallax_0001').get(0);
+  var svg = $('#svg_parallax').get(0);
+  var paris = $('#parallax_paris').get(0);
+
+  var construct = function(selector) {
+    return new Parallax(selector, {
+      calibrateX: false,
+      calibrateY: true,
+      invertX: true,
+      invertY: true,
+      limitX: false,
+      limitY: false,
+      scalarX: 2,
+      scalarY: 1,
+      frictionX: 0.1,
+      frictionY: 0.1,
+      originX: 0.1,
+      originY: 0.1,
+    });
+  };
+
+  construct(paris);
+  construct(logo);
+  construct(iphone);
+  construct(svg);
+
+};
 
 function main() {
   $('p').hide();
@@ -16,51 +47,8 @@ function main() {
   $('p').fadeIn(1000);
 };
 
-
-function main() {
-  $('.desc').hide();
-  $('.view_project').on('click', function() {
-    //$(this).next().toggle();
-    $(this).next().slideToggle(400);
-    $(this).toggleClass('active');  
-  });
-}
-
-
 $(document).ready(function() {
-  var scene = document.getElementById('parallax');
-  var parallax = new Parallax(scene, { 
-  calibrateX: false,
-    calibrateY: true,
-    invertX: true,
-    invertY: true,
-    limitX: false,
-    limitY: false,
-    scalarX: 2,
-    scalarY: 1,
-    frictionX: 0.1,
-    frictionY: 0.1,
-    originX: 0.1,
-    originY: 0.1,
-  });
+  fullpage();
+  parallax();
+  main();
 });
-
-$(document).ready(function() {
-  var scene = document.getElementById('parallax_0001');
-  var parallax = new Parallax(scene, { 
-  calibrateX: false,
-    calibrateY: true,
-    invertX: true,
-    invertY: true,
-    limitX: false,
-    limitY: false,
-    scalarX: 2,
-    scalarY: 1,
-    frictionX: 0.1,
-    frictionY: 0.1,
-    originX: 0.1,
-    originY: 0.1,
-  });
-});
-
-$(document).ready(main);

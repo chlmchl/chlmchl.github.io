@@ -1,176 +1,95 @@
-/* PROJETS */
-
-/*aspects généraux*/
-
-
-
-.projects{
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
+body:hover .projects ul {
+  transform: translate(75%, 90%);
+  transition: all 800ms ease-in-out;
 }
 
-.projects::before {
-  /* never visible - this is used in jQuery to check the current MQ */
-  content: 'mobile';
-  display: none;
+#close {
+  position: fixed;
+  outline: none;
+  border-radius: 100%;
+  border: solid 2px white;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  transform-origin: center;
+  margin-left: 50%;
+  cursor: pointer;
+  z-index: 19;
 }
 
-#project_1 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -28vh;
+#close:hover {
+  color: #ff6333;
+  border: solid 2px #ff6333;
 }
 
-#project_2 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -28vh;
-}
-
-#project_3 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -28vh;
-}
-
-#project_4 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -25vh;
+header {
+  position: fixed;
 }
 
 
-.projects h1 {
-  color: #FF6333;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 6vw;
-  line-height: 1.2em;
-  margin-left: 5vw;
-  text-shadow: #1A1945 0px 0px 5px;
+.poule {
+  width: 70vw;
+  margin-left: 15vw;
+  margin-bottom: 200px;
 }
 
-.description {
-  width: 25vw;
-  margin-left: 42vw;
-  margin-top: -1.3em;
+.poule h2 {
+  font-family: "oswald", sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #ff6333;
+  text-shadow: #1A1945 2px 5px 10px;
+  margin: 40px;
+  margin-bottom: 60px;
+}
+
+.poule p {
   color: #ffffff;
   font-family: "Quattrocento", serif;
   font-size: 18px;
   line-height: 1.4em;
+  margin: auto;
+  width: 75%;
 }
 
-/* lists */
-
-.projects ul {
-  position: absolute;
-  margin-left: 5.15vw;
-  margin-top: 25px;
-  display: flex;
-}
-
-.projects li {
-  display: inline-block;
-  width: 6vw;
-  min-width: 40px;
-  margin-right: 4vw;
-}
-
-.projects li h2 {
-  color: #ffffff;  
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-size: 25px;
-
-}
-
-.projects li p {
-  color: #ffffff;
-  font-family: "Oswald", sans-serif;
-  font-weight: 200;
-
-}
-
-/* BUTTONS */
-
-.view_project {
-  text-decoration: none;
-  font-family: : "Oswald", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #ff6333;
-  text-shadow: #1A1945 0px 0px 5px;
-
-  position: absolute;
-  width: 140px;
-  height: 20px;
-  right: 32vw;
-  margin-top: 70px;
-  opacity: 0;
-
-}
-
-
-
-.projects:hover .view_project{
-  animation: appear 1s forwards;
-}
-
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.view_project:after {    
-  bottom: -10px;
+.poule h2:after {
+  background: none repeat scroll 0 0 transparent;
   content: "";
   display: block;
-  height: 4px;
-  left: 30%;
-  right: 30%;
-  position: absolute;
-  background: #ff6333;
-  transition: right 0.3s ease 0s, left 0.3s ease 0s;
+  height: 3px;
+  background: linear-gradient(to left, transparent, #FF6333 10%);
+  /* Standard syntax */
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 5%;
 }
 
-.view_project:hover:after { 
-  left: 0; 
-  right: 0;
+.poule:hover h2:after {
+  width: 90%;
+  left: 0;
 }
 
-
-/* PROJECT 2 - 0001 */
-
-#project_2 h1 {
-  font-size: 16vw;
-  margin-left: 4.15vw;
+iframe {
+  margin-left: 6vw;
 }
 
-#project_2 .description {
-  margin-top: -3em;
+#typo_box {
+  /* TYPO BOX*/
+  width: 70%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-top: 90px;
 }
 
-
-#project_3 h1 {
-  font-size: 9vw;
-  margin-left: 4.15vw;
+#typo_box h3 {
+  font-family: "oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+  margin: 15px;
 }
 
-#project_3 .description {
-  margin-top: -2em;
+#roboto {
+  width: 90%;
+  margin-bottom: 10px;
 }
-
-#project_4 h1 {
-  font-size: 8.2vw;
-  margin-left: 4.15vw;
-}
-
-

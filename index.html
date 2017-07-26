@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Chloé Michel • Portfolio </title>
-    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-    <link href="style/style.css" type="text/css" rel="stylesheet">
-    <link href="style/overlay.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700|Quattrocento:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style/jquery.fullpage.min.css">
-  </head>
-  <body>
-    <!--
-    .d88b.  db    db d88888b d8888b. db       .d8b.  db    db
-    .8P  Y8. 88    88 88'     88  `8D 88      d8' `8b `8b  d8'
-    88    88 Y8    8P 88ooooo 88oobY' 88      88ooo88  `8bd8'
-    88    88 `8b  d8' 88~~~~~ 88`8b   88      88~~~88    88
-    `8b  d8'  `8bd8'  88.     88 `88. 88booo. 88   88    88
-    `Y88P'     YP    Y88888P 88   YD Y88888P YP   YP    YP     -->
-    
-    <aside>
-      <div class="outer-close toggle-overlay">
-        <a class="close"><span>X</span></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a class="home_about_contact" href="#home">HOME</a></li>
-          <li><a class="home_about_contact" href="about.html">ABOUT</a></li>
-          <li id="contact" ><a class="home_about_contact" href="#!">CONTACT</a>
+
+<head>
+  <meta charset="utf-8">
+  <title>Chloé Michel • Portfolio </title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="style/style.css" type="text/css" rel="stylesheet">
+  <link href="style/overlay.css" type="text/css" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700|Quattrocento:400,700" rel="stylesheet"> -->
+  <link rel="stylesheet" href="style/jquery.fullpage.min.css">
+</head>
+
+<body>
+  <aside>
+    <div class="outer-close toggle-overlay">
+      <a class="close"><span>X</span></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a class="home_about_contact" href="#home">HOME</a></li>
+        <li><a class="home_about_contact" href="about.html">ABOUT</a></li>
+        <li id="contact"><a class="home_about_contact" href="#!">CONTACT</a>
           <ul id="social_networks">
             <li><a href="mailto:ch.michel96@gmail.com" target="_blank">MAIL</a></li>
             <li><a href="https://www.linkedin.com/in/chlo%C3%A9-michel-43a90b138/" target="_blank">LINKEDIN</a></li>
@@ -37,24 +31,16 @@
       </ul>
     </nav>
   </aside>
-  <!--
-  d88888b d8b   db d8888b.       .d88b.  db    db d88888b d8888b. db       .d8b.  db    db
-  88'     888o  88 88  `8D      .8P  Y8. 88    88 88'     88  `8D 88      d8' `8b `8b  d8'
-  88ooooo 88V8o 88 88   88      88    88 Y8    8P 88ooooo 88oobY' 88      88ooo88  `8bd8'
-  88~~~~~ 88 V8o88 88   88      88    88 `8b  d8' 88~~~~~ 88`8b   88      88~~~88    88
-  88.     88  V888 88  .8D      `8b  d8'  `8bd8'  88.     88 `88. 88booo. 88   88    88
-  Y88888P VP   V8P Y8888D'       `Y88P'     YP    Y88888P 88   YD Y88888P YP   YP    YP   -->
-  <!--       <div id="menu">
-    <a href="#">
-      <img src="img/logo_chloe_michel_white.svg" alt="logo chloe michel graphic designer">
-    </a>
-  </div> -->
   <header>
     <button class="toggle-overlay"><img src="img/logo_chloe_michel_white.svg" alt="logo chloe michel graphic designer"></button>
     <div id=EN_FR>
       <ul>
-        <a href="#"><li>EN</li></a>
-        <a href="#"><li>FR</li></a>
+        <a href="#">
+          <li>EN</li>
+        </a>
+        <a href="#">
+          <li>FR</li>
+        </a>
       </ul>
     </div>
   </header>
@@ -62,135 +48,202 @@
     <div class="section">
       <section id="home">
         <div id="parallax">
-          <div id="layer"><img src="img/logo_chloe_michel_FF6333.svg" class="layer" data-depth="0.99"></div></div>
-          <div id="home_box">
-            <h1>HELLO, I'M A<br/> <span>GRAPHIC DESIGNER</span></h1>
-            <p>My name is Chloé and I’m a 21 years-old graphic design student  based in <span class="p_hilight">Paris, France</span>. <br/> I aim to live a life I love and can control... or choose not to.</p>
+          <div id="layer"><img src="img/logo_chloe_michel_FF6333.svg" class="layer" data-depth="0.99"></div>
+        </div>
+        <div id="home_box">
+          <h1>HELLO, I'M A<br/> <span>GRAPHIC DESIGNER</span></h1>
+          <p>My name is Chloé and I’m a 21 years-old graphic design student based in <span class="p_hilight">Paris, France</span>.
+            <br/> I aim to live a life I love and can control... or choose not to.</p>
+        </div>
+        <a href="about.html">
+          <button class="view_about"> ABOUT</button>
+        </a>
+        <a href="index.html#cip">
+          <button class="scroll_down"> SEE MY WORKS </button>
+        </a>
+      </section>
+    </div>
+    <div class="section">
+      <div id="parallax_paris">
+        <img src="img/paris.svg" class="layer" data-depth="0.99">
+      </div>
+      <section class="projects">
+        <div id="project_1">
+          <h1>CINÉMAS <br/> INDÉPENDANTS <br/> PARISIENS</h1>
+          <ul>
+            <li>
+              <h2>DATE</h2>
+              <p>2017</p>
+            </li>
+            <li>
+              <h2>CLIENT</h2>
+              <p>Les cinémas indépendants parisiens</p>
+            </li>
+            <li>
+              <h2>ROLE</h2>
+              <p>Motion design</p>
+            </li>
+          </ul>
+          <p class="description">Partnership with the <span class="p_hilight">Cinémas Indépendants Parisiens</span> for the realisation of the teaser of their annual festival Avants-Premières !</p>
+          <a href="cinemas.html">
+            <button class="view_project"> VIEW PROJECT </button>
+          </a>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <section class="projects">
+        <div id="project_2">
+          <div id="parallax_0001">
+            <div id="layer2">
+              <img src="img/0001_pseudo_unogame.svg" class="layer" data-depth="0.99" alt="uno card game graphic designer chloé michel">
+            </div>
           </div>
-          
-          <a href="about.html"><button class="view_about"> ABOUT</button></a>
-          <a href="index.html#cip"><button class="scroll_down"> SEE MY WORKS </button></a>
-        </section>
-      </div>
-      <div class="section">
-        <section class="projects">
-          <div id="project_1">
-            <h1>CINÉMAS <br/> INDÉPENDANTS <br/> PARISIENS</h1>
-            <ul>
-              <li>
-                <h2>DATE</h2>
-                <p>2017</p>
-              </li>
-              <li>
-                <h2>CLIENT</h2>
-                <p>Les cinémas indépendants parisiens</p>
-              </li>
-              <li>
-                <h2>ROLE</h2>
-                <p>Motion design</p>
-              </li>
-            </ul>
-            <p class="description">Sant explit eaquae oditas estes quis rempores diae volores erchitem rem quunto mint dolupta tectatinus. Nimo od quae ni dolorecea dollent omnimus sumque volectis pa prem cus aute pariorrum cum.</p>
-            <a href="#">
-              <button class="view_project"> VIEW PROJECT </button>
-            </a>
-          </div>
-        </section>
-      </div>
-      <div class="section">
-        <section class="projects">
-          <div id="project_2">
-            <div id="parallax_0001">
-              <div id="layer2">
-                <img src="img/0001_pseudo_unogame.svg" class="layer" data-depth="0.99">
-              </div></div>
-              <h1>0001</h1>
-              <ul>
-                <li>
-                  <h2>DATE</h2>
-                  <p>2017</p>
-                </li>
-                <li>
-                  <h2>CLIENT</h2>
-                  <p>School project</p>
-                </li>
-                <li>
-                  <h2>ROLE</h2>
-                  <p>Artistic direction, motion, print</p>
-                </li>
-              </ul>
-              <p class="description">Sant explit eaquae oditas estes quis rempores diae volores erchitem rem quunto mint dolupta tectatinus. Nimo od quae ni dolorecea dollent omnimus sumque volectis pa prem cus aute pariorrum cum.</p>
-              <a href="#">
-                <button class="view_project"> VIEW PROJECT </button>
-                <div class="desc">
-                <h2> BRIEFLY </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor velit, rhoncus eget neque vitae, tempus malesuada nisi. Maecenas eleifend fermentum ligula, at cursus enim porta vel. Etiam non lacus ultricies nisi lobortis faucibus. Donec purus leo, rutrum vitae enim id, venenatis pulvinar lorem. Donec lorem tortor, malesuada ac lacinia in, condimentum vel massa. Proin lobortis dignissim consequat. Sed et libero diam. Ut nec sem luctus mauris iaculis condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec sed aliquet nulla, et consectetur felis. Ut porttitor, velit nec eleifend pulvinar, enim velit laoreet neque, quis interdum leo dolor vel elit. Ut eu sem est. Morbi blandit facilisis ante, ullamcorper feugiat magna dictum vel. Fusce varius enim tellus, sed ultrices nisl congue et. Proin eget eros purus.
-                </p></div>
-              </a>
-            </div>
-          </section>
+          <h1>0001</h1>
+          <ul>
+            <li>
+              <h2>DATE</h2>
+              <p>2017</p>
+            </li>
+            <li>
+              <h2>CLIENT</h2>
+              <p>School project</p>
+            </li>
+            <li>
+              <h2>ROLE</h2>
+              <p>Artistic direction, motion, print</p>
+            </li>
+          </ul>
+          <p class="description">UNO card game revisited for its anniversary for a fictionnal school project. Realisation of a new concept, design and a video presenting a mobile app version of the card game. </p>
+          <a href="0001.html">
+            <button class="view_project"> VIEW PROJECT </button>
+          </a>
         </div>
-        <div class="section">
-          <section class="projects">
-            <div id="project_3">
-              <h1>LET'S GO - <br/> RONE</h1>
-              <ul>
-                <li>
-                  <h2>DATE</h2>
-                  <p>2017</p>
-                </li>
-                <li>
-                  <h2>CLIENT</h2>
-                  <p>School project</p>
-                </li>
-                <li>
-                  <h2>ROLE</h2>
-                  <p>Processing</p>
-                </li>
-              </ul>
-              <p class="description">Sant explit eaquae oditas estes quis rempores diae volores erchitem rem quunto mint dolupta tectatinus. Nimo od quae ni dolorecea dollent omnimus sumque volectis pa prem cus aute pariorrum cum.</p>
-              <a href="#">
-                <button class="view_project"> VIEW PROJECT </button>
-              </a>
-            </div>
-          </section>
-        </div>
-        <div class="section">
-          <section class="projects">
-            <div id="project_4">
-              <h1>THROUGH<br/> THE LENSE</h1>
-              <ul>
-                <li>
-                  <h2>DATE</h2>
-                  <p>2016-2017</p>
-                </li>
-                <li>
-                  <h2>CLIENT</h2>
-                  <p>Personal and school projects</p>
-                </li>
-                <li>
-                  <h2>ROLE</h2>
-                  <p>Photography</p>
-                </li>
-              </ul>
-              <p class="description">Sant explit eaquae oditas estes quis rempores diae volores erchitem rem quunto mint dolupta tectatinus. Nimo od quae ni dolorecea dollent omnimus sumque volectis pa prem cus aute pariorrum cum.</p>
-              <a href="#">
-                <button class="view_project"> VIEW PROJECT </button>
-              </a>
-            </div>
-          </section>
-        </div>
+      </section>
+    </div>
+    <div class="section">
+      <?xml version="1.0" encoding="utf-8"?>
+      <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+      <div id="svg_parallax">
+        <svg class="layer" data-depth="0.99" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1190.6 841.9" style="enable-background:new 0 0 1190.6 841.9;" xml:space="preserve">
+          <style type="text/css">
+          .st0 {
+            fill: none;
+            stroke: #FFFFFF;
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+          }
+
+          </style>
+          <line class="st0" x1="470" y1="162" x2="562" y2="293" />
+          <line class="st1" x1="562" y1="293" x2="548" y2="80" />
+          <line class="st2" x1="548" y1="80" x2="470" y2="162" />
+          <line class="st3" x1="562" y1="293" x2="587" y2="153" />
+          <line class="st4" x1="562" y1="293" x2="494" y2="347" />
+          <line class="st5" x1="562" y1="293" x2="465" y2="262" />
+          <line class="st6" x1="465" y1="262" x2="494" y2="347" />
+          <line class="st7" x1="465" y1="262" x2="470" y2="162" />
+          <line class="st8" x1="494" y1="347" x2="465" y2="428" />
+          <line class="st9" x1="494" y1="347" x2="494" y2="495" />
+          <line class="st10" x1="494" y1="495" x2="465" y2="428" />
+          <line class="st11" x1="587" y1="153" x2="699" y2="186.5" />
+          <line class="st12" x1="749" y1="447" x2="789" y2="399" />
+          <line class="st13" x1="749" y1="447" x2="811" y2="447" />
+          <line class="st14" x1="811" y1="447" x2="841" y2="495" />
+          <line class="st15" x1="811" y1="447" x2="871" y2="471" />
+          <line class="st16" x1="789" y1="399" x2="709" y2="375" />
+          <line class="st17" x1="789" y1="399" x2="749" y2="342" />
+          <line class="st18" x1="749" y1="342" x2="709" y2="375" />
+          <line class="st19" x1="181" y1="670" x2="124" y2="640" />
+          <line class="st20" x1="181" y1="670" x2="101" y2="687" />
+          <line class="st21" x1="181" y1="670" x2="101" y2="728" />
+          <line class="st22" x1="101" y1="728" x2="101" y2="687" />
+          <line class="st23" x1="181" y1="670" x2="250" y2="678.5" />
+          <line class="st24" x1="250" y1="678.5" x2="264" y2="614" />
+          <line class="st25" x1="215.5" y1="399" x2="186" y2="342" />
+          <line class="st26" x1="215.5" y1="399" x2="250" y2="320" />
+          <line class="st27" x1="1011" y1="169.8" x2="1022" y2="80" />
+          <line class="st28" x1="1011" y1="169.8" x2="1050" y2="153" />
+          <line class="st29" x1="1050" y1="153" x2="1016.5" y2="207" />
+          <line class="st30" x1="1011" y1="169.8" x2="991" y2="142" />
+          <line class="st31" x1="1011" y1="169.8" x2="952" y2="169.8" />
+          <line class="st32" x1="991" y1="142" x2="952" y2="169.8" />
+          <line class="st33" x1="699" y1="186.5" x2="749" y2="137" />
+          <line class="st34" x1="562" y1="293" x2="534" y2="207" />
+          <line class="st35" x1="534" y1="207" x2="548" y2="80" />
+          <line class="st36" x1="534" y1="207" x2="470" y2="162" />
+          <line class="st37" x1="534" y1="207" x2="516" y2="153" />
+          <line class="st38" x1="516" y1="153" x2="548" y2="80" />
+          <line class="st39" x1="562" y1="293" x2="541" y2="342" />
+          <line class="st40" x1="541" y1="342" x2="494" y2="347" />
+          <line class="st41" x1="541" y1="342" x2="494" y2="495" />
+          <line class="st42" x1="562" y1="293" x2="633" y2="273" />
+          <line class="st43" x1="633" y1="273" x2="587" y2="153" />
+          <line class="st44" x1="699" y1="186.5" x2="691" y2="109" />
+          <line class="st45" x1="699" y1="186.5" x2="651" y2="198" />
+          <line class="st46" x1="651" y1="198" x2="633" y2="273" />
+          <line class="st47" x1="562" y1="293" x2="597.5" y2="342" />
+          <line class="st48" x1="597.5" y1="342" x2="633" y2="273" />
+        </svg>
       </div>
-      <!-- FOOTER -->
-      <footer>
-        designed with <img src="img/logo_chloe_michel_1A1945.svg" alt="logo chloe michel graphic designer">
-      </footer>
-      <!-- SCRIPTS -->
-      <script src="js/jquery-3.1.1.min.js"></script>
-      <script src="js/jquery.fullpage.min.js"></script>
-      <script src="js/main.js"></script>
-      <script src="js/overlay.js"></script>
-      <script src="js/parallax.js"></script>
-      
-    </body>
-  </html>
+      <section class="projects">
+        <div id="project_3">
+          <h1>LET'S GO - <br/> RONE</h1>
+          <ul>
+            <li>
+              <h2>DATE</h2>
+              <p>2017</p>
+            </li>
+            <li>
+              <h2>CLIENT</h2>
+              <p>School project</p>
+            </li>
+            <li>
+              <h2>ROLE</h2>
+              <p>Processing</p>
+            </li>
+          </ul>
+          <p class="description">Realisation of a visual aiming to be displayed as a background behind the electronic music artist Rone during a fictional show. It's been created using <span class="p_hilight">processing programming language</span> to apply my newly learnt skills during a school workshop.</p>
+          <a href="processing.html">
+            <button class="view_project"> VIEW PROJECT </button>
+          </a>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <section class="projects">
+        <div id="project_4">
+          <h1>THROUGH<br/> THE LENSE</h1>
+          <ul>
+            <li>
+              <h2>DATE</h2>
+              <p>2016-2017</p>
+            </li>
+            <li>
+              <h2>CLIENT</h2>
+              <p>Personal and school projects</p>
+            </li>
+            <li>
+              <h2>ROLE</h2>
+              <p>Photography</p>
+            </li>
+          </ul>
+          <p class="description">I always had a soft spot for photography. This is a gallery of different school and personal photography projects. I have a special interest for architecture shots and playing with lights. I often post some photos on my <a class="p_hilight" href="https://www.instagram.com/chl.mchl/" target="_blank">instagram</a>.</p>
+          <a href="photography.html">
+            <button class="view_project"> VIEW PROJECT </button>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer>
+    designed with <img src="img/logo_chloe_michel_1A1945.svg" alt="logo chloe michel graphic designer">
+  </footer>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.fullpage.min.js"></script>
+  <script src="js/overlay.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/parallax.js"></script>
+</body>
+
+</html>
