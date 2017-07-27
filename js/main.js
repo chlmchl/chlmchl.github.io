@@ -1,13 +1,3 @@
-function translate() {
-  i18n.init(function(err, t) {
-    $("body").i18n({
-      lng: "en",
-      escapeInterpolation: false
-    });
-  });
-  console.log('lala1');
-};
-
 function fullpage() {
   $('#fullpage').fullpage({
     loopBottom: true,
@@ -58,7 +48,6 @@ function main() {
 };
 
 $(document).ready(function() {
-  translate();
   fullpage();
   parallax();
   main();
