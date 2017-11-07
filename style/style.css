@@ -1,8 +1,8 @@
 /*
 COLORS :
 
-orange ---- #FF6333
-blue ---- #1A1945
+orange ---- #FF3232
+blue ---- #0C0456
 white ---- #ffffff
 */
 
@@ -24,40 +24,75 @@ a {
 }
 
 ::selection {
-  color: #ff6333;
-  background-color: #1A1945;
+  color: #FF3232;
+  background-color: #0C0456;
 }
 
+
 body {
+background-color: #0c0456;
+background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
   /* gradient */
-  background-color: #1A1945;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#1A1945, #FF6333 900%);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#1A1945, #FF6333 900%);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#1A1945, #FF6333 900%);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#1A1945, #FF6333 900%);
-  /* Standard syntax */
+  
+}
+
+/*#border {
+  position: absolute;
+  z-index: 100000;
+  width: 97.7vw;
+  height: 95.7vh;
+  border: solid #ffffff 20px;
+}*/
+
+.bg {
+  animation:slide 4s ease-in-out infinite alternate;
+  background-image: linear-gradient(-10deg, #0C0456 55%, #FF3232 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.6;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:3s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
 
 #body_about {
   /* gradient */
-  background-color: #1A1945;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#1A1945, #FF6333 300%);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#1A1945, #FF6333 300%);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#1A1945, #FF6333 300%);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#1A1945, #FF6333 300%);
-  /* Standard syntax */
+  background-color: #0C0456;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
+
+/*  For browsers that do not support gradients 
+  background: -webkit-linear-gradient(#0C0456, #FF3232 300%);
+  /* For Safari 5.1 to 6.0 
+  background: -o-linear-gradient(#0C0456, #FF3232 300%);
+  /* For Opera 11.1 to 12.0 
+  background: -moz-linear-gradient(#0C0456, #FF3232 300%);
+  /* For Firefox 3.6 to 15 
+  background: linear-gradient(#0C0456, #FF3232 300%);
+  /* Standard syntax */*/
 }
 
 .p_hilight {
-  color: #FF6333;
+  color: #FF3232;
   font-weight: 700;
 }
 
@@ -79,20 +114,39 @@ HEADER
 header {
   position: fixed;
   width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
   z-index: 10;
+}
+
+header button p{
+  font-family: "Oswald";
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.1em;
+  font-weight: 700;
+  color: #0C0456;
 }
 
 #EN_FR {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: 40px;
+  right: 4vw;
 }
 
 #EN_FR li {
   display: inline-block;
   margin-left: 10px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
   font-family: "Oswald";
-  color: #ffffff;
+  font-size: 11px;
+  float: right;
+  text-align: right;
+  color: #0C0456;
   /* fin header */
 }
 
@@ -112,22 +166,6 @@ HOME + PROJECTS
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-#home img {
-/* ----------------------------
-
-LOGO PARALLAX HOME PAGE 
-
-------------------------------*/
-  position: absolute;
-  width: 60vw;
-  height: 60vh;
-  opacity: 0.8;
-  z-index: -2;
-  margin-left: 20vw;
-  margin-top: 15vh;
 }
 
 
@@ -159,28 +197,35 @@ CARACTERISTICS HOME PAGE
 }
 
 #home_box h1 {
-  margin-right: 42vw;
+  margin-right: 30vw;
   text-align: right;
-  color: #FF6333;
+  color: #0C0456;
+  opacity: 0.95;
   font-family: 'Oswald', sans-serif;
+  font-style: italic;
   font-weight: 700;
-  font-size: 75px;
-  line-height: 1.3em;
-  text-shadow: #1A1945 2px 5px 10px;
+  font-size: 100px;
+  line-height: 1.2em;
+  transform: rotate(-10deg);
+/*  text-shadow: #ff3232 -3px 0px 0px;
+*/
+
 }
 
 #home_box h1 span {
-  color: #ffffff;
-  font-size: 75px;
+  color: #0C0456;
+  opacity: 1;
+  font-size: 100px;
+
 }
 
 
 
 #home_box p {
-  width: 25vw;
+  width: 21vw;
   color: #ffffff;
   font-family: "Quattrocento", serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.4em;
   margin-left: 42vw;
   margin-top: -1.6em;
@@ -196,15 +241,15 @@ BUTTON VIEW ABOUT
 ------------------------------*/
   text-decoration: none;
   font-family: : "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff6333;
-  text-shadow: #1A1945 2px 5px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FF3232;
+  text-shadow: #0C0456 2px 5px 10px;
   text-align: left;
   position: absolute;
   width: 100px;
   height: 20px;
-  right: 4vw;
+  right: 1vw;
 }
 
 
@@ -216,7 +261,7 @@ BUTTON VIEW ABOUT
   left: 0;
   right: 100%;
   position: absolute;
-  background: #ff6333;
+  background: #FF3232;
   transition: right 0.3s ease 0s, left 0.3s ease 0s;
 }
 
@@ -227,44 +272,115 @@ BUTTON VIEW ABOUT
 
 
 
-.scroll_down {
-/* ----------------------------
-
- SCROLL DOWN  
-
-------------------------------*/
-  text-decoration: none;
-  font-family: : "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff6333;
-  text-shadow: #1A1945 2px 5px 10px;
-  text-align: right;
-  position: absolute;
-  width: 140px;
-  height: 20px;
-  bottom: 140px;
-  right: 46vw;
-  transform: rotate(-90deg);
+#mouse-scroll {
+  /* //
+   SCROLL BUTTON 
+   // */
+  style: block;
 }
-
-
-.scroll_down:after {
-  bottom: -10px;
-  content: "";
+#mouse-scroll {
+  position: fixed;
+  margin: auto;
+  left: 50%;
+  bottom: 8vh;
+  -webkit-transform: translateX(-50%);
+  z-index: 9999;
+}
+#mouse-scroll span{
   display: block;
-  height: 2px;
-  right: 0;
-  left: 100%;
-  position: absolute;
-  background: #ff6333;
-  transition: right 0.3s ease 0s, left 0.3s ease 0s;
+  width: 5px; 
+  height: 5px;
+  -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+       transform: rotate(45deg);
+       transform: rotate(45deg);
+  border-right: 2px solid #ff3232; 
+  border-bottom: 2px solid #ff3232;
+  margin: 0 0 3px 5px;
+}
+#mouse-scroll .mouse {
+  height: 21px;
+  width: 14px;
+  border-radius: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  border: 2px solid #ff3232;
+  top: 170px;
+}
+#mouse-scroll .down-arrow-1 {
+  margin-top: 6px;
+}
+#mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
+  -webkit-animation: mouse-scroll 1s infinite; 
+    -moz-animation: mouse-scroll 1s infinite:
+}
+#mouse-croll .down-arrow-1 {
+   -webkit-animation-delay: .1s; 
+   -moz-animation-delay: .1s;
+   -webkit-animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-2 {
+  -webkit-animation-delay: .2s; 
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-3 {
+   -webkit-animation-delay: .3s;
+   -moz-animation-dekay: .3s;
+   -webkit-animation-direction: alternate;
+}
+#mouse-scroll .mouse-in {
+  height: 5px;
+  width: 2px;
+  display: block; 
+  margin: 5px auto;
+  background: #ff3232;
+  position: relative;
+}
+#mouse-scroll .mouse-in {
+ -webkit-animation: animated-mouse 1.2s ease infinite;
+  moz-animation: mouse-animated 1.2s ease infinite;
 }
 
-.scroll_down:hover:after {
-  left: -100%;
-  right: 0;
+@-webkit-keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+     opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
 }
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+
+/* END SCROLL */}
+
 
 
 
@@ -286,20 +402,23 @@ BUTTON VIEW ABOUT
 #about #hey, #pigeon h1 {
   text-align: center;
   margin-top: 26vh;
-  color: #FF6333;
+  color: #FF3232;
   font-family: 'Oswald', sans-serif;
+  font-style: italic;
   letter-spacing: 3px;
-  font-weight: 500;
-  font-size: 120px;
-  line-height: 1em;
-  text-shadow: #1A1945 2px 5px 10px;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 1.15em;
+  text-shadow: #0C0456 2px 5px 10px;
+  transform: rotate(-10deg);
 }
 
 
 
 #about #hey span {
   color: #ffffff;
-  font-size: 80px;
+  font-size: 90px;
+  margin-right: 22px;
   letter-spacing: normal;
 }
 
@@ -313,16 +432,17 @@ PAGE ABOUT - BUTTON VIEW HOME
 ------------------------------*/
   text-decoration: none;
   font-family: : "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff6333;
-  text-shadow: #1A1945 2px 5px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FF3232;
+  text-shadow: #0C0456 2px 5px 10px;
   text-align: right;
   position: absolute;
   width: 100px;
   height: 20px;
   top: 50vh;
-  left: 1vw;
+  left: -1vw;
+  z-index: 10;
 }
 
 
@@ -334,7 +454,7 @@ PAGE ABOUT - BUTTON VIEW HOME
   right: 0;
   left: 100%;
   position: absolute;
-  background: #ff6333;
+  background: #FF3232;
   transition: right 0.3s ease 0s, left 0.3s ease 0s;
 }
 
@@ -373,13 +493,14 @@ article h2 {
   width: 5vw;
   margin-top: -0.35em;
   font-family: "Oswald", sans-serif;
-  color: #ff6333;
+  color: #FF3232;
   font-size: 18px;
 }
 
 article p {
   width: 21vw;
   margin-left: 7vw;
+  font-size: 15px;
   font-family: "quattrocento", serif;
   color: #ffffff;
 }
@@ -412,7 +533,7 @@ article p {
   left: 42%;
   right: 42%;
   position: absolute;
-  background: #ff6333;
+  background: #FF3232;
 }
 
 #send_me_pigeon {
@@ -426,7 +547,7 @@ article p {
 
 #send_me_pigeon li a {
   font-family: "Oswald", sans-serif;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 200;
   margin-top: 40px;
   color: #ffffff;
@@ -483,22 +604,22 @@ article p {
 
 
 .projects h1 {
-  color: #FF6333;
+  color: #FF3232;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 6vw;
-  line-height: 1.2em;
+  line-height: 1.15em;
   margin-left: 5vw;
-  text-shadow: #1A1945 2px 5px 10px;
+  text-shadow: #0C0456 2px 5px 10px;
 }
 
 .description {
-  width: 25vw;
+  width: 21vw;
   margin-left: 42vw;
   margin-top: -1.5em;
   color: #ffffff;
   font-family: "Quattrocento", serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.4em;
 }
 
@@ -540,8 +661,8 @@ article p {
   font-family: : "Oswald", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  color: #ff6333;
-  text-shadow: #1A1945 2px 5px 10px;
+  color: #FF3232;
+  text-shadow: #0C0456 2px 5px 10px;
 
   position: absolute;
   width: 150px;
@@ -575,7 +696,7 @@ article p {
   left: 30%;
   right: 30%;
   position: absolute;
-  background: #ff6333;
+  background: #FF3232;
   transition: right 0.3s ease 0s, left 0.3s ease 0s;
 }
 
@@ -617,6 +738,7 @@ article p {
 #project_3 h1 {
   font-size: 9vw;
   margin-left: 4.15vw;
+  line-height: 1em;
 }
 
 #project_3 .description {
@@ -626,6 +748,7 @@ article p {
 #project_4 h1 {
   font-size: 8.2vw;
   margin-left: 4.15vw;
+    line-height: 1em;
 }
 
 #project_2 img {
@@ -645,7 +768,7 @@ article p {
   position: absolute;
   display: block;
   list-style: none;*/
-  z-index: -1;
+  z-index: -10;
 }
 
 #layer2 {
@@ -913,9 +1036,10 @@ FOOTER
   width: 100%;
   z-index: 10;
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  color: #1A1945;
+  font-weight: 200;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  color: #FF3232;
   text-align: center;
   margin-top: -5vh;
 }

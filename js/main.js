@@ -12,10 +12,11 @@ function fullpage() {
 
 
 function parallax() {
-  var logo = $('#parallax').get(0);
+  var paris = $('#parallax_paris').get(0);
   var iphone = $('#parallax_0001').get(0);
   var svg = $('#svg_parallax').get(0);
-  var paris = $('#parallax_paris').get(0);
+
+  
 
   var construct = function(selector) {
     return new Parallax(selector, {
@@ -33,9 +34,7 @@ function parallax() {
       originY: 0.1,
     });
   };
-
   construct(paris);
-  construct(logo);
   construct(iphone);
   construct(svg);
 

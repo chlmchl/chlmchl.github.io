@@ -1,8 +1,8 @@
 /*
 COLORS :
 
-orange ---- #FF6333
-blue ---- #1A1945
+orange ---- #FF3232
+blue ---- #0C0456
 white ---- #ffffff
 */
 
@@ -13,7 +13,7 @@ ul {
 aside ul li a {
   text-decoration: none;
   position: relative;
-  color: #FF6333;
+  color: #FF3232;
   margin: 10px;
 }
 
@@ -26,7 +26,7 @@ ul .home_about_contact:after {
   height: 5px;
   left: 0;
   position: absolute;
-  background: #ff6333;
+  background: #FF3232;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -73,15 +73,15 @@ aside {
   top: 0;
   left: 0;
   /* gradient */
-  background-color: #1A1945;
+  background-color: #0C0456;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(200deg, #1A1945, #ff6333 580%);
+  background: -webkit-linear-gradient(200deg, #0C0456, #FF3232 400%);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(200deg, #1A1945, #ff6333 580%);
+  background: -o-linear-gradient(200deg, #0C0456, #FF3232 400%);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(200deg, #1A1945, #ff6333 580%);
+  background: -moz-linear-gradient(200deg, #0C0456, #FF3232 400%);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(200deg, #1A1945, #ff6333 580%);
+  background: linear-gradient(200deg, #0C0456, #FF3232 400%);
   /* Standard syntax */
   visibility: hidden;
   transition: all .5s ease;
