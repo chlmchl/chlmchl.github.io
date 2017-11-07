@@ -52,6 +52,15 @@ header {
   width: 75%;
 }
 
+.poule p span {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .poule h2:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
@@ -89,7 +98,60 @@ iframe {
   margin: 15px;
 }
 
-#roboto {
-  width: 90%;
+#typo_box img {
+  width: 100%;
   margin-bottom: 10px;
 }
+
+#color_box {
+  /* TYPO BOX*/
+  margin: auto;
+  padding: auto;
+  margin-top: 90px;
+  text-align: center;
+}
+
+#color_box h3 {
+  font-family: "oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+  margin: 15px;
+}
+
+
+.colorcircle{
+  /* COLORS */
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+  text-align: center;
+}
+
+#blue{
+  width: 120px;
+  height: 120px;
+  background-color: darkblue;
+  border-radius: 100%;
+
+}
+
+#white{
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 100%;
+
+}
+
+#red{
+  width: 120px;
+  height: 120px;
+  background-color: red;
+  border-radius: 100%;
+}
+
+
+
+
+

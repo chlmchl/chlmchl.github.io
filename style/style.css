@@ -32,13 +32,13 @@ body {
   /* gradient */
   background-color: #1A1945;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#1A1945, #FF6333 1000%);
+  background: -webkit-linear-gradient(#1A1945, #FF6333 900%);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#1A1945, #FF6333 1000%);
+  background: -o-linear-gradient(#1A1945, #FF6333 900%);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#1A1945, #FF6333 1000%);
+  background: -moz-linear-gradient(#1A1945, #FF6333 900%);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#1A1945, #FF6333 1000%);
+  background: linear-gradient(#1A1945, #FF6333 900%);
   /* Standard syntax */
 }
 
@@ -60,103 +60,6 @@ body {
   color: #FF6333;
   font-weight: 700;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -190,6 +93,7 @@ header {
   margin-left: 10px;
   font-family: "Oswald";
   color: #ffffff;
+  /* fin header */
 }
 
 
@@ -197,114 +101,13 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* fin header */
-
-
+#home, .projects {
 /* ----------------------------
 
 HOME + PROJECTS
 
 ------------------------------*/
-
-#home, .projects {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -312,114 +115,12 @@ HOME + PROJECTS
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#home img {
 /* ----------------------------
 
 LOGO PARALLAX HOME PAGE 
 
 ------------------------------*/
-
-#home img {
   position: absolute;
   width: 60vw;
   height: 60vh;
@@ -446,112 +147,12 @@ LOGO PARALLAX HOME PAGE
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#home_box {
 /* ----------------------------
 
 CARACTERISTICS HOME PAGE 
 
 ------------------------------*/
-
-#home_box {
   width: 80vw;
   height: 30vh;
   margin-top: -10vh;
@@ -582,118 +183,17 @@ CARACTERISTICS HOME PAGE
   font-size: 18px;
   line-height: 1.4em;
   margin-left: 42vw;
-  margin-top: -1.30em;
+  margin-top: -1.6em;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.view_about {
 
 /* ----------------------------
 
 BUTTON VIEW ABOUT 
 
 ------------------------------*/
-
-.view_about {
   text-decoration: none;
   font-family: : "Oswald", sans-serif;
   font-weight: 400;
@@ -727,113 +227,12 @@ BUTTON VIEW ABOUT
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.scroll_down {
 /* ----------------------------
 
  SCROLL DOWN  
 
 ------------------------------*/
-
-.scroll_down {
   text-decoration: none;
   font-family: : "Oswald", sans-serif;
   font-weight: 400;
@@ -870,112 +269,13 @@ BUTTON VIEW ABOUT
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#about {
 
 /* ----------------------------
 
  PAGE ABOUT 
 
 ------------------------------*/
-
-#about {
   width: 100vw;
   height: 100vh;
   display: table;
@@ -997,122 +297,6 @@ BUTTON VIEW ABOUT
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#about #hey:after {    
-  content: "";
-  display: block;
-  height: 4px;
-  left: 0;
-  right: 100%;
-  position: absolute;
-  background: #ffffff;
-  transition: right 0.3s ease 0s, left 0.3s ease 0s;
-}
-
-body:hover #about #hey:after { 
-  left: 0; 
-  right: 33%;
-}
-*/
-
 #about #hey span {
   color: #ffffff;
   font-size: 80px;
@@ -1121,113 +305,12 @@ body:hover #about #hey:after {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.view_home {
 /* ----------------------------
 
 PAGE ABOUT - BUTTON VIEW HOME
 
 ------------------------------*/
-
-.view_home {
   text-decoration: none;
   font-family: : "Oswald", sans-serif;
   font-weight: 400;
@@ -1261,114 +344,13 @@ PAGE ABOUT - BUTTON VIEW HOME
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#presentation {
 
 /* ----------------------------
 
  PAGE ABOUT - PRESENTATION
 
 ------------------------------*/
-
-#presentation {
   margin-top: 15vh;
   width: 74vw;
   margin-right: 14vw;
@@ -1413,111 +395,12 @@ article p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#pigeon h1 {
 /* ----------------------------
 
  PAGE ABOUT - CONTACT
 
 ------------------------------*/
-
-#pigeon h1 {
   font-size: 60px;
   line-height: 1.3em;
 }
@@ -1560,114 +443,13 @@ article p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.projects {
 /* ----------------------------
 
  PAGE PROJECTS 
 
 ------------------------------*/
-
-
 /*aspects généraux*/
-
-.projects {
   width: 100vw;
   position: relative;
   /*webkit-overflow-scrolling: touch;
@@ -1713,7 +495,7 @@ article p {
 .description {
   width: 25vw;
   margin-left: 42vw;
-  margin-top: -1.3em;
+  margin-top: -1.5em;
   color: #ffffff;
   font-family: "Quattrocento", serif;
   font-size: 18px;
@@ -1752,55 +534,6 @@ article p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .view_project {
   /* BUTTONS */
   text-decoration: none;
@@ -1811,7 +544,7 @@ article p {
   text-shadow: #1A1945 2px 5px 10px;
 
   position: absolute;
-  width: 140px;
+  width: 150px;
   height: 20px;
   right: 32vw;
   margin-top: 70px;
@@ -1921,66 +654,6 @@ article p {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-.desc {
-  position: absolute;
-  height: 1800px;
-  width: 70vw;
-  margin-left: 5vw;
-  margin-top: -100px;
-  padding-top: 350px;
-  z-index: 100;
-}
-
-.desc h2 {
-  font-family: "Oswald", sans-serif;
-  color: #ff6333;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-shadow: #1A1945 2px 5px 10px;
-  line-height: 2em;
-
-  margin-left: 100px;
-
-
-  }
-
-.desc p {
-  margin-left: 200px;
-  width: 50vw;
-  font-family: "quattrocento", serif;
-  color: #ffffff;
-  font-size: 18px;
-  }*/
 
 #svg_parallax {
   width: 100vw;
@@ -2229,117 +902,19 @@ line {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer {
 
 /* ----------------------------
 
 FOOTER
 
 ------------------------------*/
-
-footer {
   position: absolute;
   width: 100%;
   z-index: 10;
   font-family: "Oswald", sans-serif;
-  font-weight: 200;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 12px;
   color: #1A1945;
   text-align: center;
   margin-top: -5vh;
