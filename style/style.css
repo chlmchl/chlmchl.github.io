@@ -17,10 +17,33 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
+li a{
+  text-decoration: none;
+  color: #0C0456;
+}
+
+
 
 * {
   margin: 0;
   padding: 0;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: none;
+  background: transparent;
+  transition: all .5s ease;
+  outline: none;
+  cursor: pointer;
+  transform-origin: center;
 }
 
 ::selection {
@@ -31,8 +54,8 @@ a {
 
 body {
 background-color: #0c0456;
-background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
-  /* gradient */
+/*background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
+*/  /* gradient */
   
 }
 
@@ -65,6 +88,26 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-tire.pn
   animation-duration:5s;
 }
 
+.bg4 {
+  animation:slide 4s ease-in-out infinite alternate;
+  background-image: linear-gradient(-10deg, #FF3232 50%, #0C0456 50%);
+  bottom:-800px;
+  left:-50%;
+  opacity:.4;
+  position:absolute;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg5 {
+  animation-direction:alternate-reverse;
+  animation-duration:3s;
+}
+
+.bg6 {
+  animation-duration:5s;
+}
 
 @keyframes slide {
   0% {
@@ -78,7 +121,6 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-tire.pn
 #body_about {
   /* gradient */
   background-color: #0C0456;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
 
 /*  For browsers that do not support gradients 
   background: -webkit-linear-gradient(#0C0456, #FF3232 300%);
@@ -96,7 +138,9 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-tire.pn
   font-weight: 700;
 }
 
-
+.section {
+  background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");  
+}
 
 
 
@@ -151,7 +195,45 @@ header button p{
 }
 
 
+.navigation {
 
+/* ----------------------------
+
+NAV
+
+------------------------------*/
+  position: fixed;
+  display: block;
+  z-index: 10;
+  width: 100px;
+  height: 20px;
+  right: 40px;
+  transform-origin: center;
+  top: 40%;
+}
+
+.navigation li button{
+  font-family: : "Oswald", sans-serif;
+  color: #FF3232;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: right;
+  width: 110px;
+  height: 3em;
+  padding: 5px;
+  margin:0;
+  transform: rotate(-10deg);
+  opacity: .9;
+
+}
+
+.navigation li button:hover {
+  height: 5em;
+  opacity: 1;
+  margin-left: -30px;
+/*  transform: translate(-5px, -5px);*/
+  }
 
 
 
@@ -200,7 +282,7 @@ CARACTERISTICS HOME PAGE
   margin-right: 30vw;
   text-align: right;
   color: #0C0456;
-  opacity: 0.95;
+  opacity: .9;
   font-family: 'Oswald', sans-serif;
   font-style: italic;
   font-weight: 700;
@@ -224,6 +306,7 @@ CARACTERISTICS HOME PAGE
 #home_box p {
   width: 21vw;
   color: #ffffff;
+  opacity: 0.8;
   font-family: "Quattrocento", serif;
   font-size: 15px;
   line-height: 1.4em;
@@ -232,45 +315,7 @@ CARACTERISTICS HOME PAGE
 }
 
 
-.view_about {
-
-/* ----------------------------
-
-BUTTON VIEW ABOUT 
-
-------------------------------*/
-  text-decoration: none;
-  font-family: : "Oswald", sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  color: #FF3232;
-  text-shadow: #0C0456 2px 5px 10px;
-  text-align: left;
-  position: absolute;
-  width: 100px;
-  height: 20px;
-  right: 1vw;
-}
-
-
-.view_about:after {
-  bottom: -10px;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 0;
-  right: 100%;
-  position: absolute;
-  background: #FF3232;
-  transition: right 0.3s ease 0s, left 0.3s ease 0s;
-}
-
-.view_about:hover:after {
-  left: 0;
-  right: -100%;
-}
-
-
+/* SCROLL MOUSE */
 
 #mouse-scroll {
   /* //
@@ -384,243 +429,35 @@ BUTTON VIEW ABOUT
 
 
 
-
-#about {
-
-/* ----------------------------
-
- PAGE ABOUT 
-
-------------------------------*/
-  width: 100vw;
-  height: 100vh;
-  display: table;
-  /*  justify-content: center;
-*/
-}
-
-#about #hey, #pigeon h1 {
-  text-align: center;
-  margin-top: 26vh;
-  color: #FF3232;
-  font-family: 'Oswald', sans-serif;
-  font-style: italic;
-  letter-spacing: 3px;
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 1.15em;
-  text-shadow: #0C0456 2px 5px 10px;
-  transform: rotate(-10deg);
-}
-
-
-
-#about #hey span {
-  color: #ffffff;
-  font-size: 90px;
-  margin-right: 22px;
-  letter-spacing: normal;
-}
-
-
-
-.view_home {
-/* ----------------------------
-
-PAGE ABOUT - BUTTON VIEW HOME
-
-------------------------------*/
-  text-decoration: none;
-  font-family: : "Oswald", sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  color: #FF3232;
-  text-shadow: #0C0456 2px 5px 10px;
-  text-align: right;
-  position: absolute;
-  width: 100px;
-  height: 20px;
-  top: 50vh;
-  left: -1vw;
-  z-index: 10;
-}
-
-
-.view_home:after {
-  bottom: -10px;
-  content: "";
-  display: block;
-  height: 2px;
-  right: 0;
-  left: 100%;
-  position: absolute;
-  background: #FF3232;
-  transition: right 0.3s ease 0s, left 0.3s ease 0s;
-}
-
-.view_home:hover:after {
-  right: 0;
-  left: -100%;
-}
-
-
-#presentation {
-
-/* ----------------------------
-
- PAGE ABOUT - PRESENTATION
-
-------------------------------*/
-  margin-top: 15vh;
-  width: 74vw;
-  margin-right: 14vw;
-  margin-left: 14vw;
-}
-
-.row {
-  margin-top: 5vh;
-  display: flex;
-}
-
-article {
-  display: inline-block;
-  width: 31vw;
-  margin: 2vw;
-}
-
-article h2 {
-  position: absolute;
-  width: 5vw;
-  margin-top: -0.35em;
-  font-family: "Oswald", sans-serif;
-  color: #FF3232;
-  font-size: 18px;
-}
-
-article p {
-  width: 21vw;
-  margin-left: 7vw;
-  font-size: 15px;
-  font-family: "quattrocento", serif;
-  color: #ffffff;
-}
-
-#pigeon {
-  margin-top: 15vh;
-  width: 78vw;
-  height: 50vh;
-  margin-right: 11vw;
-  margin-left: 11vw;
-}
-
-
-
-
-#pigeon h1 {
-/* ----------------------------
-
- PAGE ABOUT - CONTACT
-
-------------------------------*/
-  font-size: 60px;
-  line-height: 1.3em;
-}
-
-#pigeon h1:after {
-  content: "";
-  display: block;
-  height: 4px;
-  left: 42%;
-  right: 42%;
-  position: absolute;
-  background: #FF3232;
-}
-
-#send_me_pigeon {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin-top: 50px;
-}
-
-#send_me_pigeon li a {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-  margin-top: 40px;
-  color: #ffffff;
-  margin: 40px;
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-#send_me_pigeon li a:hover {
-  opacity: 1;
-}
-
-
-
-
-
-.projects {
 /* ----------------------------
 
  PAGE PROJECTS 
 
 ------------------------------*/
-/*aspects généraux*/
-  width: 100vw;
-  position: relative;
-  /*webkit-overflow-scrolling: touch;
-*/
-}
-
-#project_1 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -28vh;
-}
-
-#project_2 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -20vh;
-}
-
-#project_3 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -28vh;
-}
-
-
-#project_4 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -25vh;
-}
-
-
 .projects h1 {
   color: #FF3232;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 6vw;
+  font-style: italic;
+  font-size: 110px;
   line-height: 1.15em;
-  margin-left: 5vw;
-  text-shadow: #0C0456 2px 5px 10px;
+  text-shadow: #0C0456 2px 2px 6px;
+  transform: rotate(-10deg);
+  text-align: right;
+  padding-right: 40%;
 }
 
 .description {
   width: 21vw;
-  margin-left: 42vw;
-  margin-top: -1.5em;
   color: #ffffff;
+  opacity: 0.8;
   font-family: "Quattrocento", serif;
   font-size: 15px;
   line-height: 1.4em;
+  margin-left: 42vw;
+  margin-top: -1.6em;
+  z-index: 40;
+
 }
 
 
@@ -628,81 +465,55 @@ article p {
 .projects ul {
   /* lists */
   position: absolute;
-  margin-left: 5.15vw;
-  margin-top: 25px;
-  display: flex;
+  left: 40px;
+  top: 40%;
 }
 
 .projects li {
-  display: inline-block;
   width: 6vw;
   min-width: 40px;
-  margin-right: 4vw;
+  margin-right: 3vw;
+  font-style: italic;
+  margin-bottom: 30px;
+
 }
 
 .projects li h2 {
-  color: #ffffff;
+  color: #ff3232;
   font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 15px;
+    transform: rotate(-10deg);
+
 }
 
 .projects li p {
-  color: #ffffff;
+  color: #fF3232;
   font-family: "Oswald", sans-serif;
   font-weight: 200;
+  font-size: 13px;
+  transform: rotate(-10deg);
+
 }
 
+/*projet 1 */
 
-
-.view_project {
-  /* BUTTONS */
-  text-decoration: none;
-  font-family: : "Oswald", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #FF3232;
-  text-shadow: #0C0456 2px 5px 10px;
-
-  position: absolute;
-  width: 150px;
-  height: 20px;
-  right: 32vw;
-  margin-top: 70px;
-  opacity: 0;
+#project_1 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -28vh;
 }
 
-
-
-.projects:hover .view_project {
-  animation: appear 1s forwards;
+#project_1 .description{
+  margin-top: 20px;
 }
 
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.view_project:after {
-  bottom: -10px;
-  content: "";
-  display: block;
-  height: 3px;
-  left: 30%;
-  right: 30%;
-  position: absolute;
-  background: #FF3232;
-  transition: right 0.3s ease 0s, left 0.3s ease 0s;
-}
-
-.view_project:hover:after {
-  left: 0;
-  right: 0;
+#parallax_paris img {
+  width: 45%;
+  height: 45%;
+  opacity: 0.9;
+  margin-top: -250px;
+  margin-left: -100px;
 }
 
 #parallax_paris {
@@ -715,52 +526,45 @@ article p {
   justify-content: center;
 }
 
-#parallax_paris img {
-  width: 45%;
-  height: 45%;
-  opacity: 0.9;
-  margin-top: -250px;
-  margin-left: -100px;
+ /* projet 2 */
+
+#project_2 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -20vh;
 }
 
-
-#project_2 h1 {
-  /* PROJECT 2 - 0001 */
-  font-size: 16vw;
-  margin-left: 4.15vw;
+#project_2 .description{
+  margin-top: 30px;
 }
 
-#project_2 .description {
-  margin-top: -3em;
-}
+/*  projet 3*/
 
+#project_3 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -25vh;
+}
 
 #project_3 h1 {
-  font-size: 9vw;
+  /* PROJECT 3 - 0001 */
+  font-size: 250px;
   margin-left: 4.15vw;
-  line-height: 1em;
 }
 
-#project_3 .description {
-  margin-top: -2em;
+#project_3 .description{
+  margin-top: 50px;
 }
 
-#project_4 h1 {
-  font-size: 8.2vw;
-  margin-left: 4.15vw;
-    line-height: 1em;
-}
-
-#project_2 img {
+#project_3 img {
   width: 600px;
   position: absolute;
-  z-index: -10;
-  opacity: 0.9;
+  z-index: -5;
+  opacity: 0.8;
   margin-left: 25vw;
-  margin-top: -10vh;
-  transform: rotate(18deg);
+  margin-top: -20vh;
+  transform: rotate(10deg);
 }
-
 
 #parallax_0001 {
   /*  width: 100%;
@@ -775,8 +579,27 @@ article p {
   transform: rotate(15deg);
   position: absolute;
   display: block;
+  z-index: -10;
 }
 
+
+/* projet 4 */
+
+#project_4 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -28vh;
+}
+
+#project_4 .description{
+  margin-top: 15px;
+}
+
+#project_4 h1 {
+  margin-left: 4.15vw;
+  font-size: 150px;
+  line-height: 1em;
+}
 
 #svg_parallax {
   width: 100vw;
@@ -1023,6 +846,64 @@ line {
     opacity: 0;
   }
 }
+
+
+/* projet 5 */
+
+#project_5 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -25vh;
+}
+
+#project_5 h1 {
+  font-size: 150px;
+  margin-left: 4.15vw;
+  line-height: 1em;
+}
+
+#project_5 .description{
+  margin-top: 15px;
+}
+
+
+
+
+
+.view_project {
+  /* BUTTONS */
+  text-decoration: none;
+  font-family: : "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FF3232;
+  text-shadow: #0C0456 2px 5px 10px;
+
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  right: 34vw;
+  margin-top: 70px;
+  opacity: 1;
+}
+
+.view_project:after {
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 30%;
+  right: 30%;
+  position: absolute;
+  background: #FF3232;
+  transition: right 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.view_project:hover:after {
+  left: 0;
+  right: 0;
+}
+
 
 
 footer {
