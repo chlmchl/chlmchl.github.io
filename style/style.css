@@ -166,13 +166,26 @@ header {
 
 header button p{
   font-family: "Oswald";
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   text-align: left;
   letter-spacing: 1px;
   line-height: 1.1em;
   font-weight: 700;
   color: #0C0456;
+  transition: color .3s ease-in-out;
+  opacity: .9;
+  transition: opacity .2s ease-in-out;
+
+}
+
+header button p:hover {
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+header button a p.orange {
+  color: #FF3232;
 }
 
 #EN_FR {
@@ -191,7 +204,29 @@ header button p{
   float: right;
   text-align: right;
   color: #0C0456;
+  opacity: 0.8;
+  transition: opacity .5s ease-in-out;
+
+
   /* fin header */
+}
+
+#EN_FR ul li a {
+  transition: color .1s ease-in-out;
+  color: #0C0456;
+
+}
+
+#EN_FR ul li:hover {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+
+}
+
+#EN_FR ul li a.orange {
+  transition: color 1s ease-in-out;
+  color: #FF3232;
+
 }
 
 
@@ -450,7 +485,7 @@ CARACTERISTICS HOME PAGE
 .description {
   width: 21vw;
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.9;
   font-family: "Quattrocento", serif;
   font-size: 15px;
   line-height: 1.4em;
@@ -470,10 +505,11 @@ CARACTERISTICS HOME PAGE
 }
 
 .projects li {
-  width: 6vw;
+  width: 7vw;
   min-width: 40px;
   margin-right: 3vw;
   font-style: italic;
+  letter-spacing: .8px;
   margin-bottom: 30px;
 
 }
@@ -488,11 +524,13 @@ CARACTERISTICS HOME PAGE
 }
 
 .projects li p {
-  color: #fF3232;
+  color: #ffffff;
+  letter-spacing: 1px;
   font-family: "Oswald", sans-serif;
   font-weight: 200;
   font-size: 13px;
   transform: rotate(-10deg);
+  opacity: .9;
 
 }
 
@@ -592,7 +630,7 @@ CARACTERISTICS HOME PAGE
 }
 
 #project_4 .description{
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 #project_4 h1 {
@@ -914,15 +952,16 @@ FOOTER
 
 ------------------------------*/
   position: absolute;
-  width: 100%;
+  text-align: right;
   z-index: 10;
   font-family: "Oswald", sans-serif;
-  font-weight: 200;
-  font-size: 11px;
-  letter-spacing: 1.2px;
-  color: #FF3232;
-  text-align: center;
-  margin-top: -5vh;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #0C0456;
+  right: 40px;
+  bottom: 40px;
+  opacity: .7;
 }
 
 footer img {

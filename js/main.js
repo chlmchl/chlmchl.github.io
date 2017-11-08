@@ -7,6 +7,21 @@ function fullpage() {
     lazyloading: true,
     recordHistory: true,
     anchors: ['hello', 'cip', 'bodydouble', '0001', 'processing', 'photography'],
+    onLeave: function(index, nextIndex) {
+      if (index === 1) {
+        $('header button a p').first().addClass('orange');
+        $('#EN_FR ul li a').addClass('orange');
+      }
+      if (nextIndex === 1) {
+        $('header button a p').first().removeClass('orange');
+        $('#EN_FR ul li a').removeClass('orange');
+      }
+      if (nextIndex === 6) {
+        $('footer.footer').show();
+      } else {
+        $('footer.footer').hide();
+      }
+    }
   });
 };
 
@@ -47,6 +62,7 @@ function main() {
 };
 
 $(document).ready(function() {
+  console.log('lolo');
   fullpage();
   // parallax();
   main();
