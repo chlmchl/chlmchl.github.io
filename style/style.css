@@ -1,0 +1,931 @@
+/*
+COLORS :
+
+orange ---- #FF3232
+blue ---- #0C0456
+white ---- #ffffff
+*/
+
+
+/* -------------------------
+
+GENERAL 
+
+---------------------------- */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a{
+  text-decoration: none;
+  color: #0C0456;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: none;
+  background: transparent;
+  transition: all .5s ease;
+  outline: none;
+  cursor: pointer;
+  transform-origin: center;
+}
+
+::selection {
+  color: #FF3232;
+  background-color: #0C0456;
+}
+
+
+body {
+background-color: #0c0456;
+/*background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
+*/  /* gradient */
+  
+}
+
+/*#border {
+  position: absolute;
+  z-index: 100000;
+  width: 97.7vw;
+  height: 95.7vh;
+  border: solid #ffffff 20px;
+}*/
+
+.bg {
+  animation:slide 4s ease-in-out infinite alternate;
+  background-image: linear-gradient(-10deg, #0C0456 55%, #FF3232 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.6;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:3s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.bg4 {
+  animation:slide 4s ease-in-out infinite alternate;
+  background-image: linear-gradient(-10deg, #FF3232 50%, #0C0456 50%);
+  bottom:-800px;
+  left:-50%;
+  opacity:.4;
+  position:absolute;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg5 {
+  animation-direction:alternate-reverse;
+  animation-duration:3s;
+}
+
+.bg6 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+#body_about {
+  /* gradient */
+  background-color: #0C0456;
+
+/*  For browsers that do not support gradients 
+  background: -webkit-linear-gradient(#0C0456, #FF3232 300%);
+  /* For Safari 5.1 to 6.0 
+  background: -o-linear-gradient(#0C0456, #FF3232 300%);
+  /* For Opera 11.1 to 12.0 
+  background: -moz-linear-gradient(#0C0456, #FF3232 300%);
+  /* For Firefox 3.6 to 15 
+  background: linear-gradient(#0C0456, #FF3232 300%);
+  /* Standard syntax */*/
+}
+
+.p_hilight {
+  color: #FF3232;
+  font-weight: 700;
+}
+
+.section {
+  background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");  
+}
+
+
+
+/*a {
+  text-decoration: none;
+}*/
+
+
+/* ----------------------------
+
+HEADER 
+
+------------------------------*/
+
+header {
+  position: fixed;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  z-index: 10;
+}
+
+header button p{
+  font-family: "Oswald";
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.1em;
+  font-weight: 700;
+  color: #0C0456;
+}
+
+#EN_FR {
+  position: absolute;
+  top: 40px;
+  right: 4vw;
+}
+
+#EN_FR li {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  font-family: "Oswald";
+  font-size: 11px;
+  float: right;
+  text-align: right;
+  color: #0C0456;
+  /* fin header */
+}
+
+
+.navigation {
+
+/* ----------------------------
+
+NAV
+
+------------------------------*/
+  position: fixed;
+  display: block;
+  z-index: 10;
+  width: 100px;
+  height: 20px;
+  right: 40px;
+  transform-origin: center;
+  top: 40%;
+}
+
+.navigation li button{
+  font-family: : "Oswald", sans-serif;
+  color: #FF3232;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: right;
+  width: 110px;
+  height: 3em;
+  padding: 5px;
+  margin:0;
+  transform: rotate(-10deg);
+  opacity: .9;
+
+}
+
+.navigation li button:hover {
+  height: 5em;
+  opacity: 1;
+  margin-left: -30px;
+/*  transform: translate(-5px, -5px);*/
+  }
+
+
+
+#home, .projects {
+/* ----------------------------
+
+HOME + PROJECTS
+
+------------------------------*/
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#parallax {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  list-style: none;
+  z-index: -10;
+}
+
+#layer {
+  position: absolute;
+  display: block;
+}
+
+
+
+#home_box {
+/* ----------------------------
+
+CARACTERISTICS HOME PAGE 
+
+------------------------------*/
+  width: 80vw;
+  height: 30vh;
+  margin-top: -10vh;
+}
+
+#home_box h1 {
+  margin-right: 30vw;
+  text-align: right;
+  color: #0C0456;
+  opacity: .9;
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.2em;
+  transform: rotate(-10deg);
+/*  text-shadow: #ff3232 -3px 0px 0px;
+*/
+
+}
+
+#home_box h1 span {
+  color: #0C0456;
+  opacity: 1;
+  font-size: 100px;
+
+}
+
+
+
+#home_box p {
+  width: 21vw;
+  color: #ffffff;
+  opacity: 0.8;
+  font-family: "Quattrocento", serif;
+  font-size: 15px;
+  line-height: 1.4em;
+  margin-left: 42vw;
+  margin-top: -1.6em;
+}
+
+
+/* SCROLL MOUSE */
+
+#mouse-scroll {
+  /* //
+   SCROLL BUTTON 
+   // */
+  style: block;
+}
+#mouse-scroll {
+  position: fixed;
+  margin: auto;
+  left: 50%;
+  bottom: 8vh;
+  -webkit-transform: translateX(-50%);
+  z-index: 9999;
+}
+#mouse-scroll span{
+  display: block;
+  width: 5px; 
+  height: 5px;
+  -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+       transform: rotate(45deg);
+       transform: rotate(45deg);
+  border-right: 2px solid #ff3232; 
+  border-bottom: 2px solid #ff3232;
+  margin: 0 0 3px 5px;
+}
+#mouse-scroll .mouse {
+  height: 21px;
+  width: 14px;
+  border-radius: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  border: 2px solid #ff3232;
+  top: 170px;
+}
+#mouse-scroll .down-arrow-1 {
+  margin-top: 6px;
+}
+#mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
+  -webkit-animation: mouse-scroll 1s infinite; 
+    -moz-animation: mouse-scroll 1s infinite:
+}
+#mouse-croll .down-arrow-1 {
+   -webkit-animation-delay: .1s; 
+   -moz-animation-delay: .1s;
+   -webkit-animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-2 {
+  -webkit-animation-delay: .2s; 
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-3 {
+   -webkit-animation-delay: .3s;
+   -moz-animation-dekay: .3s;
+   -webkit-animation-direction: alternate;
+}
+#mouse-scroll .mouse-in {
+  height: 5px;
+  width: 2px;
+  display: block; 
+  margin: 5px auto;
+  background: #ff3232;
+  position: relative;
+}
+#mouse-scroll .mouse-in {
+ -webkit-animation: animated-mouse 1.2s ease infinite;
+  moz-animation: mouse-animated 1.2s ease infinite;
+}
+
+@-webkit-keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+     opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+
+/* END SCROLL */}
+
+
+
+
+/* ----------------------------
+
+ PAGE PROJECTS 
+
+------------------------------*/
+.projects h1 {
+  color: #FF3232;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 110px;
+  line-height: 1.15em;
+  text-shadow: #0C0456 2px 2px 6px;
+  transform: rotate(-10deg);
+  text-align: right;
+  padding-right: 40%;
+}
+
+.description {
+  width: 21vw;
+  color: #ffffff;
+  opacity: 0.8;
+  font-family: "Quattrocento", serif;
+  font-size: 15px;
+  line-height: 1.4em;
+  margin-left: 42vw;
+  margin-top: -1.6em;
+  z-index: 40;
+
+}
+
+
+
+.projects ul {
+  /* lists */
+  position: absolute;
+  left: 40px;
+  top: 40%;
+}
+
+.projects li {
+  width: 6vw;
+  min-width: 40px;
+  margin-right: 3vw;
+  font-style: italic;
+  margin-bottom: 30px;
+
+}
+
+.projects li h2 {
+  color: #ff3232;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+    transform: rotate(-10deg);
+
+}
+
+.projects li p {
+  color: #fF3232;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  transform: rotate(-10deg);
+
+}
+
+/*projet 1 */
+
+#project_1 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -28vh;
+}
+
+#project_1 .description{
+  margin-top: 20px;
+}
+
+#parallax_paris img {
+  width: 45%;
+  height: 45%;
+  opacity: 0.9;
+  margin-top: -250px;
+  margin-left: -100px;
+}
+
+#parallax_paris {
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ /* projet 2 */
+
+#project_2 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -20vh;
+}
+
+#project_2 .description{
+  margin-top: 30px;
+}
+
+/*  projet 3*/
+
+#project_3 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -25vh;
+}
+
+#project_3 h1 {
+  /* PROJECT 3 - 0001 */
+  font-size: 250px;
+  margin-left: 4.15vw;
+}
+
+#project_3 .description{
+  margin-top: 50px;
+}
+
+#project_3 img {
+  width: 600px;
+  position: absolute;
+  z-index: -5;
+  opacity: 0.8;
+  margin-left: 25vw;
+  margin-top: -20vh;
+  transform: rotate(10deg);
+}
+
+#parallax_0001 {
+  /*  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  list-style: none;*/
+  z-index: -10;
+}
+
+#layer2 {
+  transform: rotate(15deg);
+  position: absolute;
+  display: block;
+  z-index: -10;
+}
+
+
+/* projet 4 */
+
+#project_4 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -28vh;
+}
+
+#project_4 .description{
+  margin-top: 15px;
+}
+
+#project_4 h1 {
+  margin-left: 4.15vw;
+  font-size: 150px;
+  line-height: 1em;
+}
+
+#svg_parallax {
+  width: 100vw;
+  height: 100vh;
+  z-index: -20;
+  position: absolute;
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+svg .st0 {
+  animation: appear 3.9s forwards;
+  stroke: white;
+}
+
+svg .st1 {
+  animation: appear 2.2s 4.5s forwards;
+  stroke: white;
+}
+
+svg .st2 {
+  animation: appear 2s 4s forwards;
+  stroke: white;
+}
+
+svg .st3 {
+  animation: appear 2s 5s forwards;
+  stroke: white;
+}
+
+svg .st4 {
+  animation: appear 3s 5.6s forwards;
+  stroke: white;
+}
+
+svg .st4 {
+  animation: appear 3.3s 7s forwards;
+  stroke: white;
+}
+
+svg .st5 {
+  animation: appear 3s 10s forwards;
+  stroke: white;
+}
+
+svg .st6 {
+  animation: appear 2.9s forwards;
+  stroke: white;
+}
+
+svg .st7 {
+  animation: appear 2.2s 7s forwards;
+  stroke: white;
+}
+
+svg .st8 {
+  animation: appear 2s 8s forwards;
+  stroke: white;
+}
+
+svg .st9 {
+  animation: appear 2s 10s forwards;
+  stroke: white;
+}
+
+svg .st10 {
+  animation: appear 2s 2.1s forwards;
+  stroke: white;
+}
+
+svg .st11 {
+  animation: appear 3.3s 4.3s forwards;
+  stroke: white;
+}
+
+svg .st12 {
+  animation: appear 1s 14s forwards;
+  stroke: white;
+}
+
+svg .st13 {
+  animation: appear 0.5s 14.1s forwards;
+  stroke: white;
+}
+
+svg .st14 {
+  animation: appear 1.3s 3.3s forwards;
+  stroke: white;
+}
+
+svg .st15 {
+  animation: appear 1s 7s forwards;
+  stroke: white;
+}
+
+svg .st16 {
+  animation: appear 1.3s 4s forwards;
+  stroke: white;
+}
+
+svg .st17 {
+  animation: appear 1s 9s forwards;
+  stroke: white;
+}
+
+svg .st18 {
+  animation: appear 1.3s 13.3s forwards;
+  stroke: white;
+}
+
+svg .st19 {
+  animation: appear 1s 2s forwards;
+  stroke: white;
+}
+
+svg .st20 {
+  animation: appear 1.3s 12.1s forwards;
+  stroke: white;
+}
+
+svg .st21 {
+  animation: appear 1.4s 13.8s forwards;
+  stroke: white;
+}
+
+svg .st22 {
+  animation: appear 1s 7s forwards;
+  stroke: white;
+}
+
+svg .st23 {
+  animation: appear 1.3s 3.3s forwards;
+  stroke: white;
+}
+
+svg .st24 {
+  animation: appear 1s 5s forwards;
+  stroke: white;
+}
+
+svg .st25 {
+  animation: appear 1.3s 13.3s forwards;
+  stroke: white;
+}
+
+svg .st26 {
+  animation: appear 2s 3.1s forwards;
+  stroke: white;
+}
+
+svg .st27 {
+  animation: appear 3.3s 4.3s forwards;
+  stroke: white;
+}
+
+svg .st28 {
+  animation: appear 1s 7s forwards;
+  stroke: white;
+}
+
+svg .st29 {
+  animation: appear 1.3s 8.3s forwards;
+  stroke: white;
+}
+
+svg .st30 {
+  animation: appear 1s 20s forwards;
+  stroke: white;
+}
+
+svg .st31 {
+  animation: appear 1.3s 4.3s forwards;
+  stroke: white;
+}
+
+svg .st32 {
+  animation: appear 1s 20s forwards;
+  stroke: white;
+}
+
+svg .st33 {
+  animation: appear 1.3s 13.3s forwards;
+  stroke: white;
+}
+
+svg .st34 {
+  animation: appear 1s 2s forwards;
+  stroke: white;
+}
+
+svg .st35 {
+  animation: appear 1.3s 9.1s forwards;
+  stroke: white;
+}
+
+svg .st36 {
+  animation: appear 1.4s 3.8s forwards;
+  stroke: white;
+}
+
+svg .st37 {
+  animation: appear 1s 22s forwards;
+  stroke: white;
+}
+
+svg .st38 {
+  animation: appear 1.3s 10.3s forwards;
+  stroke: white;
+}
+
+svg .st39 {
+  animation: appear 1s 20s forwards;
+  stroke: white;
+}
+
+svg .st40 {
+  animation: appear 1.3s 4.3s forwards;
+  stroke: white;
+}
+
+svg .st41 {
+  animation: appear 2s 10.1s forwards;
+  stroke: white;
+}
+
+
+line {
+  opacity: 0
+}
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* projet 5 */
+
+#project_5 {
+  width: 80vw;
+  height: 30vh;
+  margin-top: -25vh;
+}
+
+#project_5 h1 {
+  font-size: 150px;
+  margin-left: 4.15vw;
+  line-height: 1em;
+}
+
+#project_5 .description{
+  margin-top: 15px;
+}
+
+
+
+
+
+.view_project {
+  /* BUTTONS */
+  text-decoration: none;
+  font-family: : "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FF3232;
+  text-shadow: #0C0456 2px 5px 10px;
+
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  right: 34vw;
+  margin-top: 70px;
+  opacity: 1;
+}
+
+.view_project:after {
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 30%;
+  right: 30%;
+  position: absolute;
+  background: #FF3232;
+  transition: right 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.view_project:hover:after {
+  left: 0;
+  right: 0;
+}
+
+
+
+footer {
+
+/* ----------------------------
+
+FOOTER
+
+------------------------------*/
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  color: #FF3232;
+  text-align: center;
+  margin-top: -5vh;
+}
+
+footer img {
+  width: 15px;
+  height: 15px;
+}

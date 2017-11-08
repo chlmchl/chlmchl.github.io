@@ -1,0 +1,157 @@
+body:hover .projects ul {
+  transform: translate(75%, 90%);
+  transition: all 800ms ease-in-out;
+}
+
+#close {
+  position: fixed;
+  outline: none;
+  border-radius: 100%;
+  border: solid 2px white;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  transform-origin: center;
+  margin-left: 50%;
+  cursor: pointer;
+  z-index: 19;
+}
+
+#close:hover {
+  color: #ff6333;
+  border: solid 2px #ff6333;
+}
+
+header {
+  position: fixed;
+}
+
+
+.poule {
+  width: 70vw;
+  margin-left: 15vw;
+  margin-bottom: 200px;
+}
+
+.poule h2 {
+  font-family: "oswald", sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #ff6333;
+  text-shadow: #1A1945 2px 5px 10px;
+  margin: 40px;
+  margin-bottom: 60px;
+}
+
+.poule p {
+  color: #ffffff;
+  font-family: "Quattrocento", serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  margin: auto;
+  width: 75%;
+}
+
+.poule p span {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.poule h2:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 3px;
+  background: linear-gradient(to left, transparent, #FF6333 10%);
+  /* Standard syntax */
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 5%;
+}
+
+.poule:hover h2:after {
+  width: 90%;
+  left: 0;
+}
+
+iframe {
+  margin-left: 6vw;
+}
+
+#typo_box {
+  /* TYPO BOX*/
+  width: 70%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-top: 90px;
+}
+
+#typo_box h3 {
+  font-family: "oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+  margin: 15px;
+}
+
+#typo_box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#color_box {
+  /* TYPO BOX*/
+  margin: auto;
+  padding: auto;
+  margin-top: 90px;
+  text-align: center;
+}
+
+#color_box h3 {
+  font-family: "oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+  margin: 15px;
+}
+
+
+.colorcircle{
+  /* COLORS */
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+  text-align: center;
+}
+
+#blue{
+  width: 120px;
+  height: 120px;
+  background-color: darkblue;
+  border-radius: 100%;
+
+}
+
+#white{
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 100%;
+
+}
+
+#red{
+  width: 120px;
+  height: 120px;
+  background-color: red;
+  border-radius: 100%;
+}
+
+
+
+
+
