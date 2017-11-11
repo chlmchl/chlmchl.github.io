@@ -54,8 +54,8 @@ button {
 
 body {
 background-color: #0c0456;
-/*background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
-*/  /* gradient */
+background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
+  /* gradient */
   
 }
 
@@ -73,7 +73,7 @@ background-color: #0c0456;
   bottom:0;
   left:-50%;
   opacity:.6;
-  position:fixed;
+  position:absolute;
   right:-50%;
   top:0;
   z-index:-1;
@@ -110,10 +110,10 @@ background-color: #0c0456;
 }
 
 @keyframes slide {
-  0% {
+  from {
     transform:translateX(-25%);
   }
-  100% {
+  to {
     transform:translateX(25%);
   }
 }
@@ -139,7 +139,12 @@ background-color: #0c0456;
 }
 
 .section {
-  background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");  
+  background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png"); 
+   
+}
+
+#fullpage{
+  overflow: hidden;
 }
 
 
@@ -166,13 +171,39 @@ header {
 
 header button p{
   font-family: "Oswald";
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   text-align: left;
   letter-spacing: 1px;
   line-height: 1.1em;
   font-weight: 700;
   color: #0C0456;
+  opacity: .9;
+  transition: opacity .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+
+
+}
+
+header button p:hover {
+  opacity: 1;
+  transition: opacity .7s ease-in-out;
+  transform: rotate(-10deg);
+  transition: transform .7s ease-in-out;
+
+}
+
+header button a p{
+  transition: color .3s ease-in-out;
+    transition: transform .7s ease-in-out;
+
+}
+
+header button a p.orange {
+  transition: color .5s ease-in-out;
+  color: #FF3232;
+    transition: transform .7s ease-in-out;
+
 }
 
 #EN_FR {
@@ -191,7 +222,29 @@ header button p{
   float: right;
   text-align: right;
   color: #0C0456;
+  opacity: 0.8;
+  transition: opacity .5s ease-in-out;
+
+
   /* fin header */
+}
+
+#EN_FR ul li a {
+  transition: color .1s ease-in-out;
+  color: #0C0456;
+
+}
+
+#EN_FR ul li:hover {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+
+}
+
+#EN_FR ul li a.orange {
+  transition: color .5s ease-in-out;
+  color: #FF3232;
+
 }
 
 
@@ -207,9 +260,12 @@ NAV
   z-index: 10;
   width: 100px;
   height: 20px;
-  right: 40px;
+  right: 50px;
   transform-origin: center;
   top: 40%;
+  transition: opacity .5s ease-in-out;
+  opacity: 0;
+
 }
 
 .navigation li button{
@@ -224,15 +280,18 @@ NAV
   padding: 5px;
   margin:0;
   transform: rotate(-10deg);
+  transition: opacity .5s ease-in-out;
+  transition: font-size .8s ease-in-out;
   opacity: .9;
 
 }
 
 .navigation li button:hover {
-  height: 5em;
+  font-size: 13px;
   opacity: 1;
-  margin-left: -30px;
-/*  transform: translate(-5px, -5px);*/
+
+/*  margin-left: -30px;
+*//*  transform: translate(-5px, -5px);*/
   }
 
 
@@ -251,14 +310,14 @@ HOME + PROJECTS
 }
 
 
-#parallax {
+/*#parallax {
   width: 100%;
   height: 100%;
   position: absolute;
   display: block;
   list-style: none;
   z-index: -10;
-}
+}*/
 
 #layer {
   position: absolute;
@@ -324,7 +383,7 @@ CARACTERISTICS HOME PAGE
   style: block;
 }
 #mouse-scroll {
-  position: fixed;
+  position: absolute;
   margin: auto;
   left: 50%;
   bottom: 8vh;
@@ -444,13 +503,13 @@ CARACTERISTICS HOME PAGE
   text-shadow: #0C0456 2px 2px 6px;
   transform: rotate(-10deg);
   text-align: right;
-  padding-right: 40%;
+  padding-right: 35%;
 }
 
 .description {
   width: 21vw;
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.9;
   font-family: "Quattrocento", serif;
   font-size: 15px;
   line-height: 1.4em;
@@ -465,15 +524,16 @@ CARACTERISTICS HOME PAGE
 .projects ul {
   /* lists */
   position: absolute;
-  left: 40px;
+  left: 50px;
   top: 40%;
 }
 
 .projects li {
-  width: 6vw;
+  width: 7vw;
   min-width: 40px;
   margin-right: 3vw;
   font-style: italic;
+  letter-spacing: .8px;
   margin-bottom: 30px;
 
 }
@@ -488,11 +548,13 @@ CARACTERISTICS HOME PAGE
 }
 
 .projects li p {
-  color: #fF3232;
+  color: #ffffff;
+  letter-spacing: 1px;
   font-family: "Oswald", sans-serif;
   font-weight: 200;
   font-size: 13px;
   transform: rotate(-10deg);
+  opacity: .9;
 
 }
 
@@ -508,7 +570,7 @@ CARACTERISTICS HOME PAGE
   margin-top: 20px;
 }
 
-#parallax_paris img {
+.parallax_paris img {
   width: 45%;
   height: 45%;
   opacity: 0.9;
@@ -516,7 +578,7 @@ CARACTERISTICS HOME PAGE
   margin-left: -100px;
 }
 
-#parallax_paris {
+.parallax_paris {
   width: 100%;
   height: 100%;
   z-index: -10;
@@ -553,7 +615,7 @@ CARACTERISTICS HOME PAGE
 }
 
 #project_3 .description{
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 #project_3 img {
@@ -592,7 +654,7 @@ CARACTERISTICS HOME PAGE
 }
 
 #project_4 .description{
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 #project_4 h1 {
@@ -615,217 +677,217 @@ svg {
 
 
 svg .st0 {
-  animation: appear 3.9s forwards;
+  animation: appear 3.9s infinite;
   stroke: white;
 }
 
 svg .st1 {
-  animation: appear 2.2s 4.5s forwards;
+  animation: appear 2.2s 4.5s infinite;
   stroke: white;
 }
 
 svg .st2 {
-  animation: appear 2s 4s forwards;
+  animation: appear 2s 4s infinite;
   stroke: white;
 }
 
 svg .st3 {
-  animation: appear 2s 5s forwards;
+  animation: appear 2s 5s infinite;
   stroke: white;
 }
 
 svg .st4 {
-  animation: appear 3s 5.6s forwards;
+  animation: appear 3s 5.6s infinite;
   stroke: white;
 }
 
 svg .st4 {
-  animation: appear 3.3s 7s forwards;
+  animation: appear 3.3s 7s infinite;
   stroke: white;
 }
 
 svg .st5 {
-  animation: appear 3s 10s forwards;
+  animation: appear 3s 10s infinite;
   stroke: white;
 }
 
 svg .st6 {
-  animation: appear 2.9s forwards;
+  animation: appear 2.9s infinite;
   stroke: white;
 }
 
 svg .st7 {
-  animation: appear 2.2s 7s forwards;
+  animation: appear 2.2s 7s infinite;
   stroke: white;
 }
 
 svg .st8 {
-  animation: appear 2s 8s forwards;
+  animation: appear 2s 8s infinite;
   stroke: white;
 }
 
 svg .st9 {
-  animation: appear 2s 10s forwards;
+  animation: appear 2s 10s infinite;
   stroke: white;
 }
 
 svg .st10 {
-  animation: appear 2s 2.1s forwards;
+  animation: appear 2s 2.1s infinite;
   stroke: white;
 }
 
 svg .st11 {
-  animation: appear 3.3s 4.3s forwards;
+  animation: appear 3.3s 4.3s infinite;
   stroke: white;
 }
 
 svg .st12 {
-  animation: appear 1s 14s forwards;
+  animation: appear 1s 14s infinite;
   stroke: white;
 }
 
 svg .st13 {
-  animation: appear 0.5s 14.1s forwards;
+  animation: appear 0.5s 14.1s infinite;
   stroke: white;
 }
 
 svg .st14 {
-  animation: appear 1.3s 3.3s forwards;
+  animation: appear 1.3s 3.3s infinite;
   stroke: white;
 }
 
 svg .st15 {
-  animation: appear 1s 7s forwards;
+  animation: appear 1s 7s infinite;
   stroke: white;
 }
 
 svg .st16 {
-  animation: appear 1.3s 4s forwards;
+  animation: appear 1.3s 4s infinite;
   stroke: white;
 }
 
 svg .st17 {
-  animation: appear 1s 9s forwards;
+  animation: appear 1s 9s infinite;
   stroke: white;
 }
 
 svg .st18 {
-  animation: appear 1.3s 13.3s forwards;
+  animation: appear 1.3s 13.3s infinite;
   stroke: white;
 }
 
 svg .st19 {
-  animation: appear 1s 2s forwards;
+  animation: appear 1s 2s infinite;
   stroke: white;
 }
 
 svg .st20 {
-  animation: appear 1.3s 12.1s forwards;
+  animation: appear 1.3s 12.1s infinite;
   stroke: white;
 }
 
 svg .st21 {
-  animation: appear 1.4s 13.8s forwards;
+  animation: appear 1.4s 13.8s infinite;
   stroke: white;
 }
 
 svg .st22 {
-  animation: appear 1s 7s forwards;
+  animation: appear 1s 7s infinite;
   stroke: white;
 }
 
 svg .st23 {
-  animation: appear 1.3s 3.3s forwards;
+  animation: appear 1.3s 3.3s infinite;
   stroke: white;
 }
 
 svg .st24 {
-  animation: appear 1s 5s forwards;
+  animation: appear 1s 5s infinite;
   stroke: white;
 }
 
 svg .st25 {
-  animation: appear 1.3s 13.3s forwards;
+  animation: appear 1.3s 13.3s infinite;
   stroke: white;
 }
 
 svg .st26 {
-  animation: appear 2s 3.1s forwards;
+  animation: appear 2s 3.1s infinite;
   stroke: white;
 }
 
 svg .st27 {
-  animation: appear 3.3s 4.3s forwards;
+  animation: appear 3.3s 4.3s infinite;
   stroke: white;
 }
 
 svg .st28 {
-  animation: appear 1s 7s forwards;
+  animation: appear 1s 7s infinite;
   stroke: white;
 }
 
 svg .st29 {
-  animation: appear 1.3s 8.3s forwards;
+  animation: appear 1.3s 8.3s infinite;
   stroke: white;
 }
 
 svg .st30 {
-  animation: appear 1s 20s forwards;
+  animation: appear 1s 20s infinite;
   stroke: white;
 }
 
 svg .st31 {
-  animation: appear 1.3s 4.3s forwards;
+  animation: appear 1.3s 4.3s infinite;
   stroke: white;
 }
 
 svg .st32 {
-  animation: appear 1s 20s forwards;
+  animation: appear 1s 20s infinite;
   stroke: white;
 }
 
 svg .st33 {
-  animation: appear 1.3s 13.3s forwards;
+  animation: appear 1.3s 13.3s infinite;
   stroke: white;
 }
 
 svg .st34 {
-  animation: appear 1s 2s forwards;
+  animation: appear 1s 2s infinite;
   stroke: white;
 }
 
 svg .st35 {
-  animation: appear 1.3s 9.1s forwards;
+  animation: appear 1.3s 9.1s infinite;
   stroke: white;
 }
 
 svg .st36 {
-  animation: appear 1.4s 3.8s forwards;
+  animation: appear 1.4s 3.8s infinite;
   stroke: white;
 }
 
 svg .st37 {
-  animation: appear 1s 22s forwards;
+  animation: appear 1s 22s infinite;
   stroke: white;
 }
 
 svg .st38 {
-  animation: appear 1.3s 10.3s forwards;
+  animation: appear 1.3s 10.3s infinite;
   stroke: white;
 }
 
 svg .st39 {
-  animation: appear 1s 20s forwards;
+  animation: appear 1s 20s infinite;
   stroke: white;
 }
 
 svg .st40 {
-  animation: appear 1.3s 4.3s forwards;
+  animation: appear 1.3s 4.3s infinite;
   stroke: white;
 }
 
 svg .st41 {
-  animation: appear 2s 10.1s forwards;
+  animation: appear 2s 10.1s infinite;
   stroke: white;
 }
 
@@ -906,7 +968,7 @@ line {
 
 
 
-footer {
+.footer {
 
 /* ----------------------------
 
@@ -914,18 +976,19 @@ FOOTER
 
 ------------------------------*/
   position: absolute;
-  width: 100%;
-  z-index: 10;
+  text-align: right;
+  z-index: 100;
   font-family: "Oswald", sans-serif;
-  font-weight: 200;
-  font-size: 11px;
-  letter-spacing: 1.2px;
-  color: #FF3232;
-  text-align: center;
-  margin-top: -5vh;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #0C0456;
+  right: 40px;
+  margin-top: -70px;
+  opacity: 1;
 }
 
-footer img {
+.footer img {
   width: 15px;
   height: 15px;
 }
