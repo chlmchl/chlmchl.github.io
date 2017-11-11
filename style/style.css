@@ -73,7 +73,7 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-tire.pn
   bottom:0;
   left:-50%;
   opacity:.6;
-  position:fixed;
+  position:absolute;
   right:-50%;
   top:0;
   z-index:-1;
@@ -110,10 +110,10 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-tire.pn
 }
 
 @keyframes slide {
-  0% {
+  from {
     transform:translateX(-25%);
   }
-  100% {
+  to {
     transform:translateX(25%);
   }
 }
@@ -139,7 +139,12 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-tire.pn
 }
 
 .section {
-  background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");  
+  background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png"); 
+   
+}
+
+#fullpage{
+  overflow: hidden;
 }
 
 
@@ -174,23 +179,31 @@ header button p{
   font-weight: 700;
   color: #0C0456;
   opacity: .9;
-  transition: color .3s ease-in-out;
-  transition: opacity .2s ease-in-out;
-  transition: transform .5s ease-in-out;
+  transition: opacity .7s ease-in-out;
+  transition: transform .7s ease-in-out;
 
 
 }
 
 header button p:hover {
   opacity: 1;
-  transition: opacity .2s ease-in-out;
+  transition: opacity .7s ease-in-out;
   transform: rotate(-10deg);
-  transition: transform .5s ease-in-out;
+  transition: transform .7s ease-in-out;
+
+}
+
+header button a p{
+  transition: color .3s ease-in-out;
+    transition: transform .7s ease-in-out;
 
 }
 
 header button a p.orange {
+  transition: color .5s ease-in-out;
   color: #FF3232;
+    transition: transform .7s ease-in-out;
+
 }
 
 #EN_FR {
@@ -229,7 +242,7 @@ header button a p.orange {
 }
 
 #EN_FR ul li a.orange {
-  transition: color 1s ease-in-out;
+  transition: color .5s ease-in-out;
   color: #FF3232;
 
 }
@@ -247,10 +260,11 @@ NAV
   z-index: 10;
   width: 100px;
   height: 20px;
-  right: 40px;
+  right: 50px;
   transform-origin: center;
   top: 40%;
   transition: opacity .5s ease-in-out;
+  opacity: 0;
 
 }
 
@@ -266,15 +280,18 @@ NAV
   padding: 5px;
   margin:0;
   transform: rotate(-10deg);
+  transition: opacity .5s ease-in-out;
+  transition: font-size .8s ease-in-out;
   opacity: .9;
 
 }
 
 .navigation li button:hover {
-  height: 5em;
+  font-size: 13px;
   opacity: 1;
-  margin-left: -30px;
-/*  transform: translate(-5px, -5px);*/
+
+/*  margin-left: -30px;
+*//*  transform: translate(-5px, -5px);*/
   }
 
 
@@ -293,14 +310,14 @@ HOME + PROJECTS
 }
 
 
-#parallax {
+/*#parallax {
   width: 100%;
   height: 100%;
   position: absolute;
   display: block;
   list-style: none;
   z-index: -10;
-}
+}*/
 
 #layer {
   position: absolute;
@@ -366,7 +383,7 @@ CARACTERISTICS HOME PAGE
   style: block;
 }
 #mouse-scroll {
-  position: fixed;
+  position: absolute;
   margin: auto;
   left: 50%;
   bottom: 8vh;
@@ -486,7 +503,7 @@ CARACTERISTICS HOME PAGE
   text-shadow: #0C0456 2px 2px 6px;
   transform: rotate(-10deg);
   text-align: right;
-  padding-right: 40%;
+  padding-right: 35%;
 }
 
 .description {
@@ -507,7 +524,7 @@ CARACTERISTICS HOME PAGE
 .projects ul {
   /* lists */
   position: absolute;
-  left: 40px;
+  left: 50px;
   top: 40%;
 }
 
@@ -553,7 +570,7 @@ CARACTERISTICS HOME PAGE
   margin-top: 20px;
 }
 
-#parallax_paris img {
+.parallax_paris img {
   width: 45%;
   height: 45%;
   opacity: 0.9;
@@ -561,7 +578,7 @@ CARACTERISTICS HOME PAGE
   margin-left: -100px;
 }
 
-#parallax_paris {
+.parallax_paris {
   width: 100%;
   height: 100%;
   z-index: -10;
@@ -598,7 +615,7 @@ CARACTERISTICS HOME PAGE
 }
 
 #project_3 .description{
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 #project_3 img {
@@ -951,7 +968,7 @@ line {
 
 
 
-footer {
+.footer {
 
 /* ----------------------------
 
@@ -960,18 +977,18 @@ FOOTER
 ------------------------------*/
   position: absolute;
   text-align: right;
-  z-index: 10;
+  z-index: 100;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 10px;
   letter-spacing: 1px;
   color: #0C0456;
   right: 40px;
-  bottom: 40px;
-  opacity: .7;
+  margin-top: -70px;
+  opacity: 1;
 }
 
-footer img {
+.footer img {
   width: 15px;
   height: 15px;
 }

@@ -1,6 +1,7 @@
 function fullpage() {
   $('#fullpage').fullpage({
-    loopBottom: true,
+    loopBottom: false,
+    autoScrolling: false,
     slidesNavigation: false,
     verticalCentered: false,
     normalScrollElements: '.desc',
@@ -21,10 +22,13 @@ function fullpage() {
       } else {
         $('footer.footer').hide();
       }
-      if (nextIndex <= 1) {
-        $('nav.navigation').hide();
+      if (index != 0) {
+        $('nav.navigation').css('opacity', '1');
       } else {
-        $('nav.navigation').show();
+        $('nav.navigation').css('opacity', '0');
+      }
+      if (nextIndex === 0) {
+        $('nav.navigation').css('opacity', '0');
       }
     }
   });
@@ -32,9 +36,11 @@ function fullpage() {
 
 
 function parallax() {
-  var paris = $('#parallax_paris').get(0);
+  var paris = $('.parallax_paris').get(0);
   var iphone = $('#parallax_0001').get(0);
   var svg = $('#svg_parallax').get(0);
+  // var paris2 = $('#parallax_paris_projet').get(0);
+
 
   
 
@@ -57,6 +63,7 @@ function parallax() {
   construct(paris);
   construct(iphone);
   construct(svg);
+  // construct(paris2);
 
 };
 
