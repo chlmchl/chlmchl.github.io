@@ -1,20 +1,40 @@
-/*
-COLORS :
 
-orange ---- #FF3232
-blue ---- #0C0456
-white ---- #ffffff
+/*
+Icons by SimpleIcon from www.flaticon.com 
+License: CC 3.0 BY 
 */
 
 
-/* -------------------------
 
-GENERAL 
 
----------------------------- */
 
-a {
-  text-decoration: none;
+
+/*
+db    db  .d8b.  d8888b. d888888b  .d8b.  d8888b. db      d88888b .d8888. 
+88    88 d8' `8b 88  `8D   `88'   d8' `8b 88  `8D 88      88'     88'  YP 
+Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.   
+`8b  d8' 88~~~88 88`8b      88    88~~~88 88~~~b. 88      88~~~~~   `Y8b. 
+ `8bd8'  88   88 88 `88.   .88.   88   88 88   8D 88booo. 88.     db   8D 
+   YP    YP   YP 88   YD Y888888P YP   YP Y8888P' Y88888P Y88888P `8888Y' 
+*/
+
+
+
+
+
+/* 
+ d888b  d88888b d8b   db d88888b d8888b.  .d8b.  db      
+88' Y8b 88'     888o  88 88'     88  `8D d8' `8b 88      
+88      88ooooo 88V8o 88 88ooooo 88oobY' 88ooo88 88      
+88  ooo 88~~~~~ 88 V8o88 88~~~~~ 88`8b   88~~~88 88      
+88. ~8~ 88.     88  V888 88.     88 `88. 88   88 88booo. 
+ Y888P  Y88888P VP   V8P Y88888P 88   YD YP   YP Y88888P 
+ */
+
+
+* {
+  margin: 0;
+  padding:  text-decoration: none;
 }
 
 ul {
@@ -23,358 +43,406 @@ ul {
 
 li a{
   text-decoration: none;
-  color: #0C0456;
+  color: #636fa4;
 }
 
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 button {
-  width: 40px;
-  height: 40px;
-  margin-top: 30px;
-  margin-left: 30px;
   border: none;
   background: transparent;
   transition: all .5s ease;
   outline: none;
-  cursor: pointer;
   transform-origin: center;
 }
 
 ::selection {
-  color: #FF3232;
-  background-color: #0C0456;
+  color: #fff;
+  background-color: #ec008c;
+ 
+
 }
 
+/*
+d8888b.  .d8b.   .o88b. db   dD  d888b  d8888b.  .d88b.  db    db d8b   db d8888b. 
+88  `8D d8' `8b d8P  Y8 88 ,8P' 88' Y8b 88  `8D .8P  Y8. 88    88 888o  88 88  `8D 
+88oooY' 88ooo88 8P      88,8P   88      88oobY' 88    88 88    88 88V8o 88 88   88 
+88~~~b. 88~~~88 8b      88`8b   88  ooo 88`8b   88    88 88    88 88 V8o88 88   88 
+88   8D 88   88 Y8b  d8 88 `88. 88. ~8~ 88 `88. `8b  d8' 88b  d88 88  V888 88  .8D 
+Y8888P' YP   YP  `Y88P' YP   YD  Y888P  88   YD  `Y88P'  ~Y8888P' VP   V8P Y8888D'
+*/
+
+
+html {
+background: #800080;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ec008c, #fc6767 120%);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ec008c, #fc6767 120%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
 
 body {
-background-color: #0c0456;
-background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
-  /* gradient */
-  
+
+width: 100%;
+height: 100%;
+
+opacity: 1;
+transition: 2s opacity;
+overflow-x: hidden;
 }
 
-/*#border {
-  position: absolute;
-  z-index: 100000;
-  width: 97.7vw;
-  height: 95.7vh;
-  border: solid #ffffff 20px;
-}*/
-
-.bg {
-  animation:slide 4s ease-in-out infinite alternate;
-  background-image: linear-gradient(-10deg, #0C0456 55%, #FF3232 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.6;
-  position:absolute;
-  right:-50%;
-  top:0;
-  z-index:-1;
-}
-
-.bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:3s;
-}
-
-.bg3 {
-  animation-duration:5s;
-}
-
-.bg4 {
-  animation:slide 4s ease-in-out infinite alternate;
-  background-image: linear-gradient(-10deg, #FF3232 50%, #0C0456 50%);
-  bottom:-800px;
-  left:-50%;
-  opacity:.4;
-  position:absolute;
-  right:-50%;
-  top:0;
-  z-index:-1;
-}
-
-.bg5 {
-  animation-direction:alternate-reverse;
-  animation-duration:3s;
-}
-
-.bg6 {
-  animation-duration:5s;
-}
-
-@keyframes slide {
-  from {
-    transform:translateX(-25%);
-  }
-  to {
-    transform:translateX(25%);
-  }
-}
-
-#body_about {
-  /* gradient */
-  background-color: #0C0456;
-
-/*  For browsers that do not support gradients 
-  background: -webkit-linear-gradient(#0C0456, #FF3232 300%);
-  /* For Safari 5.1 to 6.0 
-  background: -o-linear-gradient(#0C0456, #FF3232 300%);
-  /* For Opera 11.1 to 12.0 
-  background: -moz-linear-gradient(#0C0456, #FF3232 300%);
-  /* For Firefox 3.6 to 15 
-  background: linear-gradient(#0C0456, #FF3232 300%);
-  /* Standard syntax */*/
-}
-
-.p_hilight {
-  color: #FF3232;
-  font-weight: 700;
+body.fade-out {
+    opacity: 0;
+transition: none;
 }
 
 .section {
-  background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png"); 
-   
-}
-
-#fullpage{
-  overflow: hidden;
-}
-
-
-
-/*a {
-  text-decoration: none;
-}*/
-
-
-/* ----------------------------
-
-HEADER 
-
-------------------------------*/
-
-header {
-  position: fixed;
-  width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-  z-index: 10;
-}
-
-header button p{
-  font-family: "Oswald";
-  font-size: 13px;
-  text-transform: uppercase;
-  text-align: left;
-  letter-spacing: 1px;
-  line-height: 1.1em;
-  font-weight: 700;
-  color: #0C0456;
-  opacity: .9;
-  transition: opacity .7s ease-in-out;
-  transition: transform .7s ease-in-out;
-
+  background: #2b5876;
+  background: -webkit-linear-gradient(to bottom, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
-header button p:hover {
-  opacity: 1;
-  transition: opacity .7s ease-in-out;
-  transform: rotate(-10deg);
-  transition: transform .7s ease-in-out;
-
-}
-
-header button a p{
-  transition: color .3s ease-in-out;
-    transition: transform .7s ease-in-out;
-
-}
-
-header button a p.orange {
-  transition: color .5s ease-in-out;
-  color: #FF3232;
-    transition: transform .7s ease-in-out;
-
-}
-
-#EN_FR {
+/*.gradient {
   position: absolute;
-  top: 40px;
-  right: 4vw;
-}
-
-#EN_FR li {
-  display: inline-block;
-  margin-left: 10px;
-  font-weight: 400;
-  letter-spacing: 0.8px;
-  font-family: "Oswald";
-  font-size: 11px;
-  float: right;
-  text-align: right;
-  color: #0C0456;
-  opacity: 0.8;
-  transition: opacity .5s ease-in-out;
-
-
-  /* fin header */
-}
-
-#EN_FR ul li a {
-  transition: color .1s ease-in-out;
-  color: #0C0456;
-
-}
-
-#EN_FR ul li:hover {
-  opacity: 1;
-  transition: opacity .5s ease-in-out;
-
-}
-
-#EN_FR ul li a.orange {
-  transition: color .5s ease-in-out;
-  color: #FF3232;
-
-}
-
-
-.navigation {
-
-/* ----------------------------
-
-NAV
-
-------------------------------*/
-  position: fixed;
-  display: block;
-  z-index: 10;
-  width: 100px;
-  height: 20px;
-  right: 50px;
-  transform-origin: center;
-  top: 40%;
-  transition: opacity .5s ease-in-out;
-  opacity: 0;
-
-}
-
-.navigation li button{
-  font-family: : "Oswald", sans-serif;
-  color: #FF3232;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 12px;
-  text-align: right;
-  width: 110px;
-  height: 3em;
-  padding: 5px;
-  margin:0;
-  transform: rotate(-10deg);
-  transition: opacity .5s ease-in-out;
-  transition: font-size .8s ease-in-out;
-  opacity: .9;
-
-}
-
-.navigation li button:hover {
-  font-size: 13px;
-  opacity: 1;
-
-/*  margin-left: -30px;
-*//*  transform: translate(-5px, -5px);*/
-  }
-
-
-
-#home, .projects {
-/* ----------------------------
-
-HOME + PROJECTS
-
-------------------------------*/
-  width: 100%;
+  z-index: -1;
+  width: 100vw;
   height: 100vh;
+  background: url('../img/svg.svg');
+  background-size: cover;
+  animation:slide 30s ease-in-out infinite alternate;
+  /*background-color: #2b5876;
+  left:-50%;
+  opacity:.9;
+  position:absolute;
+  right:-50%;
+  top:0;*/
+
+  /*z-index:-1;
+}
+*/
+
+
+
+
+
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+
+/*
+d8b   db  .d8b.  db    db 
+888o  88 d8' `8b 88    88 
+88V8o 88 88ooo88 Y8    8P 
+88 V8o88 88~~~88 `8b  d8' 
+88  V888 88   88  `8bd8'  
+VP   V8P YP   YP    YP  */
+
+
+ 
+.container, 
+.section {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+
+.menu-wrap a {
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Space mono', monospace;
+  font-size: 22pr;
+}
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+  color: #fff;
+}
+
+.section {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.home {
+  position: relative;
+}
+
+/* Overlay */
+.home::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  content: '';
+  opacity: 0;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
+  transition: opacity 0.3s, transform 0s 0.3s;
+}
+
+/* Menu Button */
+.menu-button {
+  position: fixed;
+  z-index: 1000;
+  margin: 1em;
+  padding: 0;
+  width: 2.5em;
+  height: 2.25em;
+  border: none;
+  text-indent: 2.5em;
+  font-size: 1.5em;
+  color: transparent;
+  background: transparent;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.menu-button::before {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+  background: linear-gradient(#ec008c 20%, transparent 20%, transparent 40%, #ec008c  40%, #fc6767 60%, transparent 60%, transparent 80%, #fc6767 80%);
+  content: '';
+}
+
+.menu-button:hover {
+  opacity: 0.6;
+}
+/* Menu */
+.menu-wrap {
+  position:fixed;
+  font-weight: 700;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.menu-top {
+  line-height: 58px;
+
+}
+
+.menu-top .profile {
+
+  display: inline-block;
+  padding: 8px 10px;
+  line-height: 42px;
+  font-family: 'Space mono', monospace;
+}
+
+.cv{
+  display: flex;
+  
+  justify-content: left;
+}
+
+.profile h1 {
+  font-size: 16px;
+  color: #fff; 
+  font-weight: 200;
+  padding: 0 10px;
+
+}
+
+
+
+.menu-top .profile,
+.menu-side {
+  width: 300px;
+
+}
+
+.menu-top .profile img {
+  float: left;
+  margin-right: 1em;
+}
+
+.icon-list {
+  display: inline-block;
+  font-size: 1.25em;
+}
+
+.icon-list img {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-list a {
+  margin: 0 1em 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 32em) {
+  .icon-list {
+    padding-left: 1em;
+  }
+}
+
+.menu-side a {
+  display: block;
+  padding: 30px 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.menu-side a:first-child {
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.menu-side p {
+  font-family: 'Space Mono', monospace;
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.5em;
+  margin: 10px 20px;
+}
+
+.menu-side p span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.menu-side hr{
+  background-color: rgba(0,0,0,0.1);
+  opacity: .6;
+  margin: 0 20px;
+  height: 2px;
+  border: none;
+}
+
+.menu-side button {
+  margin-left:29%;
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  border: 1px solid #fc6767;
+  background: #fc6767;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #fc6767, #ec008c 130%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fc6767, #ec008c 130%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Shown menu */
+.show-menu .menu-wrap {
+  opacity: 1;
+}
+
+.show-menu .section,
+.show-menu .menu-button {
+  -webkit-transform: translate3d(300px,60px,0);
+  transform: translate3d(300px,60px,0);
+}
+
+.show-menu .content::before {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+/* 
+.d8b.  d8888b.  .d88b.  db    db d888888b 
+d8' `8b 88  `8D .8P  Y8. 88    88 `~~88~~' 
+88ooo88 88oooY' 88    88 88    88    88    
+88~~~88 88~~~b. 88    88 88    88    88    
+88   88 88   8D `8b  d8' 88b  d88    88    
+YP   YP Y8888P'  `Y88P'  ~Y8888P'    YP  
+*/
+
+
+.home{
+
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+#home_box, #project_box {
 
-/*#parallax {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: block;
-  list-style: none;
-  z-index: -10;
-}*/
-
-#layer {
-  position: absolute;
-  display: block;
+  width: 75vw;
+  height: 100vh;
+  margin-top: 5%;
 }
 
 
-
-#home_box {
-/* ----------------------------
-
-CARACTERISTICS HOME PAGE 
-
-------------------------------*/
-  width: 80vw;
-  height: 30vh;
-  margin-top: -10vh;
-}
-
-#home_box h1 {
+#home_box h1, #project_box h1 {
+font-family: 'Space Mono', monospace;
   margin-right: 30vw;
-  text-align: right;
-  color: #0C0456;
-  opacity: .9;
-  font-family: 'Oswald', sans-serif;
-  font-style: italic;
+  text-align: left;
+  background: -webkit-linear-gradient(#ec008c, #fc6767 130%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 700;
-  font-size: 100px;
-  line-height: 1.2em;
-  transform: rotate(-10deg);
-/*  text-shadow: #ff3232 -3px 0px 0px;
+  font-size: 80px;
+  line-height: 1.15em;
+  width: 950px;
+}
+
+#home_box h2, #project_box h2 {
+  font-family: 'Space Mono', monospace;
+
+  margin-right: 30vw;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #fff;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 1.6em;
+/*  text-shadow: #e8cbc0 -3px 0px 0px;
 */
 
 }
 
-#home_box h1 span {
-  color: #0C0456;
-  opacity: 1;
-  font-size: 100px;
+#home_box p.about {
+  font-family: 'Space Mono', monospace;
+  width: 950px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
+#home_box p span{
+padding: 0 0.25em;
+background: #DD2476;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ec008c, #fc6767 120%);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ec008c, #fc6767 120%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 
 
-#home_box p {
-  width: 21vw;
-  color: #ffffff;
-  opacity: 0.8;
-  font-family: "Quattrocento", serif;
-  font-size: 15px;
-  line-height: 1.4em;
-  margin-left: 42vw;
-  margin-top: -1.6em;
-}
 
-
-/* SCROLL MOUSE */
+/* .88b  d88.  .d88b.  db    db .d8888. d88888b      .d8888.  .o88b. d8888b.  .d88b.  db      db      
+88'YbdP`88 .8P  Y8. 88    88 88'  YP 88'          88'  YP d8P  Y8 88  `8D .8P  Y8. 88      88      
+88  88  88 88    88 88    88 `8bo.   88ooooo      `8bo.   8P      88oobY' 88    88 88      88      
+88  88  88 88    88 88    88   `Y8b. 88~~~~~        `Y8b. 8b      88`8b   88    88 88      88      
+88  88  88 `8b  d8' 88b  d88 db   8D 88.          db   8D Y8b  d8 88 `88. `8b  d8' 88booo. 88booo. 
+YP  YP  YP  `Y88P'  ~Y8888P' `8888Y' Y88888P      `8888Y'  `Y88P' 88   YD  `Y88P'  Y88888P Y88888P */
 
 #mouse-scroll {
   /* //
@@ -386,9 +454,9 @@ CARACTERISTICS HOME PAGE
   position: absolute;
   margin: auto;
   left: 50%;
-  bottom: 8vh;
+  bottom: 140px;
   -webkit-transform: translateX(-50%);
-  z-index: 9999;
+  z-index: 999;
 }
 #mouse-scroll span{
   display: block;
@@ -398,8 +466,8 @@ CARACTERISTICS HOME PAGE
     -webkit-transform: rotate(45deg);
        transform: rotate(45deg);
        transform: rotate(45deg);
-  border-right: 2px solid #ff3232; 
-  border-bottom: 2px solid #ff3232;
+  border-right: 2px solid #ec008c; 
+  border-bottom: 2px solid #ec008c;
   margin: 0 0 3px 5px;
 }
 #mouse-scroll .mouse {
@@ -409,9 +477,10 @@ CARACTERISTICS HOME PAGE
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  border: 2px solid #ff3232;
+  border: 2px solid #ec008c;
   top: 170px;
 }
+
 #mouse-scroll .down-arrow-1 {
   margin-top: 6px;
 }
@@ -439,7 +508,7 @@ CARACTERISTICS HOME PAGE
   width: 2px;
   display: block; 
   margin: 5px auto;
-  background: #ff3232;
+  background: #ec008c;
   position: relative;
 }
 #mouse-scroll .mouse-in {
@@ -488,507 +557,120 @@ CARACTERISTICS HOME PAGE
 
 
 
+#projets{
 /* ----------------------------
 
- PAGE PROJECTS 
+HOME
 
 ------------------------------*/
-.projects h1 {
-  color: #FF3232;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 110px;
-  line-height: 1.15em;
-  text-shadow: #0C0456 2px 2px 6px;
-  transform: rotate(-10deg);
-  text-align: right;
-  padding-right: 35%;
-}
 
-.description {
-  width: 21vw;
-  color: #ffffff;
-  opacity: 0.9;
-  font-family: "Quattrocento", serif;
-  font-size: 15px;
-  line-height: 1.4em;
-  margin-left: 42vw;
-  margin-top: -1.6em;
-  z-index: 40;
-
-}
-
-
-
-.projects ul {
-  /* lists */
-  position: absolute;
-  left: 50px;
-  top: 40%;
-}
-
-.projects li {
-  width: 7vw;
-  min-width: 40px;
-  margin-right: 3vw;
-  font-style: italic;
-  letter-spacing: .8px;
-  margin-bottom: 30px;
-
-}
-
-.projects li h2 {
-  color: #ff3232;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-    transform: rotate(-10deg);
-
-}
-
-.projects li p {
-  color: #ffffff;
-  letter-spacing: 1px;
-  font-family: "Oswald", sans-serif;
-  font-weight: 200;
-  font-size: 13px;
-  transform: rotate(-10deg);
-  opacity: .9;
-
-}
-
-/*projet 1 */
-
-#project_1 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -28vh;
-}
-
-#project_1 .description{
-  margin-top: 20px;
-}
-
-.parallax_paris img {
-  width: 45%;
-  height: 45%;
-  opacity: 0.9;
-  margin-top: -250px;
-  margin-left: -100px;
-}
-
-.parallax_paris {
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  position: absolute;
+  margin-top: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
- /* projet 2 */
 
-#project_2 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -20vh;
+
+
+
+/*
+  d8888b. d8888b.  .d88b.     d88b d88888b  .o88b. d888888b      db      d888888b .d8888. d888888b 
+88  `8D 88  `8D .8P  Y8.    `8P' 88'     d8P  Y8 `~~88~~'      88        `88'   88'  YP `~~88~~' 
+88oodD' 88oobY' 88    88     88  88ooooo 8P         88         88         88    `8bo.      88    
+88~~~   88`8b   88    88     88  88~~~~~ 8b         88         88         88      `Y8b.    88    
+88      88 `88. `8b  d8' db. 88  88.     Y8b  d8    88         88booo.   .88.   db   8D    88    
+88      88   YD  `Y88P'  Y8888P  Y88888P  `Y88P'    YP         Y88888P Y888888P `8888Y'    YP  
+*/
+
+
+
+p.description {
+  font-size: 15px;
+  font-family: 'Space Mono', monospace;
+  width: 700px;
+  margin-left: 3em;
+  color: #fff;
+  text-align: left;
+  line-height: 1.5em;
+  margin-top: 10px;
 }
 
-#project_2 .description{
-  margin-top: 30px;
+p.description span{
+padding: 0 0.25em;
+background: #DD2476;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ec008c, #fc6767 120%);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ec008c, #fc6767 120%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+cursor: pointer;
 }
 
-/*  projet 3*/
 
-#project_3 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -25vh;
+.collapsible {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
 }
 
-#project_3 h1 {
-  /* PROJECT 3 - 0001 */
-  font-size: 250px;
-  margin-left: 4.15vw;
+#overlay_bodydouble, #overlay_sinestesia, 
+#overlay_cip, #overlay_usable, #overlay_uno, 
+#overlay_surrealisme, #overlay_misc {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
 }
 
-#project_3 .description{
-  margin-top: 40px;
-}
-
-#project_3 img {
-  width: 600px;
-  position: absolute;
-  z-index: -5;
-  opacity: 0.8;
-  margin-left: 25vw;
-  margin-top: -20vh;
-  transform: rotate(10deg);
-}
-
-#parallax_0001 {
-  /*  width: 100%;
+.overlay{
   height: 100%;
-  position: absolute;
-  display: block;
-  list-style: none;*/
-  z-index: -10;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  align-items: center;
+  justify-content: center;
 }
 
-#layer2 {
-  transform: rotate(15deg);
-  position: absolute;
-  display: block;
-  z-index: -10;
+.overlay p {
+  font-size: 40px;
+  color: #fff;
 }
 
-
-/* projet 4 */
-
-#project_4 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -28vh;
-}
-
-#project_4 .description{
-  margin-top: 20px;
-}
-
-#project_4 h1 {
-  margin-left: 4.15vw;
-  font-size: 150px;
-  line-height: 1em;
-}
-
-#svg_parallax {
-  width: 100vw;
-  height: 100vh;
-  z-index: -20;
-  position: absolute;
-}
-svg {
-  width: 100%;
-  height: 100%;
-}
-
-
-
-svg .st0 {
-  animation: appear 3.9s infinite;
-  stroke: white;
-}
-
-svg .st1 {
-  animation: appear 2.2s 4.5s infinite;
-  stroke: white;
-}
-
-svg .st2 {
-  animation: appear 2s 4s infinite;
-  stroke: white;
-}
-
-svg .st3 {
-  animation: appear 2s 5s infinite;
-  stroke: white;
-}
-
-svg .st4 {
-  animation: appear 3s 5.6s infinite;
-  stroke: white;
-}
-
-svg .st4 {
-  animation: appear 3.3s 7s infinite;
-  stroke: white;
-}
-
-svg .st5 {
-  animation: appear 3s 10s infinite;
-  stroke: white;
-}
-
-svg .st6 {
-  animation: appear 2.9s infinite;
-  stroke: white;
-}
-
-svg .st7 {
-  animation: appear 2.2s 7s infinite;
-  stroke: white;
-}
-
-svg .st8 {
-  animation: appear 2s 8s infinite;
-  stroke: white;
-}
-
-svg .st9 {
-  animation: appear 2s 10s infinite;
-  stroke: white;
-}
-
-svg .st10 {
-  animation: appear 2s 2.1s infinite;
-  stroke: white;
-}
-
-svg .st11 {
-  animation: appear 3.3s 4.3s infinite;
-  stroke: white;
-}
-
-svg .st12 {
-  animation: appear 1s 14s infinite;
-  stroke: white;
-}
-
-svg .st13 {
-  animation: appear 0.5s 14.1s infinite;
-  stroke: white;
-}
-
-svg .st14 {
-  animation: appear 1.3s 3.3s infinite;
-  stroke: white;
-}
-
-svg .st15 {
-  animation: appear 1s 7s infinite;
-  stroke: white;
-}
-
-svg .st16 {
-  animation: appear 1.3s 4s infinite;
-  stroke: white;
-}
-
-svg .st17 {
-  animation: appear 1s 9s infinite;
-  stroke: white;
-}
-
-svg .st18 {
-  animation: appear 1.3s 13.3s infinite;
-  stroke: white;
-}
-
-svg .st19 {
-  animation: appear 1s 2s infinite;
-  stroke: white;
-}
-
-svg .st20 {
-  animation: appear 1.3s 12.1s infinite;
-  stroke: white;
-}
-
-svg .st21 {
-  animation: appear 1.4s 13.8s infinite;
-  stroke: white;
-}
-
-svg .st22 {
-  animation: appear 1s 7s infinite;
-  stroke: white;
-}
-
-svg .st23 {
-  animation: appear 1.3s 3.3s infinite;
-  stroke: white;
-}
-
-svg .st24 {
-  animation: appear 1s 5s infinite;
-  stroke: white;
-}
-
-svg .st25 {
-  animation: appear 1.3s 13.3s infinite;
-  stroke: white;
-}
-
-svg .st26 {
-  animation: appear 2s 3.1s infinite;
-  stroke: white;
-}
-
-svg .st27 {
-  animation: appear 3.3s 4.3s infinite;
-  stroke: white;
-}
-
-svg .st28 {
-  animation: appear 1s 7s infinite;
-  stroke: white;
-}
-
-svg .st29 {
-  animation: appear 1.3s 8.3s infinite;
-  stroke: white;
-}
-
-svg .st30 {
-  animation: appear 1s 20s infinite;
-  stroke: white;
-}
-
-svg .st31 {
-  animation: appear 1.3s 4.3s infinite;
-  stroke: white;
-}
-
-svg .st32 {
-  animation: appear 1s 20s infinite;
-  stroke: white;
-}
-
-svg .st33 {
-  animation: appear 1.3s 13.3s infinite;
-  stroke: white;
-}
-
-svg .st34 {
-  animation: appear 1s 2s infinite;
-  stroke: white;
-}
-
-svg .st35 {
-  animation: appear 1.3s 9.1s infinite;
-  stroke: white;
-}
-
-svg .st36 {
-  animation: appear 1.4s 3.8s infinite;
-  stroke: white;
-}
-
-svg .st37 {
-  animation: appear 1s 22s infinite;
-  stroke: white;
-}
-
-svg .st38 {
-  animation: appear 1.3s 10.3s infinite;
-  stroke: white;
-}
-
-svg .st39 {
-  animation: appear 1s 20s infinite;
-  stroke: white;
-}
-
-svg .st40 {
-  animation: appear 1.3s 4.3s infinite;
-  stroke: white;
-}
-
-svg .st41 {
-  animation: appear 2s 10.1s infinite;
-  stroke: white;
-}
-
-
-line {
-  opacity: 0
-}
-
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-
-/* projet 5 */
-
-#project_5 {
-  width: 80vw;
-  height: 30vh;
-  margin-top: -25vh;
-}
-
-#project_5 h1 {
-  font-size: 150px;
-  margin-left: 4.15vw;
-  line-height: 1em;
-}
-
-#project_5 .description{
-  margin-top: 15px;
-}
-
-
-
-
-
-.view_project {
-  /* BUTTONS */
-  text-decoration: none;
-  font-family: : "Oswald", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #FF3232;
-  text-shadow: #0C0456 2px 5px 10px;
-
-  position: absolute;
-  width: 150px;
-  height: 20px;
-  right: 34vw;
-  margin-top: 70px;
-  opacity: 1;
-}
-
-.view_project:after {
-  bottom: -10px;
-  content: "";
-  display: block;
-  height: 3px;
-  left: 30%;
-  right: 30%;
-  position: absolute;
-  background: #FF3232;
-  transition: right 0.3s ease 0s, left 0.3s ease 0s;
-}
-
-.view_project:hover:after {
-  left: 0;
-  right: 0;
-}
-
-
-
-.footer {
 
 /* ----------------------------
 
-FOOTER
+d88888b  .d88b.   .d88b.  d888888b d88888b d8888b. 
+88'     .8P  Y8. .8P  Y8. `~~88~~' 88'     88  `8D 
+88ooo   88    88 88    88    88    88ooooo 88oobY' 
+88~~~   88    88 88    88    88    88~~~~~ 88`8b   
+88      `8b  d8' `8b  d8'    88    88.     88 `88. 
+YP       `Y88P'   `Y88P'     YP    Y88888P 88   YD 
 
 ------------------------------*/
-  position: absolute;
-  text-align: right;
-  z-index: 100;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 10px;
-  letter-spacing: 1px;
-  color: #0C0456;
-  right: 40px;
-  margin-top: -70px;
-  opacity: 1;
+ 
+/*.footer{
+  height: 50px;
+  width: 100%;
+  float: bottom;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+  color: #fff;
+  opacity: .6;
+
 }
 
-.footer img {
-  width: 15px;
-  height: 15px;
+.footer p {
+  font-family: 'Space Mone', monospace;
+  color: #fff;
+  font-size: 16px;
 }
+*/
+
+
+/

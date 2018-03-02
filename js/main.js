@@ -1,81 +1,88 @@
-function fullpage() {
-  $('#fullpage').fullpage({
-    loopBottom: false,
-    autoScrolling: false,
-    slidesNavigation: false,
-    verticalCentered: false,
-    normalScrollElements: '.desc',
-    lazyloading: true,
-    recordHistory: true,
-    anchors: ['hello', 'cip', 'bodydouble', '0001', 'processing', 'photography'],
-    onLeave: function(index, nextIndex) {
-      if (index === 1) {
-        $('header button a p').first().addClass('orange');
-        $('#EN_FR ul li a').addClass('orange');
-      }
-      if (nextIndex === 1) {
-        $('header button a p').first().removeClass('orange');
-        $('#EN_FR ul li a').removeClass('orange');
-      }
-      if (nextIndex === 6) {
-        $('footer.footer').show();
-      } else {
-        $('footer.footer').hide();
-      }
-      if (index != 0) {
-        $('nav.navigation').css('opacity', '1');
-      } else {
-        $('nav.navigation').css('opacity', '0');
-      }
-      if (nextIndex === 0) {
-        $('nav.navigation').css('opacity', '0');
-      }
+$(function() {
+    $('body').removeClass('fade-out');
+});
+
+
+
+
+function collapse() {
+  $('.menu__item').click(function(event) {
+    if ($(event.target).parents('.collapsible').length === 0) {
+      event.preventDefault();
+
+      $(event.target).parents('.menu__item-wrapper').first().find('.collapsible').first().slideToggle();
     }
   });
-};
+}
 
 
-function parallax() {
-  var paris = $('.parallax_paris').get(0);
-  var iphone = $('#parallax_0001').get(0);
-  var svg = $('#svg_parallax').get(0);
-  // var paris2 = $('#parallax_paris_projet').get(0);
+/**
+ * main.js
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2014, Codrops
+ * http://www.codrops.com
+ * Based on the <a href="https://dribbble.com/shots/1663008-Old-Designspiration-Menu-Concept">Dribble shot by Michael Martinho
+ */
+(function() {
+
+  var bodyEl = document.body,
+    content = document.querySelector( '.section' ),
+    openbtn = document.getElementById( 'open-button' ),
+    closebtn = document.getElementById( 'close-button' ),
+    isOpen = false;
+
+  function init() {
+    initEvents();
+  }
+
+  function initEvents() {
+    openbtn.addEventListener( 'click', toggleMenu );
+    if( closebtn ) {
+      closebtn.addEventListener( 'click', toggleMenu );
+    }
+
+    // close the menu element if the target it´s not the menu element or one of its descendants..
+    content.addEventListener( 'click', function(ev) {
+      var target = ev.target;
+      if( isOpen && target !== openbtn ) {
+        toggleMenu();
+      }
+    } );
+  }
+
+  function toggleMenu() {
+    if( isOpen ) {
+      classie.remove( bodyEl, 'show-menu' );
+    }
+    else {
+      classie.add( bodyEl, 'show-menu' );
+    }
+    isOpen = !isOpen;
+  }
+
+  init();
+
+})();
 
 
-  
-
-  var construct = function(selector) {
-    return new Parallax(selector, {
-      calibrateX: false,
-      calibrateY: true,
-      invertX: true,
-      invertY: true,
-      limitX: false,
-      limitY: false,
-      scalarX: 2,
-      scalarY: 1,
-      frictionX: 0.1,
-      frictionY: 0.1,
-      originX: 0.1,
-      originY: 0.1,
-    });
-  };
-  construct(paris);
-  construct(iphone);
-  construct(svg);
-  // construct(paris2);
-
-};
-
-function main() {
-  $('p').hide();
-  $('p').slideToggle(900);
-  $('p').fadeIn(1000);
-};
 
 $(document).ready(function() {
-  console.log('lolo');
-  fullpage();
-  parallax();
-  main();
+  collapse();
+  $('.tell-me-more').click(function(event) {
+    $($(event.target).attr('target')).fadeToggle();
+  });
+  $(document).click(function(event) {
+    if ($(event.target).hasClass('overlay')) {
+      $(event.target).parent().fadeToggle();
+    }
+  });
+  $(document).keydown(function(event) {
+    if (event.which === 27) {
+      $('.overlay').parent().fadeOut();
+    }
+  });
 });
