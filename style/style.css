@@ -34,7 +34,7 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 
 * {
   margin: 0;
-  padding:  text-decoration: none;
+  padding: 0 ;
 }
 
 ul {
@@ -96,6 +96,7 @@ transition: none;
 }
 
 .section {
+  height: 100%;
   background: #2b5876;
   background: -webkit-linear-gradient(to bottom, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -565,6 +566,8 @@ HOME
 ------------------------------*/
 
   margin-top: 0px;
+  margin-bottom: 100px;
+  overflow-y: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
