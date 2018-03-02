@@ -1,0 +1,98 @@
+
+/* Fade effect */
+.js body {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.js body.render {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #5d93d8;
+  color: var(--color-link);
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: #423c2b;
+  color: var(--color-link-hover);
+  outline: none;
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+
+/* Common styles for the menus */
+.menu {
+  position: relative;
+  z-index: 10;
+}
+
+.menu__item {
+  line-height: 1.1;
+  position: relative;
+  display: block;
+  margin: 1em 0;
+  outline: none;
+}
+
+.menu__item-name,
+.menu__item-label {
+  position: relative;
+  display: inline-block;
+}
+
+
+.menu__item-label {
+  margin: 0 0 0 0.5em;
+}
+
+@media screen and (min-width: 50em) {
+  .icon--keyboard {
+    position: absolute;
+    right: 0.55em;
+    bottom: -30%;
+    display: block;
+    width: 54px;
+    height: 46px;
+    fill: var(--color-link);
+  }
+  .demos {
+    display: flex;
+    padding-right: 80px;
+
+    justify-self: end;
+  }
+  .demo {
+    display: block;
+    width: 17px;
+    height: 17px;
+    margin: 0 5px 0 0;
+    border: 2px solid;
+    border-radius: 2px;
+  }
+  a.demo--current {
+    background: currentColor;
+  }
+  .demo span {
+    position: absolute;
+    top: -0.2em;
+    right: 100%;
+    display: none;
+    margin: 0 1em 0 0;
+  }
+  .demo--current span {
+    display: block;
+  }
+}
+
