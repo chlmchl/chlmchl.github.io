@@ -644,6 +644,39 @@ cursor: pointer;
   color: #fff;
 }
 
+* { box-sizing: border-box; }
+.grid {
+
+  background: transparent;
+  width: 85vw;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  overflow-y: scroll;
+
+
+}
+
+.
+
+
+/* ---- .grid-item ---- */
+
+
+.grid-item {
+  display: flex;
+  flex-flow: column;
+}
+
+
+
+.grid-item img {
+  width: 100%;
+  padding: 5px;
+}
 
 /* ----------------------------
 
