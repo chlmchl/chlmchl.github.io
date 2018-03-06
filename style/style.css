@@ -669,6 +669,7 @@ cursor: pointer;
 .grid-item {
   display: flex;
   flex-flow: column;
+  width: 33.333%;
 }
 
 
