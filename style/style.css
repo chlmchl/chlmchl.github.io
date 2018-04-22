@@ -223,8 +223,7 @@ background: #2BC0E4;  /* fallback for old browsers */
 #portrait {
   position: absolute;
   z-index: -1;
-  opacity: .4;
-  filter: contrast(170%) grayscale(100%);
+  opacity: .6;
   width: 50%;
 /*  max-width: 900px;
   min-width: 400px;*/
