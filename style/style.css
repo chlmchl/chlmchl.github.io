@@ -57,7 +57,8 @@ button {
 
 ::selection {
   color: #fff;
-  background-color: #ec008c;
+  background-color: #000;
+  opacity: .1;
  
 
 }
@@ -137,7 +138,7 @@ VP   V8P YP   YP    YP  */
   font-family: 'Space Mono', monospace;
   font-size: 12px;
   color: #000;
-  opacity: .5;
+  opacity: .3;
   transition: opacity .6s ease;
 }
 
@@ -459,11 +460,14 @@ cursor: pointer;
 
 /* ---- .grid-item ---- */
 
+.grid{
+  width: 70vw;
+}
 
 .grid-item {
   display: flex;
   flex-flow: column;
-  max-width: 33.33%;
+  width: 33.3%;
 }
 
 
