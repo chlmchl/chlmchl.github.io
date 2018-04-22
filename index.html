@@ -19,88 +19,40 @@
     <script>
     document.body.className += ' fade-out';
     </script>
-
     <!--   navigation menu -->
-    <div class="container">
-        <div class="menu-wrap">
-            <nav class="menu-top">
-                <div class="profile"><img src="img/user1.png" alt="" />
-                    <h1>Chloé Michel</h1></div>
-                <div class="icon-list">
-                    <a href="mailto:chloe.michel.pro@gmail.com"><img src="img/icon/google-logo.svg"/></a>
-                    <a href="https://www.instagram.com/chl.mchl/"><img src="img/icon/instagram-logo.svg"/></a>
-                    <a href="https://vimeo.com/chlmchl"><img src="img/icon/vimeo-logo.svg"/></a>
-                    <a href="https://www.linkedin.com/in/chlo%C3%A9-michel-43a90b138/"><img src="img/icon/linkedin-logo.svg"/></a>
-                    <!-- <a href="https://www.behance.net/chmichel967861"><img src="img/icon/behance-logo.svg"/></a> -->
+    <div class="container">       
+        <button class="menu-button" id="open-button"></button>
+    </div>
+
+    <nav class="contact">
+    <div class="icon-list">
+                    <a href="mailto:chloe.michel.pro@gmail.com" target="_blank"><img src="img/icon/google-logo.svg"/></a>
+                    <a href="https://www.instagram.com/chl.mchl/" target="_blank"><img src="img/icon/instagram-logo.svg"/></a>
+                    <a href="https://vimeo.com/chlmchl" target="_blank"><img src="img/icon/vimeo-logo.svg"/></a>
+                    <a href="https://www.linkedin.com/in/chlo%C3%A9-michel-43a90b138/" target="_blank"><img src="img/icon/linkedin-logo.svg" target="_blank"/></a>
+                    <br/>
+                    <a href="https://www.linkedin.com/in/chlo%C3%A9-michel-43a90b138/" target="_blank">télécharger mon cv</a>
+                    <!-- <a href="https://www.behance.net/chmichel967861"><img src="img/icon/behance-logo.svg"/></a>
                     <a href="https://github.com/chlmchl"><img src="img/icon/github-logo.svg"/></a>
                     <!-- <a href="#"><img src="img/icon/twitter-logo.svg"/></a> -->
                 </div>
-            </nav>
-            <nav class="menu-side">
-                <p><span>Expériences pro</span></p>
-                <hr/>
-                <div class="cv">
-                    <p>05-07 <br/>2017</p>
-                    <p>Stagiaire graphiste<br/> The photo academy, Paris</p>
-                </div>
-                
-                <p><span>Formations / Diplômes</span></p>
-                <hr/>
-                <div class="cv">
-                    <p>2018
-                        <br/>2016</p>
-                    <p>BTS design graphique option communication et médias numériques
-                        <br/> Lycée J. Prévert, Boulogne-B.</p>
-                </div>
-                <div class="cv">
-                    <p>2016
-                        <br/>2015</p>
-                    <p>Mise à niveau en arts appliqués
-                        <br/>ESAIG Estienne, Paris.</p>
-                </div>
-                <div class="cv">
-                    <p>2015
-                        <br/>2012</p>
-                    <p>BAC Scientifique OIB
-                        <br/>Lycée Evariste Galois, Noisy-le-G.</p>
-                </div>
-                <div class="cv">
-                    <p>2012
-                        <br/>2011</p>
-                    <p>Étudiante d'échange
-                        <br/>Avon Lake High School, Ohio, USA</p>
-                </div>
-                <p><span>Langues</span></p>
-                <hr/>
-                <div class="cv">
-                    <p>Français</p>
-                    <p>Langue maternelle</p>
-                </div>
-                <div class="cv">
-                    <p>Anglais</p>
-                    <p>Bilingue</p>
-                </div>
-                <div class="cv">
-                    <p>Espagnol</p>
-                    <p>Intermédiaire</p>
-                </div>
-                <!-- <button> CV </button>
- -->            </nav>
-        </div>
-        <button class="menu-button" id="open-button">Open Menu</button>
-    </div>
+    </nav>
     <div class="section">
         <section class="home">
+            <img id="portrait" src="img/portrait.jpg" alt="chloé michel designer graphique">
             <div id="home_box">
+
                 <div id="parallax_home">
-                    <h2>à propos</h2>
+                    <h2>My name is Chloé Michel.</h2>
                     <h1>Graphic design student in Paris, France</h1>
                 </div>
                 <p class="about">
-                    <br/>Je m'appelle <span>Chloé</span>,
-                    <br/>Je suis une étudiante de 22 ans en deuxième année de BTS design graphique numérique à <span>Paris, France</span>.
+                    
                     <br/>Passionnée par les métiers de la communication et les nouvelles technologies numériques et leurs influences, je me nourri de veille créative, de TED talk, de curiosité et d'ambition.
-                    <br/>Vous pouvez me contacter à <span>chloe.michel.pro[at]gmail.com</span></p>
+                    <br/>
+                    <br/> Admissible aux Gobelins, <span>je cherche une alternance</span> en design interactif, UX/UI design et motion design à partir de septembre 2018.
+                    <br/>
+                    <br/>Vous pouvez me contacter à <a href="mailto:chloe.michel.pro@gmail.com"><span>chloe.michel.pro[at]gmail.com</span></a></p>
             </div>
             <!-- SCROLL BUTTON -->
             <a href="index.html#cip">
@@ -122,9 +74,6 @@
                 <div class="demo-adsila">
                     <section class="content">
                         <nav class="menu menu--adsila">
-                            
-
-
                             <div class="menu__item-wrapper">
                                 <div class="menu__item">
                                     <span class="menu__item-name">Usable</span>
@@ -138,14 +87,11 @@
                                     </div>
                                 </div>
                             </div>
-
-                            
                             <div id="overlay_usable">
-                                <div class="overlay">    
-                                    <img src="img/mockup/usable.gif"/>
+                                <div class="overlay">
+                                    <img src="img/mockup/usable.gif" />
                                 </div>
                             </div>
-
                             <div class="menu__item-wrapper">
                                 <div class="menu__item">
                                     <span class="menu__item-name">Sinestesia</span>
@@ -162,17 +108,15 @@
                             </div>
                             <div id="overlay_sinestesia">
                                 <div class="overlay">
-                                    <p>coming soon</p>
+                                    <iframe src="https://player.vimeo.com/video/259126135?title=0&byline=0&portrait=0" width="1170" height="657.8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                 </div>
                             </div>
-
                             <div class="menu__item-wrapper">
                                 <div class="menu__item">
                                     <span class="menu__item-name">Surréalisme</span>
                                     <span class="menu__item-label">édition, réalité augmentée • 01.2018</span>
                                     <div class="collapsible">
-                                        <p class="description">Réalisation d'une édition portant sur le thème du surréalisme et fonctionnant avec la réalité augmentée à l'aide de l'application HP Reveal, anciennement Aurasma. 
-                                        L'édition reprend le rêve "L'urinoir volant" d'André Breton, jouant sur la superposition du rêve sur la réalité.
+                                        <p class="description">Réalisation d'une édition portant sur le thème du surréalisme et fonctionnant avec la réalité augmentée à l'aide de l'application HP Reveal, anciennement Aurasma. L'édition reprend le rêve "L'urinoir volant" d'André Breton, jouant sur la superposition du rêve sur la réalité.
                                             <br/>
                                             <br/>
                                             <span class="tell-me-more" target="#overlay_surrealisme">tell me more</span></p>
@@ -184,7 +128,6 @@
                                     <iframe src="https://player.vimeo.com/video/258802679?color=ffffff&title=0&byline=0&portrait=0" width="1170" height="657.8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                 </div>
                             </div>
-
                             <div class="menu__item-wrapper">
                                 <div class="menu__item" href="#">
                                     <span class="menu__item-name">Body Double</span>
@@ -213,8 +156,7 @@
                                             <span>Partenariat avec les Cinémas Indépendants Parisiens</span> pour la réalisation du teaser de leur festival annuel Avants-Premières ! qui s'appuie sur 3 notions importantes aux yeux des CIP.
                                             <br/>
                                             <span>Déplacement • Parcours • Rencontre </span>
-                                            <br/>
-                                            Le teaser explore une carte de Paris et la localisation des différentes salles pour évoquer l’idée d’un parcours en prenant pour point de départ un élément graphique rappelant les particules de poussières de l’air dans le faisceau d’un projecteur, mais aussi les lumières d’une ville.
+                                            <br/> Le teaser explore une carte de Paris et la localisation des différentes salles pour évoquer l’idée d’un parcours en prenant pour point de départ un élément graphique rappelant les particules de poussières de l’air dans le faisceau d’un projecteur, mais aussi les lumières d’une ville.
                                             <br/>
                                             <br/>
                                             <span class="tell-me-more" target="#overlay_cip">tell me more</span></p>
@@ -226,7 +168,6 @@
                                     <iframe src="https://player.vimeo.com/video/224490796?color=ff0179&title=0&byline=0&portrait=0" width="1170" height="657.8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                 </div>
                             </div>
-                            
                             <div class="menu__item-wrapper">
                                 <div class="menu__item">
                                     <span class="menu__item-name">Let's go - Rone</span>
@@ -244,14 +185,13 @@
                                     <iframe allowFullScreen frameborder="0" height="564" mozallowfullscreen src="https://player.vimeo.com/video/258801936" webkitAllowFullScreen width="640"></iframe>
                                 </div>
                             </div>
-                            
                             <div class="menu__item-wrapper">
                                 <div class="menu__item">
                                     <span class="menu__item-name">0001</span>
                                     <span class="menu__item-label">jeu de carte, design d'application • 2017</span>
                                     <div class="collapsible">
-                                        <p class="description">À l'occasion de l'anniversaire du célèbre jeu de carte UNO dans un projet de cours fictif, il m'a été demandé d'inventer un nouveau concept et de réaliser un nouveau design du UNO ainsi qu'une vidéo présentant une alternative numérique au jeu de carte.<br/>
-                                        0001 est la version binaire du UNO. On remplace les 10 chiffres par leur traduction en 0 et en 1 et on lance la partie. Ce jeu du UNO peut tout aussi bien satisfaire un but pédagogique que divertissant.
+                                        <p class="description">À l'occasion de l'anniversaire du célèbre jeu de carte UNO dans un projet de cours fictif, il m'a été demandé d'inventer un nouveau concept et de réaliser un nouveau design du UNO ainsi qu'une vidéo présentant une alternative numérique au jeu de carte.
+                                            <br/> 0001 est la version binaire du UNO. On remplace les 10 chiffres par leur traduction en 0 et en 1 et on lance la partie. Ce jeu du UNO peut tout aussi bien satisfaire un but pédagogique que divertissant.
                                             <br/>
                                             <br/>
                                             <span class="tell-me-more" target="#overlay_uno">tell me more</span></p>
@@ -263,10 +203,6 @@
                                     <iframe src="https://player.vimeo.com/video/258799662?color=ff0179&title=0&byline=0&portrait=0" width="1170" height="657.8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                 </div>
                             </div>
-                        
-                            
-                            
-                            
                             <div class="menu__item-wrapper">
                                 <div class="menu__item">
                                     <span class="menu__item-name">Miscellaneous</span>
@@ -280,38 +216,35 @@
                                 </div>
                             </div>
                             <div id="overlay_misc">
-                                <div class="overlay">    
+                                <div class="overlay">
                                     <div class="grid">
-
-  <div class="grid-item">
-    <img src="img/reliure_copystrat.gif" alt="projet de synthèse design graphique"/>
-    <img src="img/red2.jpg" alt="série photographie rouge" />
-    <img src="img/light_copenhague.jpg" alt="photographie lumière musée du design de copenhague" />
-  </div>
- <div class="grid-item">   
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-    <img src="img/red1.jpg" alt="série photographie rouge" />
-    <img src="img/night_copenhague.jpg" alt="photographie nuit copenhague" />
-
- </div>
- <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-    <img src="img/red4.jpg" alt="série photographie rouge" />
-    <img src="img/red_copenhague.jpg" alt="photographie portrait monochromatique rouge" />
-  </div>
-</div>
+                                        <div class="grid-item">
+                                            <img src="img/reliure_copystrat.gif" alt="projet de synthèse design graphique" />
+                                            <img src="img/red2.jpg" alt="série photographie rouge" />
+                                            <img src="img/red4.jpg" alt="série photographie rouge" />
+                                        </div>
+                                        <div class="grid-item">
+                                            <img src="img/light_copenhague.jpg" alt="photographie lumière musée du design de copenhague" />
+                                            <img src="img/red1.jpg" alt="série photographie rouge" />
+                                            <img src="img/red_copenhague.jpg" alt="photographie portrait monochromatique rouge" />
+                                        </div>
+                                        <div class="grid-item">
+                                            <img src="img/night_copenhague.jpg" alt="photographie nuit copenhague" />
+                                        </div>
+                                    </div>
+                                    <div></div>
                                 </div>
                             </div>
                     </section>
                 </div>
             </div>
-            <!-- SCROLL BUTTON -->
         </section>
-    </div>
-    <!--     <footer class="footer">
-        <p><br/>Chloé Michel 2018
+
+        <footer class="footer">
+        <p><br/>Chloé Michel © 2018
         <br/> codé avec amour en html, css, js</p>
-    </footer> -->
+    </footer>
+    </div>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.fullpage.min.js"></script>
     <script src="js/main.js"></script>
