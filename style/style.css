@@ -224,6 +224,7 @@ background: #2BC0E4;  /* fallback for old browsers */
   position: absolute;
   z-index: -1;
   opacity: .6;
+  filter: grayscale(20%) contrast(1.1);
   width: 50%;
 /*  max-width: 900px;
   min-width: 400px;*/
