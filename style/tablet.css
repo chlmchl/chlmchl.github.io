@@ -66,3 +66,43 @@ font-family: 'Space Mono', monospace;
 .grid_column iframe{
   width: 100%;
 }
+
+.contact{
+/*  width: 700px;*/
+  position: fixed;
+  background: transparent;
+  margin: auto;
+  right: 0;
+  top: 40px;
+  text-align: right; 
+  display: flex;
+ 
+
+}
+.icon-list {
+  flex-direction: column;
+  font-size: 1.25em;
+  text-align: left;
+  width: 100px;
+}
+
+.icon-list img {
+  height: 30px;
+  width: 30px;
+}
+
+.icon-list a {
+  margin: 0 0 2em 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: #000;
+  opacity: .9;
+  display: flex;
+  flex-flow: column;
+}
+
+.icon-list a:hover{
+  opacity: 1;
+}
+
