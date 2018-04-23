@@ -1,12 +1,9 @@
 #home_box, #project_box {
-
+  height: 100%;
   width: 90vw;
   margin-top: 10%;
 }
 
-#home_box {
-  height: 85vh;
-}
 
 #project_box {
   height: 100%;
@@ -38,8 +35,9 @@
   font-size: 35px;
   line-height: 1.8em;
   margin-top: 25px;
-width: 100%;
-max-width: 100%;}
+  width: 100%;
+  max-width: 100%;
+  height: 100%;}
 
 #portrait {
   display: none;
@@ -85,11 +83,11 @@ p.description {
 
 
 .contact{
-/*  width: 700px;*/
+  width: 50px;
   position: fixed;
   background: transparent;
   margin: auto;
-  right: 0;
+  right: 15px;
   top: 20px;
   text-align: right; 
   display: flex;
@@ -101,12 +99,13 @@ p.description {
   flex-direction: column;
   font-size: 1.25em;
   text-align: left;
-  width: 100px;
+  width: 50px;
 }
 
 .icon-list img {
-  height: 50px;
-  width: 50px;
+  width: 4vw;
+  height: 4vw;
+
 }
 
 .icon-list a {
