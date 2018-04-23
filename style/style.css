@@ -128,7 +128,6 @@ VP   V8P YP   YP    YP  */
 }
 
 .icon-list img {
-  width: 15px;
   height: 15px;
 }
 
@@ -410,7 +409,7 @@ cursor: pointer;
 }
 
 #overlay_bodydouble, #overlay_sinestesia, 
-#overlay_cip, #overlay_usable, #overlay_uno, 
+#overlay_cip, #overlay_rone, #overlay_usable, #overlay_uno, 
 #overlay_surrealisme, #overlay_misc {
     position: fixed;
     display: none;
@@ -452,6 +451,28 @@ cursor: pointer;
   overflow-y: scroll;
 
 
+}
+
+.grid_column {
+
+  background: transparent;
+  width: 70vw;
+  margin: auto;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-self: flex-start;
+  overflow-y: scroll;
+
+
+}
+
+.grid_column img {
+
+  width: 100%;
+  padding: 5px;
 }
 
 
