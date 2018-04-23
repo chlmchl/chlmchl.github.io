@@ -1,7 +1,7 @@
 #home_box, #project_box {
 
-  width: 75vw;
-  margin-top: 10%;
+  width: 82vw;
+  margin-top: 50px;
 }
 
 #home_box {
@@ -10,8 +10,8 @@
 
 #project_box {
   height: 100%;
-  margin-top: 0;
-  margin-bottom: 250px;
+  margin-top: 70px;
+  margin-bottom: 150px;
 }
 
 #home_box h1, #project_box h1 {
@@ -35,9 +35,9 @@ font-family: 'Space Mono', monospace;
 }
 
 #portrait {
-  width: 80%;
+  width: 800px;
   right: 0;
-  bottom: 10%;
+  bottom: 0;
  
 }
 
