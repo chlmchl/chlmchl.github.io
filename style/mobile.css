@@ -17,7 +17,7 @@
 #home_box h1, #project_box h1 {
   font-weight: 700;
   font-size: 90px;
-  line-height: 1.2em;
+  line-height: 1.4em;
   max-width: 100%;
   width: 100%;
   margin-top: 50px;
@@ -35,8 +35,8 @@
 #home_box p.about {
   font-family: 'Space Mono', monospace;
   color: #000;
-  font-size: 34px;
-  line-height: 1.6em;
+  font-size: 35px;
+  line-height: 1.8em;
   margin-top: 25px;
 width: 100%;
 max-width: 100%;}
@@ -57,7 +57,7 @@ max-width: 100%;}
 }
 
 p.description {
-  font-size: 30px;
+  font-size: 32px;
   margin-left: 10px;
   padding-bottom: 40px;
   width: 100%;
@@ -86,35 +86,38 @@ p.description {
 
 .contact{
 /*  width: 700px;*/
-  position: absolute;
+  position: fixed;
   background: transparent;
-  bottom: 11%;
-  width: 90vw;
   margin: auto;
   right: 0;
-  left: 0;
-  text-align: center;
+  top: 20px;
+  text-align: right; 
+  display: flex;
  
 
 }
 
 .icon-list {
-  display: inline-block;
+  flex-direction: column;
   font-size: 1.25em;
   text-align: left;
+  width: 100px;
 }
 
 .icon-list img {
   height: 50px;
+  width: 50px;
 }
 
 .icon-list a {
-  margin: 0 5em 0 0;
+  margin: 0 0 3em 0;
   padding: 0;
   font-family: 'Space Mono', monospace;
   font-size: 12px;
   color: #000;
   opacity: .9;
+  display: flex;
+  flex-flow: column;
 }
 
 .icon-list a:hover{
