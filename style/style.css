@@ -183,6 +183,7 @@ font-family: 'Space Mono', monospace;
   line-height: 1.15em;
   width: 45%;
   max-width: 700px;
+  min-width: 600px;
 }
 
 #home_box h2, #project_box h2 {
@@ -204,7 +205,9 @@ font-family: 'Space Mono', monospace;
 
 #home_box p.about {
   font-family: 'Space Mono', monospace;
-  width: 600px;
+  width: 50%;
+  min-width: 500px;
+  max-width: 700px;
   color: #000;
   font-size: 16px;
   line-height: 1.5em;
@@ -225,12 +228,14 @@ background: #2BC0E4;  /* fallback for old browsers */
   opacity: .6;
   filter: grayscale(20%) contrast(1.1);
   width: 50%;
-/*  max-width: 900px;
-  min-width: 400px;*/
+  max-width: 900px;
+  min-width: 400px;
   right: 14%;
   bottom: 100px;
  
 }
+
+
 
 /* .88b  d88.  .d88b.  db    db .d8888. d88888b      .d8888.  .o88b. d8888b.  .d88b.  db      db      
 88'YbdP`88 .8P  Y8. 88    88 88'  YP 88'          88'  YP d8P  Y8 88  `8D .8P  Y8. 88      88      

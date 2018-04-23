@@ -1,0 +1,68 @@
+#home_box, #project_box {
+
+  width: 75vw;
+  margin-top: 10%;
+}
+
+#home_box {
+  height: 100vh;
+}
+
+#project_box {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 250px;
+}
+
+#home_box h1, #project_box h1 {
+font-family: 'Space Mono', monospace;
+  text-align: left;
+  color: #000;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2em;
+  width: 85%;
+}
+
+
+#home_box p.about {
+  font-family: 'Space Mono', monospace;
+  width: 90%;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.6em;
+  margin-top: 15px;
+}
+
+#portrait {
+  width: 80%;
+  right: 0;
+  bottom: 10%;
+ 
+}
+
+#mouse-scroll {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  bottom: 40px;
+  -webkit-transform: translateX(-50%);
+  z-index: 999;
+}
+
+.overlay {
+  width: 90vw;
+  margin: auto;
+}
+
+.grid_column {
+
+  background: transparent;
+  width: 90vw;
+
+
+}
+
+.grid_column iframe{
+  width: 100%;
+}
