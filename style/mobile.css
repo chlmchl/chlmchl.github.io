@@ -1,0 +1,140 @@
+#home_box, #project_box {
+
+  width: 90vw;
+  margin-top: 10%;
+}
+
+#home_box {
+  height: 85vh;
+}
+
+#project_box {
+  height: 100%;
+  margin-top: 200px;
+  margin-bottom: 250px;
+}
+
+#home_box h1, #project_box h1 {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 1.2em;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 50px;
+
+}
+
+#home_box h2, #project_box h2 {
+  
+  font-size: 30px;
+  width: 100%;
+
+}
+
+
+#home_box p.about {
+  font-family: 'Space Mono', monospace;
+  color: #000;
+  font-size: 34px;
+  line-height: 1.6em;
+  margin-top: 25px;
+width: 100%;
+max-width: 100%;}
+
+#portrait {
+  display: none;
+ 
+}
+
+#mouse-scroll {
+  display: none;
+}
+
+.overlay {
+  width: 90vw;
+  margin: auto;
+  font-size: 25px;
+}
+
+p.description {
+  font-size: 30px;
+  margin-left: 10px;
+  padding-bottom: 40px;
+  width: 100%;
+  line-height: 1.7em;
+}
+
+.grid_column {
+
+  background: transparent;
+  width: 90vw;
+
+
+}
+
+.grid_column iframe{
+  width: 100%;
+}
+
+
+
+.menu__item-name {
+  font-size: 40px;
+}
+
+
+
+.contact{
+/*  width: 700px;*/
+  position: absolute;
+  background: transparent;
+  bottom: 11%;
+  width: 90vw;
+  margin: auto;
+  right: 0;
+  left: 0;
+  text-align: center;
+ 
+
+}
+
+.icon-list {
+  display: inline-block;
+  font-size: 1.25em;
+  text-align: left;
+}
+
+.icon-list img {
+  height: 50px;
+}
+
+.icon-list a {
+  margin: 0 5em 0 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: #000;
+  opacity: .9;
+}
+
+.icon-list a:hover{
+  opacity: 1;
+}
+
+
+.footer{
+  width: 100%;
+  margin-top: -5%;
+  margin-bottom: 40px;
+  text-align: center;
+  z-index: 1;
+  color: #000;
+  opacity: .2;
+
+}
+
+.footer p {
+  font-family: 'Space Mone', monospace;
+  color: #000;
+  font-size: 30px;
+}
