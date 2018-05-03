@@ -397,7 +397,7 @@ p.description {
   margin-top: 10px;
 }
 
-p.description span{
+p.description span, .menu__item-label span{
 padding: 0 0.25em;
 background: #2BC0E4;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
@@ -415,7 +415,7 @@ cursor: pointer;
 
 #overlay_bodydouble, #overlay_sinestesia, 
 #overlay_cip, #overlay_rone, #overlay_usable, #overlay_uno, 
-#overlay_surrealisme, #overlay_misc {
+#overlay_surrealisme, #overlay_misc, #overlay_bigoffset {
     position: fixed;
     display: none;
     width: 100%;
@@ -440,6 +440,10 @@ cursor: pointer;
 .overlay p {
   font-size: 40px;
   color: #000;
+}
+
+span#new {
+  color: red;
 }
 
 * { box-sizing: border-box; }
@@ -516,7 +520,6 @@ YP       `Y88P'   `Y88P'     YP    Y88888P 88   YD
  
 .footer{
   width: 100%;
-  margin-top: -5%;
   padding-bottom: 40px;
   text-align: center;
   z-index: 1;
@@ -533,4 +536,4 @@ YP       `Y88P'   `Y88P'     YP    Y88888P 88   YD
 
 
 
-/
+
