@@ -1,142 +1,54 @@
-#home_box, #project_box {
-  height: 100%;
-  width: 90vw;
-  margin-top: 10%;
-}
 
-
-#project_box {
-  height: 100%;
-  margin-top: 200px;
-  margin-bottom: 250px;
-}
-
-#home_box h1, #project_box h1 {
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 1.4em;
-  max-width: 100%;
-  width: 100%;
-  margin-top: 50px;
-
-}
-
-#home_box h2, #project_box h2 {
-  
-  font-size: 30px;
-  width: 100%;
-
-}
-
-
-#home_box p.about {
-  font-family: 'Space Mono', monospace;
-  color: #000;
-  font-size: 35px;
-  line-height: 1.8em;
-  margin-top: 25px;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;}
-
-#portrait {
-  display: none;
- 
-}
-
-#mouse-scroll {
+.section {
   display: none;
 }
 
-.overlay {
+
+.mobile {
+  display: all;
   width: 90vw;
+  height: 100%;
   margin: auto;
-  font-size: 25px;
-}
-
-p.description {
-  font-size: 32px;
-  margin-left: 10px;
-  padding-bottom: 40px;
-  width: 100%;
-  line-height: 1.7em;
-}
-
-.grid_column {
-
-  background: transparent;
-  width: 90vw;
-
-
-}
-
-.grid_column iframe{
-  width: 100%;
-}
-
-
-
-.menu__item-name {
-  font-size: 40px;
-}
-
-
-
-.contact{
-  width: 50px;
-  position: fixed;
-  background: transparent;
-  margin: auto;
-  right: 15px;
-  top: 20px;
-  text-align: right; 
-  display: flex;
- 
-
-}
-
-.icon-list {
-  flex-direction: column;
-  font-size: 1.25em;
-  text-align: left;
-  width: 50px;
-}
-
-.icon-list img {
-  width: 4vw;
-  height: 4vw;
-
-}
-
-.icon-list a {
-  margin: 0 0 3em 0;
-  padding: 0;
-  font-family: 'Space Mono', monospace;
-  font-size: 12px;
-  color: #000;
-  opacity: .9;
-  display: flex;
-  flex-flow: column;
-}
-
-.icon-list a:hover{
+  margin-top: 5%;
+  z-index: 100;
   opacity: 1;
 }
 
+.mobile h2{
+  font-family: 'Space Mono';
+  font-size: 35px;
+  color: #fff;
+  line-height: 1.5em;
 
-.footer{
-  width: 100%;
-  margin-top: -5%;
-  margin-bottom: 40px;
-  text-align: center;
-  z-index: 1;
-  color: #000;
-  opacity: .2;
+ 
+}
+
+.gotodesktop{
+height: 100%;
+margin-top: 1vh;}
+
+.gotodesktop p{
+  font-family: 'Space Mono';
+  font-size: 160px;
+  font-style: italic;
+  color: #fff;
+  font-weight: bold;
+  margin: auto;
+   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+.contactmobile .icon-list {
+  position: absolute;
+  float: bottom;
+  text-align: left;
+  font-family: 'space mono';
+  bottom: 20px;
 
 }
 
-.footer p {
-  font-family: 'Space Mone', monospace;
-  color: #000;
-  font-size: 30px;
+.contactmobile .icon-list a {
+  font-size: 35px;
+  line-height: 1.5em;
 }
+

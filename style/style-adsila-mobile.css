@@ -1,12 +1,15 @@
+
 .menu--adsila {
   font-family: 'Space Mono', monospace;
 }
 
 .menu__item-name {
-  font-size: 90px;
+  font-size: 110px;
   font-weight: bold;
-  color: black;
   cursor: pointer;
+    color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
 }
 
 .menu__item-name:hover{
@@ -16,11 +19,12 @@
 }
 
 .menu__item-label {
-  font-size: 30px;
+  font-size: 22px;
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
 }
+
 
 
 

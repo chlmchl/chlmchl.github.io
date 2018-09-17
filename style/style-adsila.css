@@ -1,11 +1,20 @@
 .menu--adsila {
   font-family: 'Space Mono', monospace;
+  text-align: center;
+  margin-top: 20px;
+  height: 65vh;
+}
+
+.menu__item-wrapper {
+  height: 200px;
 }
 
 .menu__item-name {
-  font-size: 60px;
+  font-size: 90px;
   font-weight: bold;
-  color: black;
+  color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
   cursor: pointer;
 }
 
@@ -16,8 +25,8 @@
 }
 
 .menu__item-label {
-  size: 12px;
-  color: #000;
+  font-size: 12px;
+  color: #fff;
 }
 
 

@@ -1,12 +1,7 @@
-
 /*
 Icons by SimpleIcon from www.flaticon.com 
 License: CC 3.0 BY 
 */
-
-
-
-
 
 
 /*
@@ -19,9 +14,6 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 */
 
 
-
-
-
 /* 
  d888b  d88888b d8b   db d88888b d8888b.  .d8b.  db      
 88' Y8b 88'     888o  88 88'     88  `8D d8' `8b 88      
@@ -31,37 +23,34 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
  Y888P  Y88888P VP   V8P Y88888P 88   YD YP   YP Y88888P 
  */
 
-
 * {
-  margin: 0;
-  padding: 0 ;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
-li a{
-  text-decoration: none;
-  color: #636fa4;
+li a {
+    text-decoration: none;
 }
 
 
 button {
-  border: none;
-  background: transparent;
-  transition: all .5s ease;
-  outline: none;
-  transform-origin: center;
+    border: none;
+    background: transparent;
+    transition: all .5s ease;
+    outline: none;
+    transform-origin: center;
 }
 
 ::selection {
-  color: #fff;
-  background-color: #000;
-  opacity: .1;
- 
-
+    color: #fff;
+    background-color: #000;
+    opacity: .1;
 }
+
 
 /*
 d8888b.  .d8b.   .o88b. db   dD  d888b  d8888b.  .d88b.  db    db d8b   db d8888b. 
@@ -72,30 +61,35 @@ d8888b.  .d8b.   .o88b. db   dD  d888b  d8888b.  .d88b.  db    db d8b   db d8888
 Y8888P' YP   YP  `Y88P' YP   YD  Y888P  88   YD  `Y88P'  ~Y8888P' VP   V8P Y8888D'
 */
 
-
-html{
-background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+html {
+    /*background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+*/
+    background-color: black;
 }
 
 body {
 
-width: 100%;
-height: 100%;
-opacity: 1;
-transition: 2s opacity;
-overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 2s opacity;
+    overflow-x: hidden;
 }
 
 body.fade-out {
     opacity: 0;
-transition: none;
+    transition: none;
 }
 
 .section {
-  height: 100%;
+    height: 100%;
 }
 
 
+#title {
+  position: fixed;
+  left: 10%;
+}
 
 
 
@@ -109,41 +103,44 @@ d8b   db  .d8b.  db    db
 88  V888 88   88  `8bd8'  
 VP   V8P YP   YP    YP  */
 
-
-
-
-.contact{
-/*  width: 700px;*/
-  position: absolute;
-  background: transparent;
-  margin-top: 2%;
-  right: 14%;
-
+.contact {
+    /*  width: 700px;*/
+    position: fixed;
+    background: transparent;
+    right: 10%;
 }
 
 .icon-list {
-  display: inline-block;
-  font-size: 1.25em;
-  text-align: right;
+    font-size: 1.25em;
+    text-align: right;
+    float: bottom;
 }
 
+.footer {
+  position: fixed;
+  z-index: 100;
+  bottom: 10%;
+  }
+
 .icon-list img {
-  height: 15px;
+    height: 15px;
 }
 
 .icon-list a {
-  margin: 0 1em 0 0;
-  padding: 0;
-  font-family: 'Space Mono', monospace;
-  font-size: 12px;
-  color: #000;
-  opacity: .3;
-  transition: opacity .6s ease;
+    margin: 0 1em 0 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: #fff;
+    opacity: .9;
+    transition: opacity .6s ease;
 }
 
-.icon-list a:hover{
-  opacity: 1;
+.icon-list a:hover {
+    opacity: 1;
+    color: white;
 }
+
 
 
 /* 
@@ -156,220 +153,91 @@ YP   YP Y8888P'  `Y88P'  ~Y8888P'    YP
 */
 
 
-.home{
 
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+#home_box,
+#project_box {
 
-#home_box, #project_box {
-
-  width: 70vw;
-  height: 100vh;
-  margin-top: 5%;
+    width: 80vw;
+    margin-top: 3%;
 }
 
 
-#home_box h1, #project_box h1 {
+
+/*#home_box h1, #project_box h1 {
 font-family: 'Space Mono', monospace;
   margin-right: 30vw;
   text-align: left;
   color: #000;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 90px;
   line-height: 1.15em;
   width: 45%;
   max-width: 700px;
   min-width: 600px;
-}
+}*/
 
-#home_box h2, #project_box h2 {
-  font-family: 'Space Mono', monospace;
-  margin-right: 30vw;
-  margin-bottom: 20px;
-  text-align: left;
-  color: #000;
-  font-weight: 200;
-  font-size: 15px;
-  line-height: 1.6em;
-
-/*  text-shadow: #e8cbc0 -3px 0px 0px;
+#home_box h2,
+#project_box h2 {
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 60px;
+    text-align: left;
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1.6em;
+    background-color: transparent;
+    /*  text-shadow: #e8cbc0 -3px 0px 0px;
 */
-
 }
 
 
 
 #home_box p.about {
-  font-family: 'Space Mono', monospace;
-  width: 50%;
-  min-width: 500px;
-  max-width: 700px;
-  color: #000;
-  font-size: 16px;
-  line-height: 1.5em;
-  margin-top: 10px;
+    font-family: 'Space Mono', monospace;
+    width: 50%;
+    min-width: 500px;
+    max-width: 700px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 10px;
 }
 
-#home_box p span{
-padding: 0 0.25em;
-background: #2BC0E4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #EAECC6, #2BC0E4);
+#home_box p span {
+    padding: 0 0.25em;
+    background: #2BC0E4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EAECC6, #2BC0E4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EAECC6, #2BC0E4);
 }
 
 
 #portrait {
-  position: absolute;
-  z-index: -1;
-  opacity: .6;
-  filter: grayscale(20%) contrast(1.1);
-  width: 50%;
-  max-width: 900px;
-  min-width: 400px;
-  right: 14%;
-  bottom: 100px;
- 
+    position: absolute;
+    z-index: -1;
+    opacity: .6;
+    filter: grayscale(20%) contrast(1.1);
+    width: 50%;
+    max-width: 900px;
+    min-width: 400px;
+    right: 14%;
+    bottom: 100px;
 }
 
 
-
-/* .88b  d88.  .d88b.  db    db .d8888. d88888b      .d8888.  .o88b. d8888b.  .d88b.  db      db      
-88'YbdP`88 .8P  Y8. 88    88 88'  YP 88'          88'  YP d8P  Y8 88  `8D .8P  Y8. 88      88      
-88  88  88 88    88 88    88 `8bo.   88ooooo      `8bo.   8P      88oobY' 88    88 88      88      
-88  88  88 88    88 88    88   `Y8b. 88~~~~~        `Y8b. 8b      88`8b   88    88 88      88      
-88  88  88 `8b  d8' 88b  d88 db   8D 88.          db   8D Y8b  d8 88 `88. `8b  d8' 88booo. 88booo. 
-YP  YP  YP  `Y88P'  ~Y8888P' `8888Y' Y88888P      `8888Y'  `Y88P' 88   YD  `Y88P'  Y88888P Y88888P */
-
-#mouse-scroll {
-  /* //
-   SCROLL BUTTON 
-   // */
-  style: block;
-}
-#mouse-scroll {
-  position: absolute;
-  margin: auto;
-  left: 50%;
-  bottom: 150px;
-  -webkit-transform: translateX(-50%);
-  z-index: 999;
-}
-#mouse-scroll span{
-  display: block;
-  width: 5px; 
-  height: 5px;
-  -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-       transform: rotate(45deg);
-       transform: rotate(45deg);
-  border-right: 2px solid #000000; 
-  border-bottom: 2px solid #000;
-  margin: 0 0 3px 5px;
-}
-#mouse-scroll .mouse {
-  height: 21px;
-  width: 14px;
-  border-radius: 10px;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  border: 2px solid #000;
-  top: 170px;
-}
-
-#mouse-scroll .down-arrow-1 {
-  margin-top: 6px;
-}
-#mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
-  -webkit-animation: mouse-scroll 1s infinite; 
-    -moz-animation: mouse-scroll 1s infinite:
-}
-#mouse-croll .down-arrow-1 {
-   -webkit-animation-delay: .1s; 
-   -moz-animation-delay: .1s;
-   -webkit-animation-direction: alternate;
-}
-#mouse-scroll .down-arrow-2 {
-  -webkit-animation-delay: .2s; 
-  -moz-animation-delay: .2s;
-  -webkit-animation-direction: alternate;
-}
-#mouse-scroll .down-arrow-3 {
-   -webkit-animation-delay: .3s;
-   -moz-animation-dekay: .3s;
-   -webkit-animation-direction: alternate;
-}
-#mouse-scroll .mouse-in {
-  height: 5px;
-  width: 2px;
-  display: block; 
-  margin: 5px auto;
-  background: #000;
-  position: relative;
-}
-#mouse-scroll .mouse-in {
- -webkit-animation: animated-mouse 1.2s ease infinite;
-  moz-animation: mouse-animated 1.2s ease infinite;
-}
-
-@-webkit-keyframes animated-mouse {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-     opacity: 0;
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-}
-@-webkit-keyframes mouse-scroll {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: .5;
-  }
-  100% {
-    opacity: 1;
-  } 
-}
-@keyframes mouse-scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-
-/* END SCROLL */}
-
-
-
-
-#projets{
-/* ----------------------------
+#projets {
+    /* ----------------------------
 
 HOME
 
 ------------------------------*/
-
-  margin-top: 0px;
-  overflow-y: scroll;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
 }
+
 
 
 
@@ -384,38 +252,44 @@ HOME
 88      88   YD  `Y88P'  Y8888P  Y88888P  `Y88P'    YP         Y88888P Y888888P `8888Y'    YP  
 */
 
-
-
 p.description {
-  font-size: 15px;
-  font-family: 'Space Mono', monospace;
-  width: 700px;
-  margin-left: 3em;
-  color: #000;
-  text-align: left;
-  line-height: 1.5em;
-  margin-top: 10px;
+    font-size: 12px;
+    font-family: 'Space Mono', monospace;
+    width: 600px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 40px;
 }
 
-p.description span, .menu__item-label span{
-padding: 0 0.25em;
-background: #2BC0E4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #EAECC6, #2BC0E4);
-cursor: pointer;
+p.description span,
+.menu__item-label span {
+    padding: 0 0.25em;
+    background: #2BC0E4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EAECC6, #2BC0E4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EAECC6, #2BC0E4);
+    cursor: pointer;
 }
 
 
 .collapsible {
-  display: none;
-  align-items: center;
-  justify-content: center;
-
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 
-#overlay_bodydouble, #overlay_sinestesia, 
-#overlay_cip, #overlay_rone, #overlay_usable, #overlay_uno, 
-#overlay_surrealisme, #overlay_misc, #overlay_bigoffset {
+#overlay_bodydouble,
+#overlay_sinestesia,
+#overlay_cip,
+#overlay_rone,
+#overlay_usable,
+#overlay_uno,
+#overlay_surrealisme,
+#overlay_misc,
+#overlay_bigoffset {
     position: fixed;
     display: none;
     width: 100%;
@@ -424,88 +298,86 @@ cursor: pointer;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 100;
 }
 
-.overlay{
-  height: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  overflow-x: scroll;
-  align-items: center;
-  justify-content: center;
+.overlay {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #fff;
 }
 
-.overlay p {
-  font-size: 40px;
-  color: #000;
-}
+
 
 span#new {
-  color: red;
+    color: red;
 }
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
+
 .grid {
 
-  background: transparent;
-  width: 85vw;
-  margin: auto;
-  margin-top: 5%;
-  padding-bottom: 5%;
-  display: flex;
-  justify-content: center;
-  align-self: flex-start;
-  overflow-y: scroll;
-
-
+    background: transparent;
+    width: 85vw;
+    margin: auto;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    overflow-y: scroll;
 }
 
 .grid_column {
 
-  background: transparent;
-  width: 70vw;
-  margin: auto;
-  margin-top: 5%;
-  padding-bottom: 5%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-self: flex-start;
-  overflow-y: scroll;
-
-
+    background: transparent;
+    width: 70vw;
+    margin: auto;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-self: flex-start;
+    overflow-y: scroll;
 }
 
 .grid_column img {
 
-  width: 100%;
-  padding: 5px;
+    width: 100%;
+    padding: 5px;
 }
 
 
 .
-
-
 /* ---- .grid-item ---- */
 
-.grid{
-  width: 70vw;
+.grid {
+    width: 70vw;
 }
 
 .grid-item {
-  display: flex;
-  flex-flow: column;
-  width: 33.3%;
+    display: flex;
+    flex-flow: column;
+    width: 33.3%;
 }
 
 
 
 .grid-item img {
-  width: 100%;
-  padding: 5px;
+    width: 100%;
+    padding: 5px;
 }
+
+
 
 /* ----------------------------
 
@@ -517,23 +389,4 @@ d88888b  .d88b.   .d88b.  d888888b d88888b d8888b.
 YP       `Y88P'   `Y88P'     YP    Y88888P 88   YD 
 
 ------------------------------*/
- 
-.footer{
-  width: 100%;
-  padding-bottom: 40px;
-  text-align: center;
-  z-index: 1;
-  color: #000;
-  opacity: .2;
-
-}
-
-.footer p {
-  font-family: 'Space Mone', monospace;
-  color: #000;
-  font-size: 12px;
-}
-
-
-
 
