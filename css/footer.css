@@ -20,10 +20,10 @@ footer:before {
     display: block;
     pointer-events: none;
     position: absolute;
-    right: 0;
+    left: -100vw;
     top: -100px;
     z-index: -1;
-    width: 100vw;
+    width: 300vw;
 }
 
 footer a {

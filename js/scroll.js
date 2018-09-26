@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  setActiveClass();
+
   $(window).scroll($.throttle(200, setActiveClass));
 });
 
