@@ -1,0 +1,130 @@
+html {
+    background-color: black;
+}
+
+body {
+    animation: fadeIn 1s;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Space Mono', monospace;
+    justify-content: center;
+    text-align: center;
+    padding: 33vh 0;
+}
+
+main > article {
+    padding: 150px 0;
+}
+
+main > article:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    transition: transform 3s ease-in-out, opacity .4s ease-in-out;
+    transform: scale(1);
+    opacity: 0;
+}
+
+main > article.active:before {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+main > article > img {
+    display: none;
+}
+
+main > article:hover {
+    cursor: pointer;
+}
+
+main > article > h1 {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+    position: relative;
+    z-index: 0;
+}
+
+main > article > h1:before {
+    background: linear-gradient(to left, #EAECC6, #2BC0E4);
+    bottom: 20px;
+    content: '';
+    left: -12px;
+    opacity: 0.9;
+    padding: 36px;
+    position: absolute;
+    right: -12px;
+    top: 21px;
+    transform-origin: 0% 50%;
+    transform: scale3d(0, 1, 1);
+    transition-timing-function: cubic-bezier(.2, 1, .3, 1);
+    transition: transform 0.5s;
+    z-index: -1;
+}
+
+main > article > h2 {
+    display: inline-block;
+    font-size: 12px;
+    margin: 20px 0;
+    position: relative;
+}
+
+main > article > h2:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: calc(100% + 2px);
+    width: 40%;
+    height: 2px;
+    opacity: 0.3;
+    transform: scale3d(0,1,1);
+    transform-origin: 100% 50%;
+    transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(.2, 1, .3, 1);
+    background: #2BC0E4;
+    background: linear-gradient(to left, #EAECC6, #2BC0E4);
+}
+
+.badge {
+    background: linear-gradient(to left, #EAECC6, #2BC0E4);
+    display: inline-block;
+    padding: 3px;
+    margin: 0 0 0 6px;
+}
+
+main > article.active > h1 {
+    -webkit-text-fill-color: white;
+}
+
+main > article.active > h2:before {
+    transform: scale3d(1, 1, 1);
+    transform-origin: 0% 50%;
+}
+
+main > article.active > h1:before {
+    transform: scale3d(1, 1, 1);
+}
