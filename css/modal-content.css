@@ -6,13 +6,23 @@
     font-weight: bold;
 }
 
+.modal-overlay .modal-dialog figcaption {
+    /*margin: 30px;*/
+    margin-top: 150px;
+}
 .modal-overlay .modal-dialog figcaption p {
-    padding: 20px;
-    line-height: 22px;
+    /*padding: 20px;*/
+    line-height: 25px;
     text-align: left;
+    font-size: 14px;
 }
 
 .modal-overlay .modal-dialog figure iframe {
     height: 100%;
     width: 100%;
+}
+
+.modal-overlay .modal-dialog figure img {
+    width: 300px;
+
 }
