@@ -10,6 +10,7 @@
     /*margin: 30px;*/
     margin-top: 150px;
 }
+
 .modal-overlay .modal-dialog figcaption p {
     /*padding: 20px;*/
     line-height: 25px;
@@ -17,12 +18,39 @@
     font-size: 14px;
 }
 
+.modal-overlay .modal-dialog figure.grid{
+    height: auto;
+}
+
 .modal-overlay .modal-dialog figure iframe {
     height: 100%;
     width: 100%;
 }
 
-.modal-overlay .modal-dialog figure img {
+/*.modal-overlay .modal-dialog figure img {
     width: 300px;
+}*/
 
+/* IMAGE GALLERY */
+
+.image-grid {
+    font-size: 0;
+    flex-flow: row wrap; 
+    display: flex;
+    padding: .1vh;
+}
+
+.image-grid li {
+    width: 33%;
+    flex: auto; 
+    margin: .1vh;
+  }
+      
+.image-grid li &:hover {
+    opacity: 0.8;
+}
+
+.image-grid li img {
+    width: 100%; 
+    height: auto;
 }
