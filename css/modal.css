@@ -154,4 +154,17 @@
     }
 }
 
-@media (max-width: 425px) {}
+@media (max-width: 425px) {
+
+.modal-overlay .modal-dialog figcaption{
+    top: 100px;
+    
+}
+
+.modal-overlay .modal-dialog button {
+    top:0;
+    left: 7%;
+}
+
+
+}
