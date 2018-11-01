@@ -37,20 +37,28 @@
     font-size: 0;
     flex-flow: row wrap; 
     display: flex;
-    padding: .1vh;
+    padding: 10px;
 }
 
 .image-grid li {
     width: 33%;
-    flex: auto; 
-    margin: .1vh;
+    flex: auto;
+    margin: 10px;
   }
       
-.image-grid li &:hover {
-    opacity: 0.8;
-}
-
 .image-grid li img {
     width: 100%; 
     height: auto;
+}
+
+@media (max-width: 425px) {
+    .image-grid {
+        flex-flow: column;
+        padding: 0;
+    }
+
+    .image-grid li {
+        width: 100%;
+        margin: 10px 0;
+    }
 }

@@ -71,33 +71,19 @@
 
 }
 
-/*.modal-overlay .modal-dialog figure {
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.modal-overlay .modal-dialog figure img{
-    margin: 10px;
-}*/
-
-
 .modal-overlay .modal-dialog figcaption {
     width: 100%;
-    /*flex-direction: column;*/
     position: relative;
     margin-bottom: 100px;
-    
 }
 
 .modal-overlay .modal-dialog figcaption p {
     width: 70%;
-    
 }
 
 .modal-overlay .modal-dialog figcaption .basicinfo {
     width: 40%;
     margin-right: 50px;
-    
 }
 
 .modal-overlay .modal-dialog button {
@@ -125,11 +111,32 @@
         align-items: center;
         height: 700px;
         width: 100%;
+        transform: none;
+        position: static;
     }
 
-    .modal-overlay .modal-dialog figure,
+    .modal-overlay .modal-dialog figure {
+        width: 100vw;
+        height: 56.25vw;
+        margin: 62px 0 0 0;
+        display: block;
+    }
+
     .modal-overlay .modal-dialog figcaption {
-        width: 75%;
+        margin: 0;
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    .modal-overlay .modal-dialog figcaption p,
+    .modal-overlay .modal-dialog figcaption p.basicinfo {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+    .modal-overlay .modal-dialog figcaption p:first-child {
+        margin-top: 20px;
     }
 }
 
@@ -139,32 +146,14 @@
         width: 100%;
     }
 
-    .modal-overlay .modal-dialog figure,
-    .modal-overlay .modal-dialog figcaption {
-        width: 100%;
+    .modal-overlay .modal-dialog button {
+        position: fixed;
+        left: 0;
+        top: 10px;
+        transform: none;
     }
 
     .modal-overlay .modal-dialog figcaption {
         flex-direction: column;
     }
-
-    .modal-overlay .modal-dialog figcaption p,
-    .modal-overlay .modal-dialog figcaption p.basicinfo {
-        margin: 0 10px 10px 10px;
-    }
-}
-
-@media (max-width: 425px) {
-
-.modal-overlay .modal-dialog figcaption{
-    top: 100px;
-    
-}
-
-.modal-overlay .modal-dialog button {
-    top:0;
-    left: 7%;
-}
-
-
 }
