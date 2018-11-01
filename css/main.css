@@ -150,4 +150,9 @@ main > article.active > h1:before {
         font-size: 40px;
         -webkit-text-stroke-width: 1px;
     }
+
+    main > article:before {
+        right: 0;
+        left: 0;
+    }
 }
