@@ -7,6 +7,12 @@ body {
     color: white;
 }
 
+a {
+    outline: none;
+    color: white;
+    text-decoration: none;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
