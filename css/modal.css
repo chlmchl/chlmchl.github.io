@@ -66,8 +66,9 @@
 .modal-overlay .modal-dialog figure,
 .modal-overlay .modal-dialog figcaption {
     /*width: 75%;*/
-    display: flex;
     justify-content: center;
+ /*   font-family: "Helvetica", sans-serif;*/
+   
 
 }
 
@@ -78,12 +79,24 @@
 }
 
 .modal-overlay .modal-dialog figcaption p {
-    width: 70%;
+    width: 80%;
+    margin: auto;
+    font-size: 24px;
+    line-height: 1.8em;
+    font-family: "Helvetica";
+    font-weight: lighter;
+    padding: 20px;
+
+
 }
 
 .modal-overlay .modal-dialog figcaption .basicinfo {
-    width: 40%;
-    margin-right: 50px;
+    width: 80%;
+    margin: auto;
+    font-family: "Space Mono";
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
 }
 
 .modal-overlay .modal-dialog button {

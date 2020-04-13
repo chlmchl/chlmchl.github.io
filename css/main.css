@@ -1,5 +1,5 @@
 html {
-    background-color: black;
+    background-color: #080808;
 }
 
 body {
@@ -40,15 +40,15 @@ main > article {
 main > article:before {
     content: '';
     position: fixed;
-    top: 25vh;
-    right: 25vw;
-    bottom: 25vh;
-    left: 25vw;
+    top: 20vh;
+    right: 20vw;
+    bottom: 20vh;
+    left: 20vw;
     z-index: -1;
     background: no-repeat center center fixed;
     background-size: contain;
-    transition: transform 40s ease-out, opacity .4s ease-in-out;
-    transform: scale(1);
+    transition: transform 80s ease-out, opacity .4s ease-in-out;
+    transform: scale(0.9);
     opacity: .2;
 }
 
