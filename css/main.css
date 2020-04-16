@@ -44,6 +44,9 @@ main {
 
 main > article {
     padding: 15vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main > article:before {
@@ -77,8 +80,6 @@ main > article:hover {
 }
 
 main > article > h1 {
-    --bg-left: #2BC0E4;
-    --bg-right: #EAECC6;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     color: black;
@@ -91,13 +92,13 @@ main > article > h1 {
 
 main > article > h1:before {
     background: linear-gradient(to right, var(--bg-left), var(--bg-right));
-    bottom: 20px;
+    bottom: 5px;
     content: '';
     left: -12px;
     opacity: 1;
     position: absolute;
     right: -12px;
-    top: 42px;
+    top: 20px;
     transform-origin: 0% 50%;
     transform: scale3d(0, 1, 1);
     transition-timing-function: cubic-bezier(.2, 1, .3, 1);
@@ -107,30 +108,22 @@ main > article > h1:before {
 
 main > article > h2 {
     font-size: 14px;
-    margin: 20px 0;
-    position: relative;
+    margin: 400px 0 0 0;
+    position: fixed;
+    bottom: 160px;
     color: black;
     line-height: 1.4em;
     
 }
 
 main > article > .text-info {
-    position: absolute;
-    text-align: center;
-    left : 60px;
-    font-size: 12px;
-    margin-top: -40px;
-
+    visibility: hidden;
 }
 
-main > article > .text-date {
-    position: absolute;
-    text-align: right;
-    right: 60px;
-    font-size: 12px;
-    margin-top: -40px;
-
+main > article.active > .text-info {
+    visibility: visible;
 }
+
 
 /*main > article > h2:before {
     content: '';

@@ -1,7 +1,7 @@
 $(document).ready(function() {
   setActiveClass();
 
-  $(window).scroll($.throttle(50, setActiveClass));
+  $(window).scroll($.debounce(50, setActiveClass));
 });
 
 function setActiveClass( event ) {
@@ -26,6 +26,12 @@ function setActiveClass( event ) {
     }
   });
 
+// $(function() {
+//     $("article").activeElement(function(){
+//       $(event.target).closest('.text-info').show();
+//     });
+//   } );
 
 
 };
+
