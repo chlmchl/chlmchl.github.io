@@ -1,5 +1,10 @@
 html {
-    background-color: #080808;
+    background-color: #FFFFFF;
+}
+
+::selection {
+    color: white;
+  background : blue;
 }
 
 body {
@@ -11,6 +16,10 @@ a {
     outline: none;
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    color: blue;
 }
 
 @keyframes fadeIn {
@@ -53,9 +62,11 @@ main > article:before {
 }
 
 main > article.active:before {
-    transform: scale(1.4);
-    opacity: 1;
+    transform: scale(1.2);
+    opacity: 0.9;
 }
+
+
 
 main > article > img {
     display: none;
@@ -69,8 +80,8 @@ main > article > h1 {
     --bg-left: #2BC0E4;
     --bg-right: #EAECC6;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    color: white;
+    -webkit-text-stroke-width: 1px;
+    color: black;
     display: inline;
     font-size: 90px;
     font-weight: bold;
@@ -95,9 +106,30 @@ main > article > h1:before {
 }
 
 main > article > h2 {
-    font-size: 12px;
+    font-size: 14px;
     margin: 20px 0;
     position: relative;
+    color: black;
+    line-height: 1.4em;
+    
+}
+
+main > article > .text-info {
+    position: absolute;
+    text-align: center;
+    left : 60px;
+    font-size: 12px;
+    margin-top: -40px;
+
+}
+
+main > article > .text-date {
+    position: absolute;
+    text-align: right;
+    right: 60px;
+    font-size: 12px;
+    margin-top: -40px;
+
 }
 
 /*main > article > h2:before {
@@ -125,6 +157,8 @@ main > article > h2 {
 
 main > article.active > h1 {
     -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 0px;
+
 }
 
 main > article.active > h2:before {

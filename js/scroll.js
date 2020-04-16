@@ -8,6 +8,7 @@ function setActiveClass( event ) {
   var position = $(window).scrollTop() + $(window).height() / 2;
   var $background = $('#background-image');
 
+
   $('article').each(function(index, article) {
     var $article = $(article)
     var articleTop = $article.position().top;
@@ -24,4 +25,7 @@ function setActiveClass( event ) {
       $article.removeClass('active');
     }
   });
+
+
+
 };

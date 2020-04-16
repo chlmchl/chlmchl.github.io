@@ -1,5 +1,5 @@
 header {
-    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+    background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
     display: inline-flex;
     padding: 50px 70px 0 70px;
     position: fixed;
@@ -10,7 +10,7 @@ header {
 }
 
 header:before {
-    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+    background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(230,230,230,1));
     top: 0;
     content: '';
     display: block;
@@ -24,7 +24,7 @@ header:before {
 
 header h1 {
     background-color: transparent;
-    color: #fff;
+    color: #000;
     flex: 1;
     font-family: 'Space Mono', monospace;
     font-size: 12px;
@@ -34,7 +34,7 @@ header h1 {
 }
 
 header nav a {
-    color: #fff;
+    color: #000;
     font-family: 'Space Mono', monospace;
     font-size: 12px;
     margin: 0 0 0 10px;
