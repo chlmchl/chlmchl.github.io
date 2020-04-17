@@ -33,16 +33,28 @@ header h1 {
     text-align: left;
 }
 
-header nav a {
-    color: #000;
+header nav {
     font-family: 'Space Mono', monospace;
     font-size: 12px;
-    margin: 0 0 0 10px;
+    
     opacity: .9;
     padding: 0;
+    display: inline-flex;
+}
+
+header nav a, p {      
+    margin: 0 0 0 10px;
     transition: opacity .6s ease;
-    text-decoration: none;
     line-height: 1.6em;
+    color: #000;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav a .lang_active {
+    font-weight: bolder;
 }
 
 @media (max-width: 425px) {

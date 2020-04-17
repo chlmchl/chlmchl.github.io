@@ -12,11 +12,7 @@ body {
     color: white;
 }
 
-a {
-    outline: none;
-    color: white;
-    text-decoration: none;
-}
+
 
 a:hover {
     color: blue;
@@ -154,10 +150,6 @@ main > article.active > h1 {
 
 }
 
-main > article.active > h2:before {
-    transform: scale3d(1, 1, 1);
-    transform-origin: 0% 50%;
-}
 
 main > article.active > h1:before {
     transform: scale3d(1, 1, 1);

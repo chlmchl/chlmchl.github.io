@@ -1,7 +1,14 @@
+.modal-overlay .modal-dialog a {
+    outline: none;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1.2px solid blue;
+}
+
 .modal-overlay .modal-dialog figure h1 {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    color: white;
+    color: black;
     font-size: 70px;
     font-weight: bold;
 }
@@ -16,6 +23,7 @@
     line-height: 25px;
     text-align: left;
     font-size: 14px;
+    color: black;
 }
 
 .modal-overlay .modal-dialog figure.grid{

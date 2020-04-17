@@ -1,7 +1,7 @@
 .modal-overlay {
-    background: black;
+    background: white;
     bottom: 0;
-    color: white;
+    color: black;
     cursor: default;
     left: 0;
     position: fixed;
@@ -11,8 +11,8 @@
     z-index: 2;
     filter: blur(0);
     overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, .95);
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, .95);
     transition: visibility 0s linear .2s;
     animation: blurOut .2s ease-in;
 }
