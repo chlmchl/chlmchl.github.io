@@ -1,59 +1,15 @@
-.modal-overlay {
-    background: white;
-    bottom: 0;
-    color: black;
-    cursor: default;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    visibility: hidden;
-    z-index: 2;
-    filter: blur(0);
-    overflow: auto;
-    background-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, .95);
-    transition: visibility 0s linear .2s;
-    animation: blurOut .2s ease-in;
-}
 
-.modal-overlay.visible {
-    visibility: visible;
-    animation: blurIn .4s ease-out;
-    transition: visibility 0s;
-}
-
-@keyframes blurIn {
-    from {
-        filter: blur(20px);
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        filter: blur(0);
-    }
-}
-
-@keyframes blurOut {
-    from {
-        filter: blur(0);
-        opacity: 1;
-    }
-    to {
-        filter: blur(20px);
-        opacity: 0;
-    }
-}
 
 .modal-overlay .modal-dialog {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 75%;
+    width: 70%;
     transform: translate3d(-50%, -50%, 0);
     /*display: inline-flex;*/
     height: 75%;
     /*background: black;*/
+    z-index: 2;
 }
 
 .modal-overlay .modal-dialog figure {
@@ -79,19 +35,21 @@
 }
 
 .modal-overlay .modal-dialog figcaption p {
-    width: 80%;
+    width: 90%;
     margin: auto;
     font-size: 24px;
     line-height: 1.8em;
     font-family: "Helvetica";
     font-weight: lighter;
     padding: 20px;
+}
 
-
+.modal-overlay .modal-dialog figcaption p span {
+    font-style: italic;
 }
 
 .modal-overlay .modal-dialog figcaption .basicinfo {
-    width: 80%;
+    width: 90%;
     margin: auto;
     font-family: "Space Mono";
     font-size: 18px;
@@ -99,21 +57,40 @@
     margin-bottom: 30px;
 }
 
-.modal-overlay .modal-dialog button {
-    position: absolute;
-    top: -82px;
-    left: 15px;
-    width: 75px;
+.modal-overlay .modal-dialog figcaption .basicinfo a {
+    outline: none;
+    color: blue;
+    text-decoration: none;
+    border-bottom: 1.3px solid blue;
+    transition: all 0.1s ease-in-out;
+ 
+}
+
+.modal-overlay .modal-dialog figcaption .basicinfo a:hover {
+   border-bottom: 2px solid blue;
+   font-weight: bold;
+}
+
+
+
+
+
+ button {
+    position: fixed;
+    top: 32px;
+    left: 20px;
+    width: 58px;
     font-size: 30px;
     border: none;
     outline: none;
     cursor: pointer;
-    transform: translateX(-50%);
+    transform: none;
     padding: 5px 20px;
     background: none;
+    z-index: 10;
 }
 
-.modal-overlay .modal-dialog figcaption button img {
+ button img {
     width: 100%;
 }
 

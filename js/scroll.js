@@ -1,11 +1,11 @@
 $(document).ready(function() {
   setActiveClass();
 
-  $(window).scroll($.debounce(50, setActiveClass));
+  $(window).scroll($.debounce(25, setActiveClass));
 });
 
 function setActiveClass( event ) {
-  var position = $(window).scrollTop() + $(window).height() / 2;
+  var position = $(window).scrollTop() + $(window).height() / 2.5;
   var $background = $('#background-image');
 
 
