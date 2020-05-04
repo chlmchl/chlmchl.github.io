@@ -17,6 +17,24 @@
     height: 100%;
     margin: auto;
     width: 100%;
+    display: flex;
+}
+.modal-overlay .modal-dialog figure h2 {
+    font-family: helvetica;
+    font-size: 80px;
+    color: black;
+    position: absolute;
+    align-self: center;
+
+}
+
+.modal-overlay .modal-dialog figure div {
+    width: 900px;
+    height: 400px;
+    border: solid lightgreen 3px;
+    border-radius: 450px / 200px;
+    align-self: center;
+    /*transform: rotate(-10deg);*/
 }
 
 .modal-overlay .modal-dialog figure,
@@ -46,6 +64,17 @@
 
 .modal-overlay .modal-dialog figcaption p span {
     font-style: italic;
+}
+
+.modal-overlay .modal-dialog figcaption h3 {
+    font-family: "bilboINC";
+    color: black;
+    font-size: 70px;
+    width: 80%;
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: lightgreen;
 }
 
 .modal-overlay .modal-dialog figcaption .basicinfo {
