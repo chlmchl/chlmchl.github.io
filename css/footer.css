@@ -1,10 +1,14 @@
+
+#footermobile {
+        display: none;
+    }
 footer {
     bottom: 0;
     right: 0;
     left: 0;
     display: inline-flex;
     font-family: 'Space Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
     color: black;
     opacity: .9;
     padding: 0 50px 50px 50px;
@@ -56,6 +60,18 @@ footer a:visited {
 
 @media (max-width: 425px) {
     footer {
-        padding: 0 20px 20px 0;
+        display: none;
+    }
+
+    #footermobile {
+        display: block;
+        margin-bottom: 60px;
+    }
+
+    #footermobile h3 {
+        font-family: "bilboINC";
+        color: black;
+        font-size: 50px;
+        margin-bottom: 20px;
     }
 }

@@ -1,3 +1,7 @@
+#headermobile {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -31,7 +35,7 @@ header h1 {
     color: #000;
     flex: 1;
     font-family: 'Space Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 200;
     line-height: 1.6em;
     text-align: left;
@@ -39,7 +43,7 @@ header h1 {
 
 header nav {
     font-family: 'Space Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
     
     opacity: .9;
     padding: 0;
@@ -63,12 +67,30 @@ header nav a .lang_active {
 
 @media (max-width: 425px) {
     header {
-        padding: 20px 20px 0 20px;
+        display: none;
     }
 
-    header nav a {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+    #headermobile {
+        display: block;
+        padding: 0px 20px 20px 20px;
+        margin-top: 25px;
+        height: 100vh;
     }
+
+    #headermobile h3 {
+        font-family: "bilboINC";
+        color: black;
+        font-size: 50px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    #headermobile h4 {
+        text-align: center;
+        font-family: "bilboINC";
+        color: black;
+        font-size: 30px;
+        opacity: 0.3;
+        margin-top: 60vh;
+    } 
 }
