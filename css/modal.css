@@ -176,3 +176,36 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 425px) {
+
+    main {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    article {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    button {
+    position: fixed;
+    top: 5px;
+    left: 0px;
+    }
+
+    .modal-overlay .modal-dialog figcaption {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .modal-overlay .modal-dialog figcaption p.basicinfo {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .modal-overlay .modal-dialog figcaption p {
+        font-size: 18px;
+
+    }
+}
