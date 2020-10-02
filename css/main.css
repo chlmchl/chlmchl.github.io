@@ -92,7 +92,7 @@ main > article > h1 {
     -webkit-text-fill-color: rgba(0,0,0,0);
     -webkit-text-stroke-width: 1.4px;
     display: inline;
-    font-family: 'BilboINC_Regular';
+    font-family: BilboINC_Regular, 'Space Mono';
     font-size: 150px;
     letter-spacing: 16px;  
     position: relative;
