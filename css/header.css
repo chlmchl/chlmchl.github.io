@@ -1,3 +1,5 @@
+
+
 #headermobile {
     display: none;
 }
@@ -74,11 +76,11 @@ header nav a .lang_active {
         display: block;
         padding: 0px 20px 20px 20px;
         margin-top: 25px;
-        height: 100vh;
+        
     }
 
     #headermobile h3 {
-        font-family: "bilboINC";
+        font-family: 'BilboINC_Regular';
         color: black;
         font-size: 50px;
         margin-bottom: 20px;
@@ -87,7 +89,7 @@ header nav a .lang_active {
     
     #headermobile h4 {
         text-align: center;
-        font-family: "bilboINC";
+        font-family: 'BilboINC_Regular';
         color: black;
         font-size: 30px;
         opacity: 0.3;

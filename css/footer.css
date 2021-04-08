@@ -64,14 +64,21 @@ footer a:visited {
     }
 
     #footermobile {
-        display: block;
-        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
 
     #footermobile h3 {
-        font-family: "bilboINC";
+        font-family: 'BilboINC_Regular';
         color: black;
-        font-size: 50px;
+        font-size: 35px;
         margin-bottom: 20px;
+    }
+
+    #footermobile p {
+        font-size: 12px;
+        margin-top: 20vh;
     }
 }
