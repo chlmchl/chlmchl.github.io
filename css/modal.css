@@ -19,6 +19,14 @@
     width: 100%;
     display: flex;
 }
+
+.modal-overlay .modal-dialog figure img{
+    align-items: center;
+ 
+    margin: auto;
+    width: 85%;
+    display: flex;
+}
 .modal-overlay .modal-dialog figure h2 {
     font-family: helvetica;
     font-size: 80px;
